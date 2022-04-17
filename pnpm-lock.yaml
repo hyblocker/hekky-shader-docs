@@ -2,10 +2,12 @@ lockfileVersion: 5.3
 
 specifiers:
   astro: ^1.0.0-beta.12
+  serialize-javascript: ^6.0.0
   shorthash: ^0.0.2
 
 dependencies:
   astro: 1.0.0-beta.12
+  serialize-javascript: 6.0.0
   shorthash: 0.0.2
 
 packages:
