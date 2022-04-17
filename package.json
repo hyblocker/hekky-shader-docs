@@ -10,6 +10,7 @@
   "dependencies": {
     "astro": "^1.0.0-beta.12",
     "serialize-javascript": "^6.0.0",
+    "shiki": "^0.10.1",
     "shorthash": "^0.0.2"
   },
   "engines": {
