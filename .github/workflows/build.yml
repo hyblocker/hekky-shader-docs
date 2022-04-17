@@ -22,9 +22,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.1
         
-      # Install pnpm
-      - name: Setup pnpm
-        run: npm install pnpm
+      # Setup pnpm
+      - uses: pnpm/action-setup@v2.1.0
+        with:
+          version: 6.0.2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install
+        run: pnpm install
 
       # Install dependencies with pnpm
       - name: Install dependencies
