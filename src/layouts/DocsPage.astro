@@ -1,16 +1,42 @@
 ---
-import { Debug } from 'astro/components';
-
+import { Debug, Markdown } from 'astro/components';
 import SocialEmbed from '@components/SocialEmbed.astro'
+import Sidebar from '@components/Sidebar/Sidebar.astro'
+import "~/css/main.scss";
+
+const { content } = Astro.props;
+let title = Astro.props.title ?? content.title;
+let description = Astro.props.description ?? content.description;
+let locale = Astro.props.locale ?? content.locale;
 ---
-<html>
+<html lang={locale ?? "en"} class="light">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
         <SocialEmbed
-
+            title={ title }
+            description={ description }
+            color="#168CDD"
         ></SocialEmbed>
-    </head>
 
+        <link rel="icon" href="/content/shared/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet"> 
+        <script is:inline src='/shared/js/search.js'></script>
+    </head>
     <body>
-        <slot/>
+        <Sidebar/>
+        <article class="content">
+            <div class="main-wrapper">
+                    <div class="search">
+                        <span class="searchItem"></span>
+                    </div>
+                    <slot/>
+            </div>
+        </article>
+        <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.5.3"></script>
     </body>
 </html>

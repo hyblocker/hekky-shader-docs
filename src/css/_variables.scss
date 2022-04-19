@@ -1,0 +1,55 @@
+:root {
+	--fonts-header: 'Poppins', 'Josefin Sans', sans-serif;
+	--fonts-normal: 'Josefin Sans', sans-serif;
+	--fonts-code: 'JetBrains Mono', monospace;
+
+	--sidebar-width: 18rem;
+	--sidebar-padding: 1rem;
+	--sidebar-header-spacing: 0.8rem;
+	--card-padding: 1rem;
+}
+.light {
+	--link: #168CDD;
+
+	--codeblock-bg: #e6e6e6;
+
+	--sidebar-default: #181818;
+	--sidebar-hover: #000000;
+	--sidebar-selected: #000000;
+	--sidebar-bg-default: #e1e1e1;
+	--sidebar-bg-hover: #eaeaea;
+	--sidebar-bg-selected: #cdcdcd;
+	--sidebar-border: #939393;
+	--sidebar-selected-accent: #168CDD;
+
+	.card-error {
+		--card-bg: #fab4b4;
+		--card-contrast: #790000;
+		--codeblock-bg: #ffd4d4;
+	}
+	.card-help {
+		--card-bg: #b7fab4;
+		--card-contrast: #103b0e;
+		--codeblock-bg: #e2ffe0;
+	}
+	.card-info {
+		--card-bg: #b4cbfa;
+		--card-contrast: #001132;
+		--codeblock-bg: #d0defb;
+		// more contrast
+		--link: #126197;
+	}
+	.card-tip {
+		--card-bg: #f5b4fa;
+		--card-contrast: #3d0d41;
+		--codeblock-bg: #f8c6fb;
+	}
+	.card-warning {
+		--card-bg: #faf6b4;
+		--card-contrast: #312f00;
+		--codeblock-bg: #faf8cb;
+	}	
+}
+.dark {
+
+}

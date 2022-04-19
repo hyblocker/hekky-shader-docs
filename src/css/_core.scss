@@ -1,0 +1,12 @@
+// Enable smooth scrolling
+html {
+	scroll-behavior: smooth;
+}
+.main-wrapper {
+	padding: 2rem;
+	max-width: 120ex;
+	margin: 0 auto;
+}
+.content {
+	margin-left: calc(var(--sidebar-width) + 2 * var(--sidebar-padding));
+}
