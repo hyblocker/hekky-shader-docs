@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>What is PBR?</title>
+<meta name="description">
+<meta name="theme-color" content="#168CDD">
+<meta property="og:url" content="https://docs.hyblocker.dev">
+<meta property="og:type" content="website">
+<meta property="og:title" content="What is PBR?">
+<meta property="og:description">
+<meta property="og:image" content="https://docs.hyblocker.dev/undefined">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="docs.hyblocker.dev">
+<meta property="twitter:url" content="https://docs.hyblocker.dev">
+<meta name="twitter:title" content="What is PBR?">
+<meta name="twitter:description">
+<meta name="twitter:image" content="https://docs.hyblocker.dev/undefined">
+
+        <link rel="icon" href="/content/shared/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet"> 
+        <script src="/shared/js/search.js"></script>
+    <link rel="stylesheet" href="/assets/asset.56a34fda.css"></link><script type="module" src="/entry.493285ae5.js" astro-script="/en/shaders/understanding-pbr/what-is-pbr/script-0"></script>
+</head>
+    <body>
+        <div class="docs-sidebar">
+	
+	<ul>
+	<li class="sidebar-section-title">
+				<span class="sidebar-title-text">Understanding PBR</span>
+				<ul class="sidebar-section-children">
+						<a class="sidebar-section-link sidebar-link-selected" href="/en/shaders/understanding-pbr/what-is-pbr">
+									<li class="sidebar-link-text">
+										What is PBR?
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/understanding-pbr/the-microfacet-theory">
+									<li class="sidebar-link-text">
+										The Microfacet theory
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/understanding-pbr/creating-pbr-textures">
+									<li class="sidebar-link-text">
+										Creating PBR Textures
+									</li>
+									
+								</a>
+					</ul>
+			</li><li class="sidebar-section-title">
+				<span class="sidebar-title-text">Hekky PBR</span>
+				<ul class="sidebar-section-children">
+						<a class="sidebar-section-link" href="/en/shaders/hekky-pbr/what-is-hekky-pbr">
+									<li class="sidebar-link-text">
+										What is Hekky PBR?
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-pbr/setup">
+									<li class="sidebar-link-text">
+										Setting up Hekky PBR
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-pbr/reference">
+									<li class="sidebar-link-text">
+										Shader Reference
+									</li>
+									
+								</a>
+					</ul>
+			</li><li class="sidebar-section-title">
+				<span class="sidebar-title-text">Who Asked</span>
+				<ul class="sidebar-section-children">
+						<a class="sidebar-section-link" href="/en/shaders/who-asked">
+									<li class="sidebar-link-text">
+										IDK
+									</li>
+									
+								</a>
+					</ul>
+			</li>
+</ul>
+	
+</div>
+        <article class="content">
+            <div class="main-wrapper">
+                    <div class="search">
+                        <span class="searchItem"></span>
+                    </div>
+                    <h1 id="what-is-pbr">What is PBR?</h1><div class="card card-info">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
+		<h3 class="card-title">Note</h3>
+	</div>
+	<div class="card-content">
+		<p>This explanation is not a technical one. It is designed to familiarise you with the core concepts of PBR, as understanding them well is important if you want to make or use good textures. This explanation will focus the concepts implemented inside of <a href="/en/shaders/hekky-pbr/what-is-hekky-pbr/">Hekky PBR</a>, but these should be exchangeable for other shaders too.</p>
+
+	</div>
+</div><p><strong>Physically Based Rendering</strong> (PBR) refers to the practise of using realistic (i.e. based on real life physics) shading and lighting algorithms to achieve the most photorealistic result possible in 3D rendering. While PBR is designed to mimic realistic shading and lighting, it does not mean that it can’t be stylized.</p><div class="card card-info">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
+		<h3 class="card-title">Standardisation</h3>
+	</div>
+	<div class="card-content">
+		<p>PBR is <strong>NOT</strong> standardised. Each application, shader and renderer have their own implementation of it. Luckily, the implementations are similar enough to be able to transfer PBR textures from one shader to another.</p>
+
+	</div>
+</div><h2 id="core-concepts">Core concepts</h2><h3 id="reflections">Reflections</h3><p>In the real world, light rays get reflected off a surface and bounce around the scene. The way light gets reflected can be represented in one of two ways, based on how rough a surface is.</p><p><strong>Specular Reflections</strong> refer to light rays which are reflected in the exact same angle they arrived in. This is basically a mirror, and what you normally think of as a reflection.</p><blockquote>
+<p>TODO: Specular reflection diagram ; Metal = 1, Rough = 0</p>
+</blockquote><p><strong>Diffuse Reflections</strong> refer to light rays which are reflected randomly.</p><blockquote>
+<p>TODO: Diffuse reflection diagram ; Metal = 0, Rough = 1 ; Albedo = red</p>
+</blockquote><div class="card card-tip">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"></path></svg>
+		<h3 class="card-title">Light scattering</h3>
+	</div>
+	<div class="card-content">
+		<p>Diffuse reflections aren’t really “reflected”. In reality the light is <strong>absorbed</strong> by the material, then scattered about.</p>
+
+	</div>
+</div><p>We can control if a surface uses specular reflections or diffuse reflections with the <strong>metal mask</strong> parameter. A surface <strong>cannot</strong> be half metallic and half dielectric (dielectric is the opposite of metal).</p><div class="card card-help">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg>
+		<h3 class="card-title">Other pipelines</h3>
+	</div>
+	<div class="card-content">
+		<p>You might see <strong>metal mask</strong> referred to as <code is:raw>metalness</code>, <code is:raw>metallic</code> or <code is:raw>metal</code> in other shaders. These refer to the same property.</p>
+
+	</div>
+</div><p>We can control the reflectivity of a surface via the <strong>roughness</strong> parameter. The rougher a surface is, the blurrier the reflections appear. The smoother a surface is, the smoother the reflections appear.</p><div class="card card-info">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
+		<h3 class="card-title">Smoothness</h3>
+	</div>
+	<div class="card-content">
+		<p>Smoothness (or glossiness) is the inverse of roughness.</p>
+
+	</div>
+</div><blockquote>
+<p>TODO: Roughness diagram ; Metal = 1, Rough = user-controlled</p>
+</blockquote><h3 id="light-scattering">Light Scattering</h3><p>Certain surfaces scatter light. This means that the light goes through them. This can be seen in <strong>subsurface scattering</strong> and <strong>sheen</strong>.</p><p><strong>Subsurface scattering</strong> refers to when light goes through a solid surface and spreads around it before coming out from the other side. You might have noticed it when you put your hand in front of a light and your hand glowed an orange red colour. This behavior is called subsurface scattering, and can be seen on numerous surfaces, such as candles, curtains, and skin.</p><blockquote>
+<p>TODO: Real life image of subsurface scattering</p>
+</blockquote><p><strong>Sheen</strong> refers to a special type of light behavior typically exhibited by cloths. Without sheen,</p><h3 id="refraction">Refraction</h3>
+            </div>
+        </article>
+        
+    </body>
+</html>
