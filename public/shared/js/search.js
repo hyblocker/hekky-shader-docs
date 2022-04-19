@@ -1,3 +1,4 @@
+
 const waitForGlobal = function(key, callback) {
     if (window[key]) {
         callback();

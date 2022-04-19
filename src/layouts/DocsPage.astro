@@ -25,6 +25,7 @@ let locale = Astro.props.locale ?? content.locale;
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet"> 
+        <script type="module" src='/shared/js/fuse.mjs'></script>
         <script is:inline src='/shared/js/search.js'></script>
     </head>
     <body>
@@ -37,6 +38,6 @@ let locale = Astro.props.locale ?? content.locale;
                     <slot/>
             </div>
         </article>
-        <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.5.3"></script>
+        
     </body>
 </html>
