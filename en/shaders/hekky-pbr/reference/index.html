@@ -26,7 +26,7 @@
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet"> 
         <script type="module" src="/shared/js/fuse.mjs"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/asset.897e6171.css"></link>
+    <link rel="stylesheet" href="/assets/asset.1d5a93e2.css"></link>
 </head>
     <body>
         <header>
@@ -100,13 +100,52 @@
                     <h1 id="shader-reference">Shader Reference</h1><div class="card card-info">
 	<div class="heading-container">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
-		<h3 class="card-title">OI!</h3>
+		<h3 class="card-title">Paid Features</h3>
 	</div>
 	<div class="card-content">
-		<p>PBR Fundamentals are cool :+1:</p>
+		Some features require a copy of 
+<a href="https://patreon.com/hekky">Hekky PBR Pro</a>
+ to use. These features will have 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor">
+<path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
+</path>
+</svg>
+ next to them.
 
 	</div>
-</div>
+</div><blockquote>
+<h3 id="table-of-contents">Table of Contents</h3>
+<ul>
+<li><a href="#main">Main</a></li>
+<li><a href="#lighting">Lighting</a></li>
+<li><a href="#toon">Toon</a></li>
+<li><a href="#specular">Specular</a></li>
+<li><a href="#anisotropy">Anisotropy</a></li>
+<li><a href="#outline">Outline</a></li>
+</ul>
+</blockquote><p><img src="/en/shader_inspector_full.png" alt="Shader Inspector"></p><div class="card card-info">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
+		<h3 class="card-title">Sliders</h3>
+	</div>
+	<div class="card-content">
+		<p>Sliders next to textures control the intensity of the texture!</p>
+
+	</div>
+</div><p><strong>Rendering Mode</strong> Allows you to change the material from opaque mode to transparency mode.</p><h2 id="main">Main</h2><p>This section describes the base layer of a material using Hekky PBR.</p><ul>
+<li><strong>Texture</strong> The albedo / diffuse / base texture. Can also be tinted.</li>
+<li><strong>Metal Mask</strong> Controls how “metallic” and reflective the material is. Other shaders may call this property <code>Metal Map</code>, <code>Metallness</code> or something similar.</li>
+<li><strong>Roughness Map</strong> Controls how “rough” the material is.</li>
+<li><strong>Invert Roughness</strong> Inverts the roughness map. Enable this if you want to use smoothness instead of a roughness.</li>
+<li><strong>Normal Map</strong> Allows you to define surface bumps without increasing the polygon count.</li>
+</ul><h2 id="lighting">Lighting</h2><p>This section describes how you may customise how a material reflects light using Hekky PBR.</p><ul>
+<li><strong>Lighting Mode</strong> Controls the lighting style of the material. You can choose between <code>Realistic</code>, <code>Toon</code> and <code>Unlit</code>.</li>
+<li><strong>Baked Specular</strong> Enables specular lighting from baked light sources, such as lightmaps and light probes.</li>
+</ul><h3 id="toon">Toon</h3><p>This section describes how you can tweak the lighting to achieve a cartoon-esque look.</p><h3 id="specular">Specular</h3><h3 id="anisotropy">Anisotropy</h3><h3 id="outline">Outline</h3><p>This section controls outlines.</p><ul>
+<li><strong>Enable Outline</strong> Enables outline effects.</li>
+<li><strong>Outline Width</strong> Controls the thickness of the outline.</li>
+<li><strong>Outline Colour</strong> Controls the outline’s colour.</li>
+</ul>
             </article>
             <footer>
 	<div class="prominent">
