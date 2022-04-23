@@ -6,6 +6,9 @@ setup: |
   import CardTip from '@components/CardTip.astro'
   import CardHelp from '@components/CardHelp.astro'
   import CardWarning from '@components/CardWarning.astro'
+  import Accordion from '@components/Accordion.astro'
+  import AccordionTabbed from '@components/AccordionTabbed.astro'
+  import AccordionTab from '@components/AccordionTab.astro'
 ---
 # What is PBR?
 
@@ -51,14 +54,48 @@ Smoothness (or glossiness) is the inverse of roughness.
 
 > TODO: Roughness diagram ; Metal = 1, Rough = user-controlled
 
+### Occlusion
+
+Occlusion refers to the **lack** of light reaching a surface. It's used to tell the shader which parts of the model should be darker than others.
+
+> before / after control : AO on/off, entire scene to really nail the point
+
+### Emission
+
+Some surfaces, such as small LEDs, emit light, but are too small to be an entire light source. An emissive map is used to allow such surfaces to cast light.
+
 ### Light Scattering
 
 Certain surfaces scatter light. This means that the light goes through them. This can be seen in **subsurface scattering** and **sheen**.
 
 **Subsurface scattering** refers to when light goes through a solid surface and spreads around it before coming out from the other side. You might have noticed it when you put your hand in front of a light and your hand glowed an orange red colour. This behavior is called subsurface scattering, and can be seen on numerous surfaces, such as candles, curtains, and skin.
 
-> TODO: Real life image of subsurface scattering
+> TODO: Real life image of subsurface scattering ; Replace with render when Hekky PBR suppports it
 
-**Sheen** refers to a special type of light behavior typically exhibited by cloths. Without sheen, 
+**Sheen** refers to a special type of light behavior typically exhibited by cloths. Without sheen, cloth will most likely look "plastic"-like. This is because, in real-life, at grazing angles, cloth generally scatters more light than traditional materials.
+
+> TODO: Sheen image, with before / after
 
 ### Refraction
+
+In real-life, transparent and translucent surfaces refract light. This is most prominent on common surfaces like glass, plastic, and lenses.
+
+<CardWarning title="Performance">
+Refraction is an **expensive** graphical effect, and can negatively affect your framerate! Use it only if you **REALLY need to**. Using refraction for glass, for example, **will** negatively affect your performance!
+</CardWarning>
+
+> TODO: Lens
+
+### Anisotropy
+
+Anisotropy refers to stretched specular reflections. It's typically seen at angles around a point on a surface too. Brushed materials are common anisotropic materials.
+
+> TODO: Aniso pan + CDJ
+
+<Accordion title="Among Us">
+A hit social deduction game developed by Innersloth Studios.
+</Accordion>
+
+<AccordionTabbed title="Among Us">
+A hit social deduction game developed by Innersloth Studios.
+</AccordionTabbed>

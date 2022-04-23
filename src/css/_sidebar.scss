@@ -2,7 +2,7 @@
 	position: fixed;
 	overflow: hidden scroll;
 	width: calc(var(--sidebar-width) + 2 * var(--sidebar-padding));
-	height: calc(100% - 2 * var(--sidebar-padding));
+	height: calc(100% - 2 * var(--sidebar-padding) - var(--header-height));
 	padding: var(--sidebar-padding) 0;
 	background: var(--sidebar-bg-default);
 }

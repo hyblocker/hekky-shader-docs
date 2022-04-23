@@ -1,0 +1,15 @@
+---
+import { SITE, SOCIALS } from '~/constants.js';
+import SearchIcon from '~/icons/search_black_24dp.astro';
+
+// TODO: Mobile button
+---
+<header>
+
+	<h1 class="site-title">{ SITE.title }</h1>
+	<div class="dock-right">
+		<button class="search"><SearchIcon/></button>
+		<a class="link-external" href={ SOCIALS.discord} target="_blank">Discord</a>
+		<a class="link-external" href={ SOCIALS.github} target="_blank">GitHub</a>
+	</div>
+</header>

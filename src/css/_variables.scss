@@ -6,10 +6,30 @@
 	--sidebar-width: 18rem;
 	--sidebar-padding: 1rem;
 	--sidebar-header-spacing: 0.8rem;
+
 	--card-padding: 1rem;
+
+	--header-height: 4rem;
+	--header-padding: 4rem;
+	--header-title-size: 1.6rem;
+
+	--search-container-width:  120ex;
+	--search-container-height: 75vh;
+	--search-popup-padding: 1.75rem;
+	--search-input-height: 3rem;
+	--search-input-font-size: 1.2rem;
 }
 .light {
 	--link: #168CDD;
+
+	--footer-bg: #dedede;
+	--footer-text: #434343;
+	--footer-border: #434343aa;
+	--footer-link: #525252;
+	--footer-link-hover: #181818;
+
+	--header-bg: #3c3c3c;
+	--header-text: #ededed;
 
 	--codeblock-bg: #e6e6e6;
 
@@ -21,6 +41,18 @@
 	--sidebar-bg-selected: #cdcdcd;
 	--sidebar-border: #939393;
 	--sidebar-selected-accent: #168CDD;
+
+	--search-container-bg: #bababa;
+	--search-input-bg: #dedede;
+	--search-input-text: #242424;
+	--search-result-bg: var(--search-container-bg);
+	--search-result-hover-bg: #a7a7a7;
+	--search-result-text: #191919;
+
+	--accordion-bg: #d1d1d1;
+	--accordion-hover-bg: #e4e4e4;
+	--accordion-text: #212121;
+	--accordion-collapse: #b9b9b9;
 
 	.card-error {
 		--card-bg: #fab4b4;

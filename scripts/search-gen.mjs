@@ -103,11 +103,11 @@ export function run() {
             parsedFileCount++;
 
             const resolvedFilePath = path.relative('src/pages', currFile)
-                .replaceAll('\\', '/')      // To forward slashes
-                .replaceAll('.astro', '')    // Trim astro pages
-                .replaceAll('.md', '')       // Trim markdown pages
-                .replaceAll('index', '')    // Hide index
-                .replaceAll(/\/+$/g, "");          // Trailing slash
+                .replaceAll('\\', '/')              // To forward slashes
+                .replaceAll('.astro', '')           // Trim astro pages
+                .replaceAll('.md', '')              // Trim markdown pages
+                .replaceAll('index', '')            // Hide index
+                .replaceAll(/\/+$/g, "");           // Trailing slash
 
             // Store current page
             if (title.length > 0 && fileContents.length > 0) {

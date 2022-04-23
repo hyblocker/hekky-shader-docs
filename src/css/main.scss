@@ -1,7 +1,11 @@
 @use 'variables';
 @use 'resetcss';
 @use 'core';
+@use 'header';
+@use 'footer';
 @use 'sidebar';
 @use 'markdown';
 @use 'cards';
+@use 'accordion';
+@use 'search';
 @use 'prism_theme';

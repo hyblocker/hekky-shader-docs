@@ -1,10 +1,10 @@
 ---
 layout: '@layouts/DocsPage.astro'
-title: What is PBR?
+title: Who Asked
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
 ---
-# What is PBR?
+# Who Asked
 <CardInfo title="OI!">
 	PBR Fundamentals are cool :+1:
 </CardInfo>
