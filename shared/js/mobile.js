@@ -1,6 +1,6 @@
 // Yes I literally botched a swipe API for this
 const MobileSwipeAPI = {
-	SwipeDirections: {
+	SwipeDirection: {
 		NONE:	0,
 		LEFT:	1,
 		RIGHT:	2,
@@ -10,7 +10,7 @@ const MobileSwipeAPI = {
 	gesture: {
 		x: [],
 		y: [],
-		match: MobileSwipeAPI.SwipeDirections.NONE,
+		match: MobileSwipeAPI.SwipeDirection.NONE,
 	},
 	Setup: function (callback, tolerance = 100) {
 		window.addEventListener('touchstart', function(e) {
@@ -34,26 +34,29 @@ const MobileSwipeAPI = {
 			const yTravel = MobileSwipeAPI.gesture.y[MobileSwipeAPI.gesture.y.length - 1] - MobileSwipeAPI.gesture.y[0];
 			
 			if (xTravel < tolerance && xTravel > -tolerance && yTravel < -tolerance) {
-				MobileSwipeAPI.gesture.match = SwipeDirections.UP;
+				MobileSwipeAPI.gesture.match = SwipeDirection.UP;
 			} else
 			if (xTravel < tolerance && xTravel > -tolerance && yTravel > tolerance) {
-				MobileSwipeAPI.gesture.match = SwipeDirections.DOWN;
+				MobileSwipeAPI.gesture.match = SwipeDirection.DOWN;
 			} else
 			if (yTravel < tolerance && yTravel > -tolerance && xTravel < -tolerance) {
-				MobileSwipeAPI.gesture.match = SwipeDirections.LEFT;
+				MobileSwipeAPI.gesture.match = SwipeDirection.LEFT;
 			} else
 			if (yTravel < tolerance && yTravel > -tolerance && xTravel > tolerance) {
-				MobileSwipeAPI.gesture.match = SwipeDirections.RIGHT;
+				MobileSwipeAPI.gesture.match = SwipeDirection.RIGHT;
 			} else {
-				MobileSwipeAPI.gesture.match = SwipeDirections.NONE;
+				MobileSwipeAPI.gesture.match = SwipeDirection.NONE;
 			}
 
-			callback()
+			callback(gesture);
 		
 			// MobileSwipeAPI.gesture.x = [];
 			// MobileSwipeAPI.gesture.y = [];
-			// MobileSwipeAPI.gesture.match = SwipeDirections.NONE;
+			// MobileSwipeAPI.gesture.match = SwipeDirection.NONE;
 		});
 	}
 };
 
+window.MobileSwipeAPI = MobileSwipeAPI;
+
+// TODO: swipe right => open sidebar mobile
