@@ -19,6 +19,9 @@ blockquote {
 
 	& p {
 		margin: .8rem 0;
+	}
+
+	& * {
 		&:first-child {
 			margin-top: 0;
 		}
@@ -60,9 +63,22 @@ em {
 strong {
 	font-weight: bold;
 }
+article {
+	& ul, & li, & ol, & p, & strong, & em {
+		line-height: 1.2rem;
+	}
+}
 p {
 	margin: 1rem 0;
 }
 a {
 	color: var(--link);
+}
+article > p > img {
+	margin: auto;
+	display: block;
+}
+article ul, article ol {
+	list-style: disc;
+	margin-left: 1rem;
 }
