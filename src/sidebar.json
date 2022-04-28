@@ -8,10 +8,6 @@
 			"url": "/en/shaders/understanding-pbr/what-is-pbr"
 		  },
 		  {
-			"title": "The Microfacet theory",
-			"url": "/en/shaders/understanding-pbr/the-microfacet-theory"
-		  },
-		  {
 			"title": "Creating PBR Textures",
 			"url": "/en/shaders/understanding-pbr/creating-pbr-textures"
 		  }

@@ -96,6 +96,8 @@ Anisotropy refers to stretched specular reflections. It's typically seen at angl
 A hit social deduction game developed by Innersloth Studios.
 </Accordion>
 
-<AccordionTabbed title="Among Us">
+<AccordionTabbed title="Among Us No way">
+<AccordionTab tabName="What">
 A hit social deduction game developed by Innersloth Studios.
+</AccordionTab>
 </AccordionTabbed>

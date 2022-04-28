@@ -1,7 +1,7 @@
 body {
 	font-family: var(--fonts-normal);
 }
-h1, h2, h3, h4, h5, h6 {
+.heading-wrapper, h1, h2, h3, h4, h5, h6 {
 	font-family: var(--fonts-header);
 	font-weight: 800;
 }
@@ -56,6 +56,28 @@ h5 {
 }
 h6 {
 	font-size: 1.2rem;
+}
+.heading-wrapper {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	align-items: baseline;
+	margin-inline-start: calc(-1 * var(--heading-icon-size));
+	& * {
+		display: inline;
+	}
+	& .anchor-link {
+		color: inherit;
+		position: relative;
+		inset-inline-start: -0.75rem;
+		width: var(--heading-icon-size);
+		height: var(--heading-icon-size);
+		opacity: 0;
+		transition: ease-in-out 250ms opacity;
+	}
+	&:hover .anchor-link {
+		opacity: 1;
+	}
 }
 em {
 	font-style: italic;
