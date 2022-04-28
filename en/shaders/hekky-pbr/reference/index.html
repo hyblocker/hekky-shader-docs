@@ -26,7 +26,7 @@
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet"> 
         <script type="module" src="/shared/js/fuse.mjs"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/asset.1d5a93e2.css"></link>
+    <link rel="stylesheet" href="/assets/asset.881c9d87.css"></link>
 </head>
     <body>
         <header>
@@ -48,11 +48,6 @@
 						<a class="sidebar-section-link" href="/en/shaders/understanding-pbr/what-is-pbr">
 									<li class="sidebar-link-text">
 										What is PBR?
-									</li>
-									
-								</a><a class="sidebar-section-link" href="/en/shaders/understanding-pbr/the-microfacet-theory">
-									<li class="sidebar-link-text">
-										The Microfacet theory
 									</li>
 									
 								</a><a class="sidebar-section-link" href="/en/shaders/understanding-pbr/creating-pbr-textures">
@@ -97,7 +92,7 @@
 	
 </div>
             <article class="content">
-                    <h1 id="shader-reference">Shader Reference</h1><div class="card card-info">
+                    <div class="heading-wrapper level-h1"><h1 id="shader-reference">Shader Reference</h1><a class="anchor-link" href="#shader-reference"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="card card-info">
 	<div class="heading-container">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
 		<h3 class="card-title">Paid Features</h3>
@@ -114,7 +109,7 @@
 
 	</div>
 </div><blockquote>
-<h3 id="table-of-contents">Table of Contents</h3>
+<div class="heading-wrapper level-h3"><h3 id="table-of-contents">Table of Contents</h3><a class="anchor-link" href="#table-of-contents"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div>
 <ul>
 <li><a href="#main">Main</a></li>
 <li><a href="#lighting">Lighting</a></li>
@@ -132,16 +127,16 @@
 		<p>Sliders next to textures control the intensity of the texture!</p>
 
 	</div>
-</div><p><strong>Rendering Mode</strong> Allows you to change the material from opaque mode to transparency mode.</p><h2 id="main">Main</h2><p>This section describes the base layer of a material using Hekky PBR.</p><ul>
+</div><p><strong>Rendering Mode</strong> Allows you to change the material from opaque mode to transparency mode.</p><div class="heading-wrapper level-h2"><h2 id="main">Main</h2><a class="anchor-link" href="#main"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes the base layer of a material using Hekky PBR.</p><ul>
 <li><strong>Texture</strong> The albedo / diffuse / base texture. Can also be tinted.</li>
 <li><strong>Metal Mask</strong> Controls how “metallic” and reflective the material is. Other shaders may call this property <code>Metal Map</code>, <code>Metallness</code> or something similar.</li>
 <li><strong>Roughness Map</strong> Controls how “rough” the material is.</li>
 <li><strong>Invert Roughness</strong> Inverts the roughness map. Enable this if you want to use smoothness instead of a roughness.</li>
 <li><strong>Normal Map</strong> Allows you to define surface bumps without increasing the polygon count.</li>
-</ul><h2 id="lighting">Lighting</h2><p>This section describes how you may customise how a material reflects light using Hekky PBR.</p><ul>
+</ul><div class="heading-wrapper level-h2"><h2 id="lighting">Lighting</h2><a class="anchor-link" href="#lighting"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes how you may customise how a material reflects light using Hekky PBR.</p><ul>
 <li><strong>Lighting Mode</strong> Controls the lighting style of the material. You can choose between <code>Realistic</code>, <code>Toon</code> and <code>Unlit</code>.</li>
 <li><strong>Baked Specular</strong> Enables specular lighting from baked light sources, such as lightmaps and light probes.</li>
-</ul><h3 id="toon">Toon</h3><p>This section describes how you can tweak the lighting to achieve a cartoon-esque look.</p><h3 id="specular">Specular</h3><h3 id="anisotropy">Anisotropy</h3><h3 id="outline">Outline</h3><p>This section controls outlines.</p><ul>
+</ul><div class="heading-wrapper level-h3"><h3 id="toon">Toon</h3><a class="anchor-link" href="#toon"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes how you can tweak the lighting to achieve a cartoon-esque look.</p><div class="heading-wrapper level-h3"><h3 id="specular">Specular</h3><a class="anchor-link" href="#specular"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="heading-wrapper level-h3"><h3 id="anisotropy">Anisotropy</h3><a class="anchor-link" href="#anisotropy"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="heading-wrapper level-h3"><h3 id="outline">Outline</h3><a class="anchor-link" href="#outline"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section controls outlines.</p><ul>
 <li><strong>Enable Outline</strong> Enables outline effects.</li>
 <li><strong>Outline Width</strong> Controls the thickness of the outline.</li>
 <li><strong>Outline Colour</strong> Controls the outline’s colour.</li>
