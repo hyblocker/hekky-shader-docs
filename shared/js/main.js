@@ -8,6 +8,26 @@ function AccordionClick(e) {
     }
 }
 
+function ComparisionControlClick(e) {
+
+    // Early quit if we aren't holding any buttons
+    if (e.buttons === 0 && e.type === 'mousemove') return false;
+
+    // Fetch comparision card ; up to 5 parents
+    let element = e.target;
+    for (let i = 0; i < 5; i++) {
+        if (!element.classList.contains('comparision-card')) {
+            element = element.parentNode;
+        } else break;
+    }
+    // Calculate new width
+    const newWidth = e.layerX;
+    element.setAttribute('style', `--compare-width: ${newWidth}px`);
+
+    // Fuck dragging
+    return false;
+}
+
 const waitForGlobal = function(key, callback) {
     if (window[key]) {
         callback();
@@ -90,6 +110,7 @@ document.addEventListener("DOMContentLoaded", (() => {
 	// Try yeeting noJS flag
 	document.documentElement.classList.remove('no-js');
 
+    // Search
 	// Fetch references
 	SearchRefs = {
 		searchButton: document.querySelector('header button.search'),
@@ -134,10 +155,16 @@ document.addEventListener("DOMContentLoaded", (() => {
 
 	documentLoaded = true;
 
+    // Accordions
     document.querySelectorAll('.accordion .accordion-header').forEach((accordion) => {
         accordion.onclick = AccordionClick;
     });
 
+    // Comparision Control
+    document.querySelectorAll('.comparision-card').forEach((comparisionControl) => {
+        comparisionControl.onmousemove = ComparisionControlClick;
+        comparisionControl.onmouseup = ComparisionControlClick;
+    })
 }));
 
 document.onkeyup = ((e) => {
