@@ -9,6 +9,7 @@ setup: |
   import Accordion from '@components/Accordion.astro'
   import AccordionTabbed from '@components/AccordionTabbed.astro'
   import AccordionTab from '@components/AccordionTab.astro'
+  import ComparisionCard from '@components/ComparisionCard.astro'
 ---
 # What is PBR?
 
@@ -58,7 +59,7 @@ Smoothness (or glossiness) is the inverse of roughness.
 
 Occlusion refers to the **lack** of light reaching a surface. It's used to tell the shader which parts of the model should be darker than others.
 
-> before / after control : AO on/off, entire scene to really nail the point
+<ComparisionCard beforeSrc="/shared/img/ao-off.png" beforeTxt="Ambient Occlusion Off" afterSrc="/shared/img/ao-on.png" afterTxt="Ambient Occlusion On"/>
 
 ### Emission
 
@@ -90,7 +91,7 @@ Refraction is an **expensive** graphical effect, and can negatively affect your 
 
 Anisotropy refers to stretched specular reflections. It's typically seen at angles around a point on a surface too. Brushed materials are common anisotropic materials.
 
-> TODO: Aniso pan + CDJ
+![Shader Inspector](/shared/img/aniso-example.png)
 
 <Accordion title="Among Us">
 A hit social deduction game developed by Innersloth Studios.

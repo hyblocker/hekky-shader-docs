@@ -5,6 +5,7 @@ header {
 	width: 100%;
 	background-color: var(--header-bg);
 	color: var(--header-text);
+	z-index: 1000;
 
 	display: flex;
 	align-items: center;

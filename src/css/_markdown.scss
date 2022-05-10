@@ -99,8 +99,11 @@ a {
 article > p > img {
 	margin: auto;
 	display: block;
+	// Fix oversized images
+	max-width: 100%;
 }
 article ul, article ol {
 	list-style: disc;
 	margin-left: 1rem;
+	margin-top: 1rem;
 }

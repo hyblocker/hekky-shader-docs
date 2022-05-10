@@ -4,6 +4,7 @@ title: Shader Reference
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import PaywallIcon from '~/icons/PaywalledFeature.astro'
+  import ComparisionCard from '@components/ComparisionCard.astro'
 ---
 # Shader Reference
 <CardInfo title="Paid Features">
@@ -48,6 +49,13 @@ This section describes how you may customise how a material reflects light using
 
 This section describes how you can tweak the lighting to achieve a cartoon-esque look.
 
+<ComparisionCard beforeSrc="/shared/img/toon-off.png" beforeTxt="Realistic Lighting" afterSrc="/shared/img/toon-on.png" afterTxt="Toon Lighting"/>
+
+- **Math Gradient Start** Controls the start of the math gradient for toon shading.
+- **Math Gradient End** Controls the end of the math gradient for toon shading.
+- **Min Brightness** Controls the minimum brightness when using toon shading.
+- **Max Brightness** Controls the maximum brightness when using toon shading.
+
 ### Specular
 
 ### Anisotropy
@@ -59,3 +67,15 @@ This section controls outlines.
 - **Enable Outline** Enables outline effects.
 - **Outline Width** Controls the thickness of the outline.
 - **Outline Colour** Controls the outline's colour.
+
+## Emission
+
+## Occlusion
+
+## Other Modules
+
+## Misc
+
+- **Render Queue** Controls when to render this material. See the [Unity Docs](https://docs.unity3d.com/Manual/class-Material.html) for more information.
+- **Enable GPU Instancing** Allows Unity to draw objects using the **same mesh** and **same material** using one draw call, yielding performance.
+- **Double Sided Global Illumination** Enables double sided global illumination for this material. See the [Unity Docs](https://docs.unity3d.com/Manual/class-Material.html) for more information.
