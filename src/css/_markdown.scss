@@ -22,6 +22,7 @@ blockquote {
 	}
 
 	& * {
+		margin-left: 0.5rem;
 		&:first-child {
 			margin-top: 0;
 		}
@@ -106,4 +107,33 @@ article ul, article ol {
 	list-style: disc;
 	margin-left: 1rem;
 	margin-top: 1rem;
+}
+table {
+	background-color: var(--table-bg);
+	color: var(--table-text);
+	width: 100%;
+
+	$padding: 0.5rem;
+	$border-width: 1px;
+
+	& thead {
+		background-color: var(--table-heading-bg);
+		color: var(--table-heading-text);
+	}
+
+	& th {	
+		border: $border-width solid var(--table-border);
+		text-align: left;
+		font-weight: 700;
+		font-size: 1.2rem;
+		padding: $padding;
+	}
+	& td {	
+		border: $border-width solid var(--table-border);
+		text-align: left;
+		padding: $padding;
+	}
+	& tbody tr:nth-child(2n - 1) {
+		background: var(--table-bg2);
+	}
 }
