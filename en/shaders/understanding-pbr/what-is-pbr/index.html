@@ -25,12 +25,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet"> 
         <script type="module" src="/shared/js/fuse.mjs"></script>
+        <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/asset.3f5bdc23.css"></link>
+    <link rel="stylesheet" href="/assets/asset.36d83baa.css"></link>
 </head>
     <body>
         <header>
-
+	<button class="mobile sidebar">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+	</button>
 	<h1 class="site-title">Documentation</h1>
 	<div class="dock-right">
 		<button class="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></button>
@@ -39,7 +42,7 @@
 	</div>
 </header>
         <div class="main-wrapper">
-            <div class="docs-sidebar">
+            <div class="docs-sidebar collapse">
 	
 	<ul>
 	<li class="sidebar-section-title">
@@ -87,9 +90,21 @@
 									
 								</a>
 					</ul>
+			</li><li class="sidebar-section-title">
+				<span class="sidebar-title-text">Other</span>
+				<ul class="sidebar-section-children">
+						<a class="sidebar-section-link" href="/en/shaders/branding">
+									<li class="sidebar-link-text">
+										Branding
+									</li>
+									
+								</a>
+					</ul>
 			</li>
 </ul>
 	
+</div>
+<div class="sidebar-overlay">
 </div>
             <article class="content">
                     <div class="heading-wrapper level-h1"><h1 id="what-is-pbr">What is PBR?</h1><a class="anchor-link" href="#what-is-pbr"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="card card-info">
@@ -171,24 +186,8 @@
 
 	</div>
 </div><blockquote>
-<p>TODO: Lens</p>
-</blockquote><div class="heading-wrapper level-h3"><h3 id="anisotropy">Anisotropy</h3><a class="anchor-link" href="#anisotropy"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Anisotropy refers to stretched specular reflections. It’s typically seen at angles around a point on a surface too. Brushed materials are common anisotropic materials.</p><p><img src="/shared/img/aniso-example.png" alt="Shader Inspector"></p><div class="accordion">
-	<div class="accordion-header">
-		<span class="accordion-title">Among Us</span>
-	</div>
-	<div class="accordion-content collapsed">
-		<p>A hit social deduction game developed by Innersloth Studios.</p>
-
-	</div>
-</div><div class="accordion-tab container">
-	<div class="accordion-header">
-		<span class="accordion-title">Among Us No way</span>
-	</div>
-	<div class="accordion-tab-content collapsed" aria-label="What" id="accordion-tab-what">
-	<p>A hit social deduction game developed by Innersloth Studios.</p>
-
-</div>
-</div>
+<p>TODO: Lens / Glass</p>
+</blockquote><div class="heading-wrapper level-h3"><h3 id="anisotropy">Anisotropy</h3><a class="anchor-link" href="#anisotropy"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Anisotropy refers to stretched specular reflections. It’s typically seen at angles around a point on a surface too. Brushed materials are common anisotropic materials.</p><p><img src="/shared/img/aniso-example.png" alt="Anisotropy example"></p>
             </article>
             <footer>
 	<div class="prominent">

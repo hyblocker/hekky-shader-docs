@@ -10,7 +10,7 @@ const MobileSwipeAPI = {
 	gesture: {
 		x: [],
 		y: [],
-		match: MobileSwipeAPI.SwipeDirection.NONE,
+		swipeDirection: 0,
 	},
 	Setup: function (callback, tolerance = 100) {
 		window.addEventListener('touchstart', function(e) {
@@ -33,26 +33,23 @@ const MobileSwipeAPI = {
 			const xTravel = MobileSwipeAPI.gesture.x[MobileSwipeAPI.gesture.x.length - 1] - MobileSwipeAPI.gesture.x[0];
 			const yTravel = MobileSwipeAPI.gesture.y[MobileSwipeAPI.gesture.y.length - 1] - MobileSwipeAPI.gesture.y[0];
 			
-			if (xTravel < tolerance && xTravel > -tolerance && yTravel < -tolerance) {
-				MobileSwipeAPI.gesture.match = SwipeDirection.UP;
-			} else
-			if (xTravel < tolerance && xTravel > -tolerance && yTravel > tolerance) {
-				MobileSwipeAPI.gesture.match = SwipeDirection.DOWN;
-			} else
-			if (yTravel < tolerance && yTravel > -tolerance && xTravel < -tolerance) {
-				MobileSwipeAPI.gesture.match = SwipeDirection.LEFT;
-			} else
-			if (yTravel < tolerance && yTravel > -tolerance && xTravel > tolerance) {
-				MobileSwipeAPI.gesture.match = SwipeDirection.RIGHT;
+				   if (xTravel < tolerance && xTravel > -tolerance && yTravel < -tolerance) {
+				MobileSwipeAPI.gesture.swipeDirection = MobileSwipeAPI.SwipeDirection.UP;
+			} else if (xTravel < tolerance && xTravel > -tolerance && yTravel > tolerance) {
+				MobileSwipeAPI.gesture.swipeDirection = MobileSwipeAPI.SwipeDirection.DOWN;
+			} else if (yTravel < tolerance && yTravel > -tolerance && xTravel < -tolerance) {
+				MobileSwipeAPI.gesture.swipeDirection = MobileSwipeAPI.SwipeDirection.LEFT;
+			} else if (yTravel < tolerance && yTravel > -tolerance && xTravel > tolerance) {
+				MobileSwipeAPI.gesture.swipeDirection = MobileSwipeAPI.SwipeDirection.RIGHT;
 			} else {
-				MobileSwipeAPI.gesture.match = SwipeDirection.NONE;
+				MobileSwipeAPI.gesture.swipeDirection = MobileSwipeAPI.SwipeDirection.NONE;
 			}
 
-			callback(gesture);
-		
-			// MobileSwipeAPI.gesture.x = [];
-			// MobileSwipeAPI.gesture.y = [];
-			// MobileSwipeAPI.gesture.match = SwipeDirection.NONE;
+			callback(MobileSwipeAPI.gesture);
+
+			// touch end, therefore reset
+			MobileSwipeAPI.gesture.x.length = 0;
+			MobileSwipeAPI.gesture.y.length = 0;
 		});
 	}
 };
