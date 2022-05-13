@@ -6,9 +6,6 @@ setup: |
   import CardTip from '@components/CardTip.astro'
   import CardHelp from '@components/CardHelp.astro'
   import CardWarning from '@components/CardWarning.astro'
-  import Accordion from '@components/Accordion.astro'
-  import AccordionTabbed from '@components/AccordionTabbed.astro'
-  import AccordionTab from '@components/AccordionTab.astro'
   import ComparisionCard from '@components/ComparisionCard.astro'
 ---
 # What is PBR?
@@ -85,20 +82,10 @@ In real-life, transparent and translucent surfaces refract light. This is most p
 Refraction is an **expensive** graphical effect, and can negatively affect your framerate! Use it only if you **REALLY need to**. Using refraction for glass, for example, **will** negatively affect your performance!
 </CardWarning>
 
-> TODO: Lens
+> TODO: Lens / Glass
 
 ### Anisotropy
 
 Anisotropy refers to stretched specular reflections. It's typically seen at angles around a point on a surface too. Brushed materials are common anisotropic materials.
 
-![Shader Inspector](/shared/img/aniso-example.png)
-
-<Accordion title="Among Us">
-A hit social deduction game developed by Innersloth Studios.
-</Accordion>
-
-<AccordionTabbed title="Among Us No way">
-<AccordionTab tabName="What">
-A hit social deduction game developed by Innersloth Studios.
-</AccordionTab>
-</AccordionTabbed>
+![Anisotropy example](/shared/img/aniso-example.png)
