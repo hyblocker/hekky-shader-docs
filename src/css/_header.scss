@@ -20,6 +20,10 @@ header {
 		text-transform: uppercase;
 		margin: 0;
 		margin-left: var(--header-padding);
+		
+		@media only screen and (max-width: 1111px) {
+			margin-left: calc(var(--header-padding) / 2 - 4px);
+		}
 	}
 	& .dock-right {
 		margin-left: auto;
@@ -45,5 +49,20 @@ header {
 		border: none;
 		color: currentColor;
 		background-color: transparent;
+	}
+
+	& .mobile.sidebar {
+		padding: 0;
+		margin: 0;
+		margin-left: calc(var(--header-padding) / 2);
+		border: none;
+		color: currentColor;
+		background-color: transparent;
+		@media only screen and (min-width: 1110px) {
+			display: none;
+		}
+		@media only screen and (max-width: 1111px) {
+			
+		}
 	}
 }

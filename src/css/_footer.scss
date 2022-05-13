@@ -33,4 +33,9 @@ footer {
 			border: none;
 		}
 	}
+	
+	// mobile
+	@media only screen and (max-width: 1111px) {
+		margin-left: 0;
+	}
 }

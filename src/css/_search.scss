@@ -16,6 +16,7 @@ button.search {
 	&.visible {
 		display: block;
 	}
+	z-index: 100;
 }
 .search-container {
 	// Center popup
@@ -90,5 +91,11 @@ button.search {
 		&:hover {
 			background-color: var(--search-result-hover-bg);
 		}
+	}
+}
+// mobile
+@media only screen and (max-width: 1111px) {
+	.search-container {
+		width: 100%;
 	}
 }

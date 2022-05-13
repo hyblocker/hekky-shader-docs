@@ -5,6 +5,7 @@
 	height: calc(100% - 2 * var(--sidebar-padding) - var(--header-height));
 	padding: var(--sidebar-padding) 0;
 	background: var(--sidebar-bg-default);
+	z-index: 50;
 }
 .sidebar-section-title {
 	&:not(:first-child)::before {
@@ -46,5 +47,37 @@
 	
 	& .sidebar-link-text {
 		color: currentColor;
+	}
+}
+// mobile
+@media only screen and (max-width: 1111px) {
+	.docs-sidebar {
+		position: fixed;
+		transition: left ease-in-out 150ms;
+	}
+	.docs-sidebar.expand {
+		left: 0;
+	}
+	.docs-sidebar.collapse {
+		left: calc(-1 * var(--sidebar-width) - 2 * var(--sidebar-padding));
+	}
+	
+	.docs-sidebar + .sidebar-overlay {
+		background-color: #000000;
+		opacity: 0%;
+		transition: opacity linear 150ms;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+		pointer-events: none;
+	}
+	.docs-sidebar.expand + .sidebar-overlay {
+		opacity: 80%;
+		pointer-events: all;
 	}
 }
