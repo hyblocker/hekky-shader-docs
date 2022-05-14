@@ -3,13 +3,14 @@ layout: '@layouts/DocsPage.astro'
 title: Shader Reference
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
+  import CardWarning from '@components/CardWarning.astro'
   import PaywallIcon from '~/icons/PaywalledFeature.astro'
   import ComparisionCard from '@components/ComparisionCard.astro'
 ---
 # Shader Reference
-<CardInfo title="Paid Features">
+<CardWarning title="Paid Features">
 Some features require a copy of [Hekky PBR Pro](https://patreon.com/hekky) to use. These features will have <PaywallIcon height="16px" width="16px"/> next to them.
-</CardInfo>
+</CardWarning>
 
 > ### Table of Contents
 > 
@@ -47,8 +48,8 @@ This section describes how you may customise how a material reflects light using
 
 > ### Lighting Mode
 > 
-> - **Realistic** realistic lighting model, and aims for photorealism
-> - **Toon** toonifies the output of the realistic lighting model to achieve PBR toon shading
+> - **Realistic** uses a realistic lighting model, and aims for photorealism.
+> - **Toon** toonifies the output of the realistic lighting model to achieve PBR toon shading.
 > - **Unlit** uses light probes for shading. Doesn't get affected by any realtime lights.
 
 ### Toon

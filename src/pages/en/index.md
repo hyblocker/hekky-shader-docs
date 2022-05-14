@@ -7,6 +7,10 @@ setup: |
 ---
 # Documentation
 
-Welcome to my Documentation site!
+Hi!
 
-[Hekky Shaders Documentation](/en/shaders/)
+You seem to have stumbled upon root...
+
+Hmmmm. I think I can help you go to where you want to go...
+
+You're looking for the [Hekky Shaders Documentation](/en/shaders/), aren't you?
