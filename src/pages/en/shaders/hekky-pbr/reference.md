@@ -21,7 +21,7 @@ Some features require a copy of [Hekky PBR Pro](https://patreon.com/hekky) to us
 > - [Anisotropy](#anisotropy)
 > - [Outline](#outline)
 
-![Shader Inspector](/en/shader_inspector_full.png)
+![Shader Inspector](/en/hekkypbr_shader_inspector_full.png)
 
 <CardInfo title="Sliders">
 Sliders next to textures control the intensity of the texture!

@@ -11,3 +11,40 @@ setup: |
 </CardInfo>
 
 Who Asked is a simple radar shader, with AudioLink functionality because "it's funny&trade;".
+
+> ### Table of Contents
+> 
+> - [Rings](#rings)
+> - [Radar](#radar)
+> - [AudioLink](#audiolink)
+> - [Misc](#misc)
+
+![Shader Inspector](/en/whoasked_shader_inspector_full.png)
+
+# Rings
+
+- **Rings** Number of rings to render.
+- **Ring Color** Color of the rings.
+- **Ring Thickness** Thickness of each ring.
+- **Ring Emission** How emissive the ring should be.
+
+# Radar
+
+- **Rings** Number of rings to render.
+- **Ring Color** Color of the rings.
+- **Ring Thickness** Thickness of each ring.
+- **Ring Emission** How emissive the ring should be.
+
+# AudioLink
+
+- **Rings** Number of rings to render.
+- **Ring Color** Color of the rings.
+- **Ring Thickness** Thickness of each ring.
+- **Ring Emission** How emissive the ring should be.
+
+# Misc
+
+- **Rings** Number of rings to render.
+- **Ring Color** Color of the rings.
+- **Ring Thickness** Thickness of each ring.
+- **Ring Emission** How emissive the ring should be.
