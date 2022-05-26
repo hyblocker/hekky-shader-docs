@@ -8,7 +8,7 @@ body {
 code, pre {
 	font-family: var(--fonts-code);
 }
-.card, blockquote, pre, h1, h2, h3, h4, h5, h6 {
+.comparision-card, .accordion, .card, blockquote, pre, h1, h2, h3, h4, h5, h6 {
 	margin: 0.75rem 0;
 }
 blockquote {
@@ -29,6 +29,10 @@ blockquote {
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	& strong {
+		margin-left: 0;
 	}
 }
 code {
@@ -104,8 +108,13 @@ article > p > img {
 	// Fix oversized images
 	max-width: 100%;
 }
-article ul, article ol {
+article ul {
 	list-style: disc;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+article ol {
+	list-style: decimal;
 	margin-left: 1rem;
 	margin-top: 1rem;
 }
