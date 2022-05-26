@@ -18,6 +18,8 @@ I wrote my own documentations generator as I wasn't satisfied with the current s
 
 ## License
 
-This website is licensed under GPLv3. See [the LICENSE file](https://github.com/hyblocker/hekky-shader-docs/blob/master/LICENSE) for more information.
+This website is licensed under a Creative Commons Attribution-NonCommercial-ShareALike license. See [the LICENSE file](https://github.com/hyblocker/hekky-shader-docs/blob/master/LICENSE) for more information.
+
+![CC-BY-NC-SA](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
 
 The SSG template I created for this may later be released under a different license.
