@@ -24,6 +24,11 @@ header {
 		@media only screen and (max-width: 1111px) {
 			margin-left: calc(var(--header-padding) / 2 - 4px);
 		}
+
+		a {
+			color: currentColor;
+			text-decoration: none;
+		}
 	}
 	& .dock-right {
 		margin-left: auto;

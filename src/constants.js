@@ -1,6 +1,7 @@
 export const SITE = {
-    title: "Documentation",
-    domain: "docs.hyblocker.dev"
+    title:      "Documentation",
+    domain:     "docs.hyblocker.dev",
+    docsRoot:   "/"
 };
 
 export const SOCIALS = {
