@@ -3,6 +3,10 @@ layout: '@layouts/DocsPage.astro'
 title: Who Asked
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
+  import CardTip from '@components/CardTip.astro'
+  import CardHelp from '@components/CardHelp.astro'
+  import CardWarning from '@components/CardWarning.astro'
+  import ComparisionCard from '@components/ComparisionCard.astro'
 ---
 # Who Asked
 

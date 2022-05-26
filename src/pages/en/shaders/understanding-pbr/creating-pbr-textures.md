@@ -18,6 +18,8 @@ Creating your own PBR materials from scratch is difficult, time consuming, and e
 - [cgbookcase.com](https://www.cgbookcase.com/)
 - [3D Textures by icons8](https://icons8.com/l/3d-textures/)\*
 
+> \* **Requires** attribution (i.e. say that you got the textures from icons8) if using the **free license**. Paid license doesn't demand attribution.
+
 <CardInfo title="Substance Player">
 Sometimes you'll find PBR textures offered in a `sbsar` file format. You can open these files in [Substance Player](https://substance3d.adobe.com/documentation/sp31/substance-player-2294742.html), and further tweak them to generate unique PBR textures. This route is preferred whenever possible over using random PBR textures, as due to these textures being freely available, users might feel that they are repetitive.
 </CardInfo>
