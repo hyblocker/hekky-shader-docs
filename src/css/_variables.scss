@@ -1,7 +1,13 @@
 :root {
 	--fonts-header: 'Poppins', 'Josefin Sans', sans-serif;
+	--fonts-header-weight: 800;
 	--fonts-normal: 'Josefin Sans', sans-serif;
+	--fonts-normal-weight: 400;
 	--fonts-code: 'JetBrains Mono', monospace;
+	--fonts-code-weight: 400;
+
+	--blockquote-border-width: 0.25rem;
+	--blockquote-padding: 1rem;
 
 	--sidebar-width: 18rem;
 	--sidebar-padding: 1rem;
@@ -24,6 +30,10 @@
 .light {
 	--accent: #168CDD;
 	--link: #168CDD;
+
+	--blockquote-background: #d2d2d2;
+	--blockquote-color: #151515;
+	--blockquote-border: #949494;
 
 	--footer-bg: #dedede;
 	--footer-text: #434343;

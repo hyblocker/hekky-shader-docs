@@ -1,6 +1,7 @@
 export const SITE = {
     title:      "Documentation",
     domain:     "docs.hyblocker.dev",
+    embedColor: "#168CDD",
     docsRoot:   "/"
 };
 

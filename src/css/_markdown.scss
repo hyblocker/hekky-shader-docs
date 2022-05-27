@@ -1,21 +1,23 @@
 body {
 	font-family: var(--fonts-normal);
+	font-weight: var(--fonts-normal-weight);
 }
 .heading-wrapper, h1, h2, h3, h4, h5, h6 {
 	font-family: var(--fonts-header);
-	font-weight: 800;
+	font-weight: var(--fonts-header-weight);
 }
 code, pre {
 	font-family: var(--fonts-code);
+	font-weight: var(--fonts-code-weight);
 }
 .comparision-card, .accordion, .card, blockquote, pre, h1, h2, h3, h4, h5, h6 {
 	margin: 0.75rem 0;
 }
 blockquote {
-	border-left: 0.25rem solid #949494;
-	background: #d2d2d2;
-	color: #151515;
-	padding: 1rem;
+	border-left: var(--blockquote-border-width) solid var(--blockquote-border);
+	background: var(--blockquote-background);
+	color: var(--blockquote-color);
+	padding: var(--blockquote-padding);
 
 	& p {
 		margin: .8rem 0;
