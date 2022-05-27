@@ -7,6 +7,7 @@ setup: |
   import CardHelp from '@components/CardHelp.astro'
   import CardWarning from '@components/CardWarning.astro'
   import ComparisionCard from '@components/ComparisionCard.astro'
+  import FilamentRenderer from '@components/FilamentRenderer.astro'
 ---
 # What is PBR?
 
@@ -29,6 +30,8 @@ In the real world, light rays get reflected off a surface and bounce around the 
 **Specular Reflections** refer to light rays which are reflected in the exact same angle they arrived in. This is basically a mirror, and what you normally think of as a reflection.
 
 > TODO: Specular reflection diagram ; Metal = 1, Rough = 0
+
+<FilamentRenderer id="metallic" />
 
 **Diffuse Reflections** refer to light rays which are reflected randomly.
 
