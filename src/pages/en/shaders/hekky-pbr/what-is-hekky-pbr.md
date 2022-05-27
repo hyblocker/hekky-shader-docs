@@ -18,6 +18,7 @@ Hekky PBR supports numerous features:
 | ------- | ---------------- | --------------- |
 | Physically based rendering | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
 | Packed Textures |  |  |
+| Matcaps | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
 | Anisotropy |  | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
 | Toon Shading | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
 | Outlines | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
