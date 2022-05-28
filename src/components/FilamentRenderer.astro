@@ -1,6 +1,11 @@
 ---
-const { id } = Astro.props;
+const { id, filamat } = Astro.props;
+let filamentMaterial = filamat ?? "textured";
 ---
 <div class="filament-renderer container">
-    <canvas id={id}></canvas>
+    <canvas id={id} data-filamat={ filamentMaterial }></canvas>
 </div>
+
+<script is:inline src='/shared/js/filament.js'></script>
+<script is:inline src="//unpkg.com/gl-matrix@2.8.1" ></script>
+<script is:inline src="//unpkg.com/gltumble"></script>
