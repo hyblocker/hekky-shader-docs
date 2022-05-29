@@ -291,7 +291,6 @@ waitForGlobal( "Trackball", async function () {
         const canvas = filamentRenderers[i].getElementsByTagName("canvas")[0];
         const identifier = canvas.id;
         const canvasMaterial = canvas.getAttribute("data-filamat");
-        console.log(canvasMaterial);
         const sliders = document.querySelectorAll(`input[type="range"][data-type*="filament"][data-affects="${identifier}"]`);
         const filamat_url = `${filamentAssetsRoot}${canvasMaterial ?? "textured"}.filamat`;
     
@@ -302,7 +301,6 @@ waitForGlobal( "Trackball", async function () {
 
     class App {
         constructor(canvas, sliders, filamat_url) {
-            console.log(filamat_url);
             this.canvas = canvas;
             this.sliders = sliders;
             this.engine = Filament.Engine.create(canvas);
@@ -310,7 +308,6 @@ waitForGlobal( "Trackball", async function () {
 
             const material = this.engine.createMaterial(filamat_url);
             this.matinstance = material.createInstance();
-            console.log(this.sliders);
 
             const filamesh = this.engine.loadFilamesh(filamesh_url, this.matinstance);
             this.shaderball = filamesh.renderable;
