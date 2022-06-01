@@ -27,6 +27,10 @@
 		  {
 			"title": "Shader Reference",
 			"url": "/en/shaders/hekky-pbr/reference"
+		  },
+		  {
+			"title": "Using With VRChat",
+			"url": "/en/shaders/hekky-pbr/using-with-vrchat"
 		  }
 		]
 	  },
