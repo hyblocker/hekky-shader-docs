@@ -43,6 +43,8 @@
 	padding: var(--card-padding);
 	margin: 1rem 0;
 
+	transition: background-color 250ms ease, color 250ms ease;
+
 	.card-download:hover & {
 		background: var(--card-bg);
 		color: var(--card-contrast);
