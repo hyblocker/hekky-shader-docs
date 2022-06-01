@@ -94,13 +94,16 @@ function doSearch () {
 
     const result = fuse.search( searchString );
 
+    const uniqueResults = new Map(result.map(obj => [obj.item.path, obj]));
+    const uniqueResultsArr = [...uniqueResults.values()];
+
     SearchRefs.searchResultsContainer.innerHTML = '';
 
-    result.sort( function( a, b ) { 
+    uniqueResultsArr.sort( function( a, b ) { 
         return b.score - a.score;
     });
 
-    result.forEach( (item) => {
+    uniqueResultsArr.forEach( (item) => {
         const itemToAdd = createSearchResult( item );
         SearchRefs.searchResultsContainer.appendChild( itemToAdd );
     });
@@ -240,28 +243,6 @@ waitForGlobal( "MobileSwipeAPI", async function () {
         }
     });
 });
-
-// https://github.com/gajus/object-unfreeze/blob/master/src/objectUnfreeze.js
-function unfreezeObj(source) {
-    let target;
-
-    if (source.constructor === Array) {
-        target = source.map((element) => {
-            return element;
-        });
-    } else {
-        target = {};
-        for (const property in source) {
-            if (source.hasOwnProperty(property)) {
-                target[property] = source[property];
-            }
-        }
-    }
-
-    Object.setPrototypeOf(target, Object.getPrototypeOf(source));
-
-    return target;
-}
 
 waitForGlobal( "Filament", async function () {
 waitForGlobal( "Trackball", async function () {
