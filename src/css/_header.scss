@@ -3,6 +3,7 @@ header {
 	top: 0;
 	height: var(--header-height);
 	width: 100%;
+	max-width: 100%;
 	background-color: var(--header-bg);
 	color: var(--header-text);
 	z-index: 1000;
