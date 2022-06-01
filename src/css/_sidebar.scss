@@ -13,7 +13,7 @@
 		content: '';
 		background: var(--sidebar-border);
 		width: calc(100% - 2 * var(--sidebar-padding));
-		height: 2px;
+		height: 0.125rem;
 		display: block;
 		margin-left: var(--sidebar-padding);
 		margin-bottom: var(--sidebar-header-spacing);
