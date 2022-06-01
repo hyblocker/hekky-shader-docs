@@ -15,9 +15,17 @@
 
 	--card-padding: 1rem;
 
+	--heading-icon-size: 1rem;
 	--header-height: 4rem;
-	--header-padding: 4rem;
+	--header-padding: 2rem;
 	--header-title-size: 1.6rem;
+
+	--footer-text-size: 1.5rem;
+	--footer-padding: 1rem;
+	--footer-height: 4rem;
+
+	--table-padding: 0.5rem;
+	--table-border-width: 0.0625rem;
 
 	--search-container-width:  120ex;
 	--search-container-height: 75vh;
@@ -25,7 +33,8 @@
 	--search-input-height: 3rem;
 	--search-input-font-size: 1.2rem;
 
-	--heading-icon-size: 1rem;
+	--content-padding: 2rem;
+	--content-max-width: 120ex;
 }
 .light {
 	--accent: #168CDD;

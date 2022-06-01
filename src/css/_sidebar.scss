@@ -1,5 +1,6 @@
 .docs-sidebar {
 	position: fixed;
+	top: var(--header-height);
 	overflow: hidden scroll;
 	width: calc(var(--sidebar-width) + 2 * var(--sidebar-padding));
 	height: calc(100% - 2 * var(--sidebar-padding) - var(--header-height));
