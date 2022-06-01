@@ -1,6 +1,7 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: Hekky Docs Example
+index: false
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import CardTip from '@components/CardTip.astro'
