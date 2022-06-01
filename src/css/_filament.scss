@@ -1,8 +1,26 @@
 .filament-renderer {
+    position: relative;
 
     & canvas {
         touch-action: none;
         width: 100%;
         height: 100%;
+    }
+
+    & .filament-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 4rem);
+        height: calc(100% - 2rem);
+        pointer-events: none;
+        padding: 1rem 2rem;
+
+        & .control {
+            pointer-events: all;
+            color: #fff;
+            text-shadow: 2px 2px 2px black;
+            font-weight: 700;
+        }
     }
 }
