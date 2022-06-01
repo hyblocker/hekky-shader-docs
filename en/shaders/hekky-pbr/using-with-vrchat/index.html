@@ -4,20 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 
-        <!-- Generic  --><title>Who Asked | Documentation</title>
-<link rel="canonical" href="https://docs.hyblocker.dev/en/shaders/who-asked/">
+        <!-- Generic  --><title>Using With VRChat | Documentation</title>
+<link rel="canonical" href="https://docs.hyblocker.dev/en/shaders/hekky-pbr/using-with-vrchat/">
 
 <meta name="theme-color" content="#168CDD">
 <!-- OpenGraph  -->
 <meta property="og:url" content="https://docs.hyblocker.dev">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Who Asked | Documentation">
+<meta property="og:title" content="Using With VRChat | Documentation">
 
 
 <!-- Twitter  -->
 <meta property="twitter:domain" content="docs.hyblocker.dev">
 <meta property="twitter:url" content="https://docs.hyblocker.dev">
-<meta name="twitter:title" content="Who Asked | Documentation">
+<meta name="twitter:title" content="Using With VRChat | Documentation">
 
 
 
@@ -81,7 +81,7 @@
 										Shader Reference
 									</li>
 									
-								</a><a class="sidebar-section-link" href="/en/shaders/hekky-pbr/using-with-vrchat">
+								</a><a class="sidebar-section-link sidebar-link-selected" href="/en/shaders/hekky-pbr/using-with-vrchat">
 									<li class="sidebar-link-text">
 										Using With VRChat
 									</li>
@@ -91,7 +91,7 @@
 			</li><li class="sidebar-section-title">
 				<span class="sidebar-title-text">Who Asked</span>
 				<ul class="sidebar-section-children">
-						<a class="sidebar-section-link sidebar-link-selected" href="/en/shaders/who-asked">
+						<a class="sidebar-section-link" href="/en/shaders/who-asked">
 									<li class="sidebar-link-text">
 										IDK
 									</li>
@@ -115,44 +115,16 @@
 <div class="sidebar-overlay">
 </div>
             <article class="content">
-                    <div class="heading-wrapper level-h1"><h1 id="who-asked">Who Asked</h1><a class="anchor-link" href="#who-asked"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="card card-info">
+                    <div class="heading-wrapper level-h1"><h1 id="using-with-vrchat">Using With VRChat</h1><a class="anchor-link" href="#using-with-vrchat"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Hekky PBR is designed with <a href="https://hello.vrchat.com">VRChat</a> in mind, and has VRChat specific integrations as a result.</p><div class="card card-error">
 	<div class="heading-container">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
-		<h3 class="card-title">Patreon only</h3>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
+		<h3 class="card-title">Keywords</h3>
 	</div>
 	<div class="card-content">
-		<p>This shader requires the 10 EUR tier or higher</p>
+		<p>Unity 2019.4.31f1 has a maximum <strong>global</strong> shader keyword limit of 384 keywords. When you exceed the global keyword limit, other shaders will start to break. Local keywords allow us to make use of keywords without affecting the global keyword limit, which means other shaders won’t break. Hekky PBR makes use of <strong>local</strong> shader keywords as a result of this, but, the VRChat Avatar SDK has a bug which prompts you to remove local shader keywords. Please <strong>DO NOT DO THIS</strong>, as your materials <strong>WILL BREAK</strong>. If you would like to see this bug get resolved, go upvote <a href="https://vrchat.canny.io/sdk-bug-reports/p/sdk-displays-custom-keyword-warning-for-local-shader-keywords">this canny</a>.</p>
 
 	</div>
-</div><p>Who Asked is a simple radar shader, with AudioLink functionality because “it’s funny™“.</p><blockquote>
-<div class="heading-wrapper level-h3"><h3 id="table-of-contents">Table of Contents</h3><a class="anchor-link" href="#table-of-contents"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div>
-<ul>
-<li><a href="#rings">Rings</a></li>
-<li><a href="#radar">Radar</a></li>
-<li><a href="#audiolink">AudioLink</a></li>
-<li><a href="#misc">Misc</a></li>
-</ul>
-</blockquote><p><img src="/en/whoasked_shader_inspector_full.png" alt="Shader Inspector"></p><div class="heading-wrapper level-h1"><h1 id="rings">Rings</h1><a class="anchor-link" href="#rings"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Rings</strong> Number of rings to render.</li>
-<li><strong>Ring Color</strong> Color of the rings.</li>
-<li><strong>Ring Thickness</strong> Thickness of each ring.</li>
-<li><strong>Ring Emission</strong> How emissive the ring should be.</li>
-</ul><div class="heading-wrapper level-h1"><h1 id="radar">Radar</h1><a class="anchor-link" href="#radar"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Rings</strong> Number of rings to render.</li>
-<li><strong>Ring Color</strong> Color of the rings.</li>
-<li><strong>Ring Thickness</strong> Thickness of each ring.</li>
-<li><strong>Ring Emission</strong> How emissive the ring should be.</li>
-</ul><div class="heading-wrapper level-h1"><h1 id="audiolink">AudioLink</h1><a class="anchor-link" href="#audiolink"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Rings</strong> Number of rings to render.</li>
-<li><strong>Ring Color</strong> Color of the rings.</li>
-<li><strong>Ring Thickness</strong> Thickness of each ring.</li>
-<li><strong>Ring Emission</strong> How emissive the ring should be.</li>
-</ul><div class="heading-wrapper level-h1"><h1 id="misc">Misc</h1><a class="anchor-link" href="#misc"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Rings</strong> Number of rings to render.</li>
-<li><strong>Ring Color</strong> Color of the rings.</li>
-<li><strong>Ring Thickness</strong> Thickness of each ring.</li>
-<li><strong>Ring Emission</strong> How emissive the ring should be.</li>
-</ul>
+</div><div class="heading-wrapper level-h2"><h2 id="ltcgi">LTCGI</h2><a class="anchor-link" href="#ltcgi"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p><a href="https://github.com/pimaker/ltcgi">Linearly Transformed Cosine Global Illumination (LTCGI)</a> is a plug and play real-time lighting solution, which allows video players to emit light onto surfaces. Hekky PBR supports LTCGI, allowing materials which use it to receive light from video players! To set it up: enable LTCGI in the External Modules category. Setting up LTCGI itself is beyond the scope of this section; please read the instructions on GitHub for more information.</p><div class="heading-wrapper level-h2"><h2 id="audiolink">AudioLink</h2><a class="anchor-link" href="#audiolink"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p><a href="https://github.com/llealloo/vrc-udon-audio-link">AudioLink</a> is a VRChat addon which allows materials to react to music. Hekky PBR offers (currently basic) AudioLink support for materials, with plans for more advanced functionality down the road. To set up AudioLink enable AudioLink in the External Modules category. You can then configure AudioLink in the Emission category and test it using the AudioLink Debug section. Setting up AudioLink itself is beyond the scope of this section; please read the instructions on GitHub for more information.</p>
             </article>
             <footer>
 	<div class="prominent">
