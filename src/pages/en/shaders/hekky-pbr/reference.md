@@ -19,7 +19,11 @@ Some features require a copy of [Hekky PBR Pro](https://patreon.com/hekky) to us
 > - [Toon](#toon)
 > - [Specular](#specular)
 > - [Anisotropy](#anisotropy)
+> - [Emission](#emission)
+> - [Matcap](#matcap)
+> - [Occlusion](#occlusion)
 > - [Outline](#outline)
+> - [AudioLink](#audiolink)
 
 ![Shader Inspector](/en/hekkypbr_shader_inspector_full.png)
 
@@ -36,7 +40,7 @@ This section describes the base layer of a material using Hekky PBR.
 - **Texture** The albedo / diffuse / base texture. Can also be tinted.
 - **Metal Mask** Controls how "metallic" and reflective the material is. Other shaders may call this property `Metal Map`, `Metallness` or something similar.
 - **Roughness Map** Controls how "rough" the material is.
-- **Invert Roughness** Inverts the roughness map. Enable this if you want to use smoothness instead of a roughness.
+- **Invert Roughness** Inverts the roughness map. Enable this if you want to use smoothness instead of roughness.
 - **Normal Map** Allows you to define surface bumps without increasing the polygon count.
 
 ## Lighting
@@ -46,7 +50,7 @@ This section describes how you may customise how a material reflects light using
 - **Lighting Mode** Controls the lighting style of the material. You can choose between `Realistic`, `Toon` and `Unlit`.
 - **Baked Specular** Enables specular lighting from baked light sources, such as lightmaps and light probes.
 
-> ### Lighting Mode
+> #### Lighting Mode
 > 
 > - **Realistic** uses a realistic lighting model, and aims for photorealism.
 > - **Toon** toonifies the output of the realistic lighting model to achieve PBR toon shading.
@@ -62,20 +66,42 @@ This section describes how you can tweak the lighting to achieve a cartoon-esque
 - **Math Gradient End** Controls the end of the math gradient for toon shading. Should always be larger or equal to `Math Gradient Start`.
 - **Min Brightness** Controls the minimum brightness when using toon shading. Should always be smaller or equal to `Max Brightness`.
 - **Max Brightness** Controls the maximum brightness when using toon shading. Should always be larger or equal to `Min Brightness`.
+- **Receive Shadows** Disables shadows on this material.
+- **Normal Reprojection** Recalculates normals using a spherical mapping, assuming the mesh's origin as the center of the sphere. This is mainly intended for cartoony faces.
+- **Base Normal Blend** How much to blend between the model's normals and the reprojected normals.
 
 ### Specular
 
 - **Specular** How much to blend between the true color and the tinted specular color on specular highlights.
 - **Specular Tint** Allows you to change the color of specular highlights.
 - **Specular Mode** Allows you to toggle between isotropic (normal) and anisotropic specular modes.
-- **Baked Specular** Enable specular effects from baked light sources. These are not as accurate as realtime ones.
+- **Baked Specular** Enable specular effects from baked light sources. These are not as accurate as realtime ones if not using [Directional](https://docs.unity3d.com/2019.4/Documentation/Manual/LightmappingDirectional.html) or [Bakery lightmapping modes](https://geom.io/bakery/wiki/index.php?title=Manual#Directional_mode).
 
 ### Anisotropy
 
 - **Anisotropy Map** A texture map that stores anisotropy. Red is anisotropic intensity. Green is anisotropic angle.
 - **Angle Offset** Allows you to offset the angles from 0°.
 
-### Outline
+### Emission
+
+- **Emission** Controls the object's emissiveness.
+- **Intensity** How bright to make the emission.
+
+### Matcap
+
+- **Enable Matcap** Enables matcaps shading.
+- **Texture** The matcap texture.
+- **Mask** A mask texture. All channels other than red are ignored.
+- **Border** How much to offset the bounds matcap from the edge of the texture.
+- **Replace, Add, Difference, Multiply, Overlay** Different blend modes. Value controls their strength.
+- **Reflection Blend** How much to blend the matcap with cubemap reflections.
+
+## Occlusion
+
+- **Ambient Occlusion** Controls how much ambient occlusion to apply to the object. Useful to help improve selfshadowing on non-lightmapped materials.
+- **Exposure Occlusion** Controls the effect ambient occlusion has on lightmap ambient occlusion. Doesn't effect per-material ambient occlusion.
+
+## Outline
 
 This section controls outlines.
 
@@ -83,14 +109,17 @@ This section controls outlines.
 - **Outline Width** Controls the thickness of the outline.
 - **Outline Colour** Controls the outline's colour.
 
-## Emission
+## AudioLink
 
-- **Emission** Controls the object's emissiveness.
+This section explains the various [AudioLink](https://github.com/llealloo/vrc-udon-audio-link) related controls Hekky PBR offers.
 
-## Occlusion
+- **Enable Debug Mode** Enables AudioLink Debug mode, which allows you to manually input parameters for AudioLink to ensure that it's functioning properly. Make sure that this is disabled in before uploading VRChat.
+- **Bass / Low Mid / High Mid / Treble** Controls the individual AudioLink channels.
 
-- **Ambient Occlusion** Controls how much ambient occlusion to apply to the object. Useful to help improve selfshadowing on non-lightmapped materials.
-- **Exposure Occlusion** Controls the effect ambient occlusion has on lightmap ambient occlusion. Doesn't effect per-material ambient occlusion.
+> ### AudioLink Emission
+> 
+> - **Multiply** - Multiplies the Emission strength with the specified AudioLink channel. Use the **Min/Max** sliders to adjust how intense you want the audio reactivity to be.
+> - **Add** - Adds the specified AudioLink channel to the Emission strength. Use the **Min/Max** sliders to adjust how intense you want the audio reactivity to be.
 
 ## Other Modules
 
