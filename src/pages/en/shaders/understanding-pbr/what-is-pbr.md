@@ -7,7 +7,6 @@ setup: |
   import CardHelp from '@components/CardHelp.astro'
   import CardWarning from '@components/CardWarning.astro'
   import ComparisionCard from '@components/ComparisionCard.astro'
-  import FilamentRenderer from '@components/FilamentRenderer.astro'
 ---
 # What is PBR?
 
@@ -29,19 +28,13 @@ In the real world, light rays get reflected off a surface and bounce around the 
 
 **Specular Reflections** refer to light rays which are reflected in the exact same angle they arrived in. This is basically a mirror, and what you normally think of as a reflection.
 
-> TODO: Specular reflection diagram ; Metal = 1, Rough = 0
+![Specular reflection example demonstrating a highly reflective surface](/shared/img/specular-reflection.png)
 
-<FilamentRenderer id="metallic" />
+**Diffuse Reflections** refer to light rays which are reflected randomly. Diffuse reflections aren't really "reflected". In reality the light is **absorbed** (i.e. the light goes **inside** the material) by the material, then scattered about. Some of the light gets absorbed by the material itself, meaning that the light color can changed based on the material. This is why we perceive orange painted plastic as "orange" instead of white for example.
 
-**Diffuse Reflections** refer to light rays which are reflected randomly.
+![Specular reflection example demonstrating a red and rough surface](/shared/img/diffuse-reflection.png)
 
-> TODO: Diffuse reflection diagram ; Metal = 0, Rough = 1 ; Albedo = red
-
-<CardTip title="Light scattering">
-Diffuse reflections aren't really "reflected". In reality the light is **absorbed** by the material, then scattered about.
-</CardTip>
-
-We can control if a surface uses specular reflections or diffuse reflections with the **metal mask** parameter. A surface **cannot** be half metallic and half dielectric (dielectric is the opposite of metal).
+We can control if a surface uses specular reflections or diffuse reflections with the **metal mask** parameter. A surface **cannot** be half metallic and half dielectric (a dielectric surface is the opposite of a metallic surface).
 
 <CardHelp title="Other pipelines">
 You might see **metal mask** referred to as `metalness`, `metallic` or `metal` in other shaders. These refer to the same property.
@@ -53,7 +46,22 @@ We can control the reflectivity of a surface via the **roughness** parameter. Th
 Smoothness (or glossiness) is the inverse of roughness.
 </CardInfo>
 
-> TODO: Roughness diagram ; Metal = 1, Rough = user-controlled
+<div class="filament-renderer container">
+    <canvas id="roughness" data-filamat="textured-userRough"}></canvas>
+
+  <div class="filament-overlay">
+      <div class="control">
+          <div class="slidecontainer">
+            <input style="width: 100%;" type="range" min="0" max="100" value="0" class="slider" data-type="filament-roughness" data-affects="roughness">
+          </div>
+          <span class="control-title  ">Roughness</span>
+      </div>
+  </div>
+</div>
+
+### Energy Conservation
+
+One of the key principles of PBR rendering in comparision to other rendering methods is the principle of energy conservation. This means that a surface **never** reflects more light than it receives. The only exception to this is when a surface is said to be [emissive](#emission).
 
 ### Occlusion
 
@@ -92,3 +100,7 @@ Refraction is an **expensive** graphical effect, and can negatively affect your 
 Anisotropy refers to stretched specular reflections. It's typically seen at angles around a point on a surface too. Brushed materials are common anisotropic materials.
 
 ![Anisotropy example](/shared/img/aniso-example.png)
+
+<script is:inline src='/shared/js/filament.js'></script>
+<script is:inline src="//unpkg.com/gl-matrix@2.8.1" ></script>
+<script is:inline src="//unpkg.com/gltumble"></script>
