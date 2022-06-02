@@ -2,7 +2,7 @@
 layout: '@layouts/DocsPage.astro'
 title: Editor Extensions
 setup: | 
-  import CardInfo from '@components/CardInfo.astro'
+  import ComparisionCard from '@components/ComparisionCard.astro'
 ---
 # Editor Extensions
 
@@ -12,27 +12,26 @@ Hekky PBR comes with a couple of Editor extensions to make the process of world 
 > 
 > - [Post Processing Setup](#post-processing-setup)
 > - [Studio Lighting Mode](#studio-lighting-mode)
+> - [Normal Map Conversion Tool](#normal-map-conversion-tool)
 
 ## Post Processing Setup
 
-> Hekky/Setup Post Processing
+> Hekky > Setup Post Processing
 
 A quick and easy tool to help you setup Post Processing in your Unity Project and Scene with sane default values.
 
-> TODO: Image of scene with / without post processing
+<ComparisionCard beforeSrc="/shared/img/post-off.png" beforeTxt="Post Processing Off" afterSrc="/shared/img/post-on.png" afterTxt="Post Processing On" color="#fff"/>
 
 ## Studio Lighting Mode
 
-> F12
+> Press <kbd>F12</kbd> You can go to Edit > Shortcuts.. to edit keybinds.
 
 This allows you to mimic the Studio Lighting Mode seen in [Blender](blender.org/) inside the Unity Scene View. This is particularly useful for navigating dark scenes such as nightclubs.
 
-> TODO: Image of Studio Lighting
+![Studio Lighting](/shared/img/studio-lighting.png)
 
 ## Normal Map Conversion Tool
 
-> Right click Normal Map => Convert / Normal Map (GL <=> DX)
+> Right click a Normal Map texture, then select Convert > Normal map (GL 🡸🡺 DX)
 
-This allows you to mimic the Studio Lighting Mode seen in [Blender](blender.org/) inside the Unity Scene View. This is particularly useful for navigating dark scenes such as nightclubs.
-
-> TODO: Image of Studio Lighting
+Allows you to convert a normal map from OpenGL mode to DirectX mode, and vice-versa.
