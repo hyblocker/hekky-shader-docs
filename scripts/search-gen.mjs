@@ -76,11 +76,15 @@ export function run() {
             }
     
             // Isolate title tag from YAML frontmatter
-            title = title.substring(title.indexOf('title:') + 7);
-            title = title.substring(0, title.indexOf('\n')).trim();
+            if (title.indexOf('title:') === -1) {
+                title = '';
+            } else {
+                title = title.substring(title.indexOf('title:') + 7);
+                title = title.substring(0, title.indexOf('\n')).trim();
+            }
 
         } else if (currFile.includes('.astro')) {
-            // Strip YAML frontmatter
+            // Strip title attribute
             title = fileContents.substring(fileContents.substring(3).indexOf('---') + 7);
             const separator = title.substring(title.indexOf('title=') + 6, title.indexOf('title=') + 7);
             title = title.substring(title.indexOf('title=') + 7);
