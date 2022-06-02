@@ -47,8 +47,12 @@
 		"title": "Other",
 		"children": [
 		  {
+			"title": "Editor Extensions",
+			"url": "/en/shaders/misc/editor-extensions"
+		  },
+		  {
 			"title": "Branding",
-			"url": "/en/shaders/branding"
+			"url": "/en/shaders/misc/branding"
 		  }
 		]
 	  }
