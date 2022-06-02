@@ -60,7 +60,7 @@ This section describes how you may customise how a material reflects light using
 
 This section describes how you can tweak the lighting to achieve a cartoon-esque look.
 
-<ComparisionCard beforeSrc="/shared/img/toon-off.png" beforeTxt="Realistic Lighting" afterSrc="/shared/img/toon-on.png" afterTxt="Toon Lighting"/>
+<ComparisionCard beforeSrc="/shared/img/toon-off.png" beforeTxt="Realistic Lighting" afterSrc="/shared/img/toon-on.png" afterTxt="Toon Lighting" color="#000"/>
 
 - **Math Gradient Start** Controls the start of the math gradient for toon shading. Should always be smaller or equal to `Math Gradient End`.
 - **Math Gradient End** Controls the end of the math gradient for toon shading. Should always be larger or equal to `Math Gradient Start`.

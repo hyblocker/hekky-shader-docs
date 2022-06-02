@@ -2,6 +2,7 @@
 const { beforeSrc, afterSrc } = Astro.props;
 const beforeTxt = Astro.props.beforeTxt ?? "";
 const afterTxt = Astro.props.afterTxt ?? "";
+const colVar = Astro.props.color ?? "var(--text-color)";
 // All the drag shit is so that we dont get "image drag" when youre simply just trying to use the slider to compare and contrast
 ---
 <div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
@@ -14,7 +15,7 @@ const afterTxt = Astro.props.afterTxt ?? "";
 	<div class="slider" draggable="false" ondragstart="return false">
 		<div class="grip" draggable="false" ondragstart="return false"></div>
 	</div>
-	<div class="text-overlay">
+	<div class="text-overlay" style={`color: ${colVar}`}>
 		<span class="before">{beforeTxt}</span>
 		<span class="after">{afterTxt}</span>
 	</div>
