@@ -14,8 +14,12 @@ Unity 2019.4.31f1 has a maximum **global** shader keyword limit of 384 keywords.
 
 ## LTCGI
 
-[Linearly Transformed Cosine Global Illumination (LTCGI)](https://github.com/pimaker/ltcgi) is a plug and play real-time lighting solution, which allows video players to emit light onto surfaces. Hekky PBR supports LTCGI, allowing materials which use it to receive light from video players! To set it up: enable LTCGI in the External Modules category. Setting up LTCGI itself is beyond the scope of this section; please read the instructions on GitHub for more information.
+[Linearly Transformed Cosine Global Illumination (LTCGI)](https://github.com/pimaker/ltcgi) is a plug and play real-time lighting solution, which allows video players to emit light onto surfaces. Hekky PBR supports LTCGI, allowing materials which use it to receive light from video players! To set it up: enable LTCGI in the Other Modules category.
+
+Setting up LTCGI itself is beyond the scope of this section; please read the instructions on GitHub for more information.
 
 ## AudioLink
 
-[AudioLink](https://github.com/llealloo/vrc-udon-audio-link) is a VRChat addon which allows materials to react to music. Hekky PBR offers (currently basic) AudioLink support for materials, with plans for more advanced functionality down the road. To set up AudioLink enable AudioLink in the External Modules category. You can then configure AudioLink in the Emission category and test it using the AudioLink Debug section. Setting up AudioLink itself is beyond the scope of this section; please read the instructions on GitHub for more information.
+[AudioLink](https://github.com/llealloo/vrc-udon-audio-link) is a VRChat addon which allows materials to react to music. Hekky PBR offers (currently basic) AudioLink support for materials, with plans for more advanced functionality down the road. To set up AudioLink enable AudioLink in the Other Modules category. You can then configure AudioLink in the Emission category and test it using the AudioLink Debug section.
+
+Setting up AudioLink itself is beyond the scope of this section; please read the instructions on GitHub for more information.
