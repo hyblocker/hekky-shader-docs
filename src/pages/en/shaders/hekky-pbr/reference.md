@@ -1,6 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: Shader Reference
+description: A list of all properties for Hekky PBR
+image: assets/hekky-pbr-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import CardWarning from '@components/CardWarning.astro'

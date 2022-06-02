@@ -1,6 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: Using With VRChat
+description: Hekky PBR has VRChat specific integrations
+image: assets/hekky-pbr-banner.png
 setup: |
   import CardError from '@components/CardError.astro'
 ---

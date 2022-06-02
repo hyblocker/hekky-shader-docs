@@ -1,6 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: What is PBR?
+description: Learn more about what PBR even is
+image: assets/hekky-shaders-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import CardTip from '@components/CardTip.astro'

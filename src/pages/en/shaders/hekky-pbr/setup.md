@@ -1,6 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: Setting up Hekky PBR
+description: How to setup Hekky PBR in your Unity Project
+image: assets/hekky-pbr-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
 ---

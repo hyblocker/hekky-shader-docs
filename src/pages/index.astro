@@ -1,4 +1,19 @@
 ---
-import DocsLayout from '@layouts/DocsPage.astro'
+import SocialEmbed from '@components/SocialEmbed.astro';
+import { SITE } from '~/constants.js';
 ---
-<meta http-equiv="refresh" content="0;url=/en" />
+<!DOCTYPE html>
+<html>
+	<head>
+        <SocialEmbed
+            title="Documentation"
+            description="Documentation for Hekky Shaders"
+            image="assets/hekky-shaders-banner.png"
+            color={ SITE.embedColor }
+            canonicalURL={ Astro.canonicalURL }
+        ></SocialEmbed>
+
+		<meta http-equiv="refresh" content="0;url=/en" />
+
+	</head>
+</html>

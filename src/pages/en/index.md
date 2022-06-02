@@ -1,8 +1,7 @@
 ---
 layout: '@layouts/DocsPage.astro'
-setup: | 
-  import CardInfo from '@components/CardInfo.astro'
-  import CardWarning from '@components/CardWarning.astro'
+description: Documentation for Hekky Shaders
+image: assets/hekky-shaders-banner.png
 ---
 # Documentation
 

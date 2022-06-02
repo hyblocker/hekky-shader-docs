@@ -1,6 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: Editor Extensions
+description: Learn more about the Editor Extensions included with Hekky Shaders
+image: assets/hekky-shaders-banner.png
 setup: | 
   import ComparisionCard from '@components/ComparisionCard.astro'
 ---

@@ -1,6 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: What is Hekky PBR?
+description: Learn more about Hekky PBR
+image: assets/hekky-pbr-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import FeatureIncluded from '~/icons/FeatureIncluded.astro'

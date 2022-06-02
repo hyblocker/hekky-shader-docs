@@ -1,6 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: Creating PBR Textures
+description: Learn the basics of PBR texturing
+image: assets/hekky-shaders-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import CardHelp from '@components/CardHelp.astro'

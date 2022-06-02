@@ -1,6 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: Who Asked
+description: An audio-reactive radar shader
+image: assets/hekky-shaders-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import CardTip from '@components/CardTip.astro'
