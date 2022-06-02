@@ -1,6 +1,6 @@
 # Hekky Shader Documentation
 
-> You probably meant to go to [https://docs.hyblocker.dev/en/shaders/hekky-pbr/](https://docs.hyblocker.dev/en/shaders/hekky-pbr/)
+> You probably meant to go to [https://docs.hyblocker.dev/en/](https://docs.hyblocker.dev/en/)
 
 This repository contains the documentation for Hekky's Shaders.
 
