@@ -9,7 +9,7 @@ setup: |
 Hekky PBR is designed with [VRChat](https://hello.vrchat.com) in mind, and has VRChat specific integrations as a result.
 
 <CardError title="Keywords">
-Unity 2019.4.31f1 has a maximum **global** shader keyword limit of 384 keywords. When you exceed the global keyword limit, other shaders will start to break. Local keywords allow us to make use of keywords without affecting the global keyword limit, which means other shaders won't break. Hekky PBR makes use of **local** shader keywords as a result of this, but, the VRChat Avatar SDK has a bug which prompts you to remove local shader keywords. Please **DO NOT DO THIS**, as your materials **WILL BREAK**. If you would like to see this bug get resolved, go upvote [this canny](https://vrchat.canny.io/sdk-bug-reports/p/sdk-displays-custom-keyword-warning-for-local-shader-keywords).
+Unity 2019.4.31f1 has a maximum **global** shader keyword limit of 384 keywords. When you exceed the global keyword limit, other shaders will start to break. **Local** keywords allow us to make use of keywords without affecting the global keyword limit, which means other shaders won't break. Hekky PBR makes use of **local** shader keywords as a result of this, but, the VRChat Avatar SDK has a bug which prompts you to remove local shader keywords. Please **DO NOT DO THIS**, as your materials **WILL BREAK**. If you would like to see this bug get resolved, go upvote [this canny](https://vrchat.canny.io/sdk-bug-reports/p/sdk-displays-custom-keyword-warning-for-local-shader-keywords).
 </CardError>
 
 ## LTCGI
