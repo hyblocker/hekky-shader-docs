@@ -79,8 +79,8 @@ This section describes how you can tweak the lighting to achieve a cartoon-esque
 
 ### Anisotropy
 
-- **Anisotropy Map** A texture map that stores anisotropy. Red is anisotropic intensity. Green is anisotropic angle.
-- **Angle Offset** Allows you to offset the angles from 0°.
+- <PaywallIcon height="16px" width="16px"/> **Anisotropy Map** A texture map that stores anisotropy. Red is anisotropic intensity. Green is anisotropic angle.
+- <PaywallIcon height="16px" width="16px"/> **Angle Offset** Allows you to offset the angles from 0°.
 
 ### Emission
 
