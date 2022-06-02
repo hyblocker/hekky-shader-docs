@@ -14,7 +14,7 @@ The documentation uses an entirely custom template on top of Astro, with a few s
 
 ### Motivation
 
-I wrote my own documentations generator as I wasn't satisfied with the current solutions. I wanted a good, lightweight documentation generator that had you focus mostly on writing documentation, which doesn't require Javascript. Javascript is used solely to enhance the experience (for example by adding a search function or a swipe to show sidebar function on mobile devices, or to provide WebGL based diagrams to allow the user to better understand a concept by being able to see how certain properties affect the look of a shader).
+I wrote my own documentation generator as I wasn't satisfied with the current solutions. I wanted a good, lightweight documentation generator that had you focus mostly on writing documentation, which doesn't require Javascript. Javascript is used solely to enhance the experience (for example by adding a search function or a swipe to show sidebar function on mobile devices, or to provide WebGL based diagrams to allow the user to better understand a concept by being able to see how certain properties affect the look of a shader).
 
 ## License
 
