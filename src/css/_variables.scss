@@ -8,6 +8,12 @@
 
 	--blockquote-border-width: 0.25rem;
 	--blockquote-padding: 1rem;
+	
+	--keybind-padding-top: 0.1rem;
+	--keybind-padding-side: 0.2rem;
+	--keybind-border-thickness: 0.1rem;
+	--keybind-border-radius: 0.2rem;
+	--keybind-border-shadow-height: 0.2rem;
 
 	--sidebar-width: 18rem;
 	--sidebar-padding: 1rem;
@@ -53,11 +59,6 @@
 	--keybind-text: #000;
 	--keybind-border-color: #5b5b5b;
 	--keybind-border-shadow-color: #848484;
-	--keybind-padding-top: 0.1rem;
-	--keybind-padding-side: 0.2rem;
-	--keybind-border-thickness: 0.1rem;
-	--keybind-border-radius: 0.2rem;
-	--keybind-border-shadow-height: 0.2rem;
 
 	--table-bg: #dfdfdf;
 	--table-bg2: #f5f5f5;
@@ -66,7 +67,7 @@
 	--table-text: #131313;
 	--table-border: #131313;
 
-	--footer-bg: #dedede;
+	--footer-bg: #d2d2d2;
 	--footer-text: #434343;
 	--footer-border: #434343aa;
 	--footer-link: #525252;
@@ -128,6 +129,11 @@
 		--card-bg: #168CDD;
 		--card-contrast: #FFF;
 		--codeblock-bg: #3F9EDD;
+	}
+	.card-noicon {
+		--card-bg: #CACACA;
+		--card-bg-hover: #BDBDBD;
+		--card-contrast: #222;
 	}
 }
 @mixin darkMode {

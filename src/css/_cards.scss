@@ -33,9 +33,21 @@
 	}
 }
 
+
+a.card-noicon,
 .card-download {
 	text-decoration: none;
 }
+
+.card-noicon {
+	& .heading-container h3 {
+		margin: 0;
+	}
+	&:hover, &:active{
+		background-color: var(--card-bg-hover);
+	}
+}
+
 
 .card-download-wrapper {
 	border: 0.2rem solid var(--card-bg);
