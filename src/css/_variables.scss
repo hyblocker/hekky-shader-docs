@@ -36,7 +36,10 @@
 	--content-padding: 2rem;
 	--content-max-width: 120ex;
 }
-.light {
+@mixin lightMode {
+	--background-color: #fff;
+	--text-color: #000;
+
 	--accent: #168CDD;
 	--link: #168CDD;
 
@@ -117,6 +120,24 @@
 		--codeblock-bg: #3F9EDD;
 	}
 }
-.dark {
+@mixin darkMode {
 
+}
+
+
+// automatic/manual light mode
+:root, :root.light {
+	@include lightMode();
+}
+// automatic dark mode
+// keep the rules in sync with the manual dark mode below!
+@media (prefers-color-scheme: dark) {
+	:root {
+		@include darkMode();
+	}
+}
+// manual dark mode
+// keep the rules in sync with the automatic dark mode above!
+:root.dark {
+	@include darkMode();
 }
