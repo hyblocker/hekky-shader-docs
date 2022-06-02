@@ -15,12 +15,14 @@ Creating PBR textures is a complex subject, and this guide **CANNOT** explain ev
 
 Creating your own PBR materials from scratch is difficult, time consuming, and expensive. Thus there are a wide variety of freely available PBR textures you can use:
 
-- [Ambient CG](ambientcg.com/) (Formerly CC0 Textures)
+- [Ambient CG](https://ambientcg.com/) (Formerly CC0 Textures)\*\*
 - [cgbookcase.com](https://www.cgbookcase.com/)
 - [Share Textures](https://www.sharetextures.com/)
 - [3D Textures by icons8](https://icons8.com/l/3d-textures/)\*
 
 > \* **Requires** attribution (i.e. say that you got the textures from icons8) if using the **free license**. Paid license doesn't demand attribution.
+>
+> \*\* Uses Direct-X style normal maps. See [Normal map conversion](../misc/editor-extensions#normal-map-conversion-tool) for more information.
 
 <CardHelp title="Substance Player">
 Sometimes you'll find PBR textures offered in a `sbsar` file format. You can open these files in [Substance Player](https://substance3d.adobe.com/documentation/sp31/substance-player-2294742.html), and further tweak them to generate unique PBR textures. This route is preferred whenever possible over using random PBR textures, as due to these textures being freely available, users might feel that they are repetitive.
