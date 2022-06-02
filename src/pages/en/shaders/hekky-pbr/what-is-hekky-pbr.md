@@ -25,3 +25,4 @@ Hekky PBR supports numerous features:
 | Bakery support | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
 | LTCGI support | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
 | AudioLink support | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
+| Numerous Editor Extensions | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
