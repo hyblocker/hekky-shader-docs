@@ -1,6 +1,7 @@
 ---
 import CardBase from './CardBase.astro'
-const { href, title } = Astro.props;
+const { title } = Astro.props;
+const href = Astro.props.href ?? "#";
 
 // locale resolution to ensure the final path includes the locale
 const { canonicalURL } = Astro;

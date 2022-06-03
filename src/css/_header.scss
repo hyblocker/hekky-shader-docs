@@ -71,4 +71,69 @@ header {
 			
 		}
 	}
+
+	.theme-toggle {
+		position: relative;
+		display: inline-block;
+
+		width: 1.5rem;
+		height: 1.5rem;
+
+		& input {
+			opacity: 0;
+			width: 1.5rem;
+			height: 1.5rem;
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+
+			&:checked ~ .moon {
+				opacity: 0;
+				transform: rotateZ(-100deg);
+			}
+			&:not(:checked) ~ .sun {
+				opacity: 0;
+				transform: rotateZ(-100deg);
+			}
+
+			@media (prefers-color-scheme: light) {
+				html:not(.dark) & ~ .moon {
+					opacity: 0;
+					transform: rotateZ(-100deg);
+				}
+				html:not(.dark) & ~ .sun {
+					opacity: 1;
+					transform: rotateZ(0deg);
+				}
+			}
+			@media (prefers-color-scheme: dark) {
+				html:not(.light) & ~ .sun {
+					opacity: 0;
+					transform: rotateZ(-100deg);
+				}
+				html:not(.light) & ~ .moon {
+					opacity: 1;
+					transform: rotateZ(0deg);
+				}
+			}
+		}
+
+		& svg {
+			width: 1.5rem;
+			height: 1.5rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			opacity: 1;
+			transition: transform 250ms ease;
+			transform: rotateZ(0deg);
+		}
+
+		.no-js & {
+			display: none;
+		}
+	}
 }

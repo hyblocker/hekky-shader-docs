@@ -30,6 +30,10 @@
 		& p:last-child {
 			margin-bottom: 0;
 		}
+
+		& hr {
+			color: var(--card-contrast);
+		}
 	}
 }
 
