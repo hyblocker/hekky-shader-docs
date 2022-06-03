@@ -195,6 +195,10 @@ document.addEventListener( "DOMContentLoaded", ( () => {
     }
 
     // Theme toggler
+    document.querySelector( '.theme-toggle' ).checked = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if (storedTheme != null) {
+        document.querySelector( '.theme-toggle' ).checked = (storedTheme === 'dark');
+    }
     document.querySelector( '.theme-toggle' ).onclick = ( (e) => {
         if (document.documentElement.classList.contains( "light" )) {
             document.documentElement.classList.remove( "light" );

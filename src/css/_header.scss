@@ -97,27 +97,6 @@ header {
 				opacity: 0;
 				transform: rotateZ(-100deg);
 			}
-
-			@media (prefers-color-scheme: light) {
-				html:not(.dark) & ~ .moon {
-					opacity: 0;
-					transform: rotateZ(-100deg);
-				}
-				html:not(.dark) & ~ .sun {
-					opacity: 1;
-					transform: rotateZ(0deg);
-				}
-			}
-			@media (prefers-color-scheme: dark) {
-				html:not(.light) & ~ .sun {
-					opacity: 0;
-					transform: rotateZ(-100deg);
-				}
-				html:not(.light) & ~ .moon {
-					opacity: 1;
-					transform: rotateZ(0deg);
-				}
-			}
 		}
 
 		& svg {
@@ -135,5 +114,26 @@ header {
 		.no-js & {
 			display: none;
 		}
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	html:not(.dark) header .theme-toggle input:not(:checked) ~ .moon {
+		opacity: 0;
+		transform: rotateZ(-100deg);
+	}
+	html:not(.dark) header .theme-toggle input:not(:checked) ~ .sun {
+		opacity: 1;
+		transform: rotateZ(0deg);
+	}
+}
+@media (prefers-color-scheme: dark) {
+	html:not(.light) header .theme-toggle input:not(:checked) ~ .sun {
+		opacity: 0;
+		transform: rotateZ(-100deg);
+	}
+	html:not(.light) header .theme-toggle input:not(:checked) ~ .moon {
+		opacity: 1;
+		transform: rotateZ(0deg);
 	}
 }
