@@ -16,7 +16,7 @@ Hekky Shaders are a collection of Shaders designed primarily for world creation.
 Learn about what PBR rendering is
 </CardNoIcon>
 
-<CardNoIcon title="What is Hekky PBR?" href="/en/shaders/understanding-pbr/what-is-pbr">
+<CardNoIcon title="What is Hekky PBR?" href="/en/shaders/hekky-pbr/what-is-hekky-pbr">
 Learn about what Hekky's PBR shaders have to offer
 </CardNoIcon>
 
