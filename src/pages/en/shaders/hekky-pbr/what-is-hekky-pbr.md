@@ -8,7 +8,7 @@ setup: |
   import FeatureIncluded from '~/icons/FeatureIncluded.astro'
 ---
 
-![Hekky PBR Logo](/assets/hekky-pbr-banner.png)
+![Hekky PBR Logo](/assets/hekky-pbr-banner.webp)
 
 # What is Hekky PBR?
 

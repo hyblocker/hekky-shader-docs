@@ -30,11 +30,11 @@ In the real world, light rays get reflected off a surface and bounce around the 
 
 **Specular Reflections** refer to light rays which are reflected in the exact same angle they arrived in. This is basically a mirror, and what you normally think of as a reflection.
 
-![Specular reflection example demonstrating a highly reflective surface](/shared/img/specular-reflection.png)
+![Specular reflection example demonstrating a highly reflective surface](/shared/img/specular-reflection.webp)
 
 **Diffuse Reflections** refer to light rays which are reflected randomly. Diffuse reflections aren't really "reflected". In reality the light is **absorbed** (i.e. the light goes **inside** the material) by the material, then scattered about. Some of the light gets absorbed by the material itself, meaning that the light color can changed based on the material. This is why we perceive orange painted plastic as "orange" instead of white for example.
 
-![Specular reflection example demonstrating a red and rough surface](/shared/img/diffuse-reflection.png)
+![Specular reflection example demonstrating a red and rough surface](/shared/img/diffuse-reflection.webp)
 
 We can control if a surface uses specular reflections or diffuse reflections with the **metal mask** parameter. A surface **cannot** be half metallic and half dielectric (a dielectric surface is the opposite of a metallic surface).
 
@@ -69,7 +69,7 @@ One of the key principles of PBR rendering in comparision to other rendering met
 
 Occlusion refers to the **lack** of light reaching a surface. It's used to tell the shader which parts of the model should be darker than others.
 
-<ComparisionCard beforeSrc="/shared/img/ao-off.png" beforeTxt="Ambient Occlusion Off" afterSrc="/shared/img/ao-on.png" afterTxt="Ambient Occlusion On"/>
+<ComparisionCard beforeSrc="/shared/img/ao-off.webp" beforeTxt="Ambient Occlusion Off" afterSrc="/shared/img/ao-on.webp" afterTxt="Ambient Occlusion On" color="#000"/>
 
 ### Emission
 
@@ -79,7 +79,7 @@ Some surfaces, such as small LEDs, emit light, but are too small to be an entire
 
 Anisotropy refers to stretched specular reflections. It's typically seen at angles around a point on a surface too. Brushed materials are common anisotropic materials.
 
-![Anisotropy example](/shared/img/aniso-example.png)
+![Anisotropy example](/shared/img/aniso-example.webp)
 
 <script is:inline src='/shared/js/filament.js'></script>
 <script is:inline src="//unpkg.com/gl-matrix@2.8.1" ></script>

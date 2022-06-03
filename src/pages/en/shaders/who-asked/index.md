@@ -25,7 +25,7 @@ Who Asked is a simple radar shader, with AudioLink functionality because "it's f
 > - [AudioLink](#audiolink)
 > - [Misc](#misc)
 
-![Shader Inspector](/en/whoasked_shader_inspector_full.png)
+![Shader Inspector](/en/whoasked_shader_inspector_full.webp)
 
 ## Rings
 

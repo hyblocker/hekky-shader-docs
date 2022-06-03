@@ -22,7 +22,7 @@ Hekky PBR comes with a couple of Editor extensions to make the process of world 
 
 A quick and easy tool to help you setup Post Processing in your Unity Project and Scene with sane default values.
 
-<ComparisionCard beforeSrc="/shared/img/post-off.png" beforeTxt="Post Processing Off" afterSrc="/shared/img/post-on.png" afterTxt="Post Processing On" color="#fff"/>
+<ComparisionCard beforeSrc="/shared/img/post-off.webp" beforeTxt="Post Processing Off" afterSrc="/shared/img/post-on.webp" afterTxt="Post Processing On" color="#fff"/>
 
 ## Studio Lighting Mode
 
@@ -30,7 +30,7 @@ A quick and easy tool to help you setup Post Processing in your Unity Project an
 
 This allows you to mimic the Studio Lighting Mode seen in [Blender](blender.org/) inside the Unity Scene View. This is particularly useful for navigating dark scenes such as nightclubs.
 
-![Studio Lighting](/shared/img/studio-lighting.png)
+![Studio Lighting](/shared/img/studio-lighting.webp)
 
 ## Normal Map Conversion Tool
 
