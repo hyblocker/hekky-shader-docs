@@ -26,7 +26,7 @@ A quick and easy tool to help you setup Post Processing in your Unity Project an
 
 ## Studio Lighting Mode
 
-> Press <kbd>F12</kbd> You can go to Edit > Shortcuts.. to edit keybinds.
+> Press <kbd>F12</kbd>. You can go to Edit > Shortcuts.. to edit keybinds.
 
 This allows you to mimic the Studio Lighting Mode seen in [Blender](blender.org/) inside the Unity Scene View. This is particularly useful for navigating dark scenes such as nightclubs.
 
