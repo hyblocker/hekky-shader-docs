@@ -183,6 +183,7 @@ document.addEventListener( "DOMContentLoaded", ( () => {
         }
     });
 
+    // Theme toggler
     // Load theme from localStorage
     const storedTheme = localStorage.getItem('theme');
     switch (storedTheme) {
@@ -194,11 +195,7 @@ document.addEventListener( "DOMContentLoaded", ( () => {
             break;
     }
 
-    // Theme toggler
-    document.querySelector( '.theme-toggle' ).checked = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
-    if (storedTheme != null) {
-        document.querySelector( '.theme-toggle' ).checked = (storedTheme === 'light');
-    }
+    // Theme toggler button
     document.querySelector( '.theme-toggle' ).onclick = ( (e) => {
         if (document.documentElement.classList.contains( "light" )) {
             document.documentElement.classList.remove( "light" );

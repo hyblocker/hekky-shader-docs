@@ -89,11 +89,11 @@ header {
 			left: 0;
 			margin: 0;
 
-			&:checked ~ .moon {
+			.light & ~ .moon {
 				opacity: 0;
 				transform: rotateZ(-100deg);
 			}
-			&:not(:checked) ~ .sun {
+			.dark & ~ .sun {
 				opacity: 0;
 				transform: rotateZ(-100deg);
 			}
@@ -118,21 +118,21 @@ header {
 }
 
 @media (prefers-color-scheme: light) {
-	html:not(.dark) header .theme-toggle input:not(:checked) ~ .moon {
+	html:not(.dark) header .theme-toggle input ~ .moon {
 		opacity: 0;
 		transform: rotateZ(-100deg);
 	}
-	html:not(.dark) header .theme-toggle input:not(:checked) ~ .sun {
+	html:not(.dark) header .theme-toggle input ~ .sun {
 		opacity: 1;
 		transform: rotateZ(0deg);
 	}
 }
 @media (prefers-color-scheme: dark) {
-	html:not(.light) header .theme-toggle input:not(:checked) ~ .sun {
+	html:not(.light) header .theme-toggle input ~ .sun {
 		opacity: 0;
 		transform: rotateZ(-100deg);
 	}
-	html:not(.light) header .theme-toggle input:not(:checked) ~ .moon {
+	html:not(.light) header .theme-toggle input ~ .moon {
 		opacity: 1;
 		transform: rotateZ(0deg);
 	}
