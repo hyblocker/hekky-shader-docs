@@ -100,7 +100,7 @@ function doSearch () {
     SearchRefs.searchResultsContainer.innerHTML = '';
 
     uniqueResultsArr.sort( function( a, b ) { 
-        return b.score - a.score;
+        return a.score - b.score;
     });
 
     uniqueResultsArr.forEach( (item) => {
