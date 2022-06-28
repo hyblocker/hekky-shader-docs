@@ -7,6 +7,10 @@
 	padding: var(--sidebar-padding) 0;
 	background: var(--sidebar-bg-default);
 	z-index: 50;
+
+	& .sidebar-section-link + ul {
+		padding-top: var(--sidebar-padding);
+	}
 }
 .sidebar-section-title {
 	&:not(:first-child)::before {

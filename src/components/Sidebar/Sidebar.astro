@@ -1,10 +1,29 @@
 ---
+import { SITE } from '~/constants.js';
 import SidebarSection from './SidebarSection.astro';
-import SidebarEntries from '~/sidebar.json';
+
+// oh boy dont you love node
+import fs from 'node:fs/promises';
+
+const { locale } = Astro.props;
+
+// this is stupidly fucking cursed
+const relativeToRoot = "../".repeat(import.meta.env.DEV === true ? 2 : 1) + (import.meta.env.DEV === true ? "" : "src/");
+
+const currUrl = Astro.canonicalURL.pathname;
+const url = new URL(`${relativeToRoot}pages/${locale}/meta.json`, import.meta.url);
+const json = await fs.readFile(url, 'utf-8');
+const SidebarEntries = JSON.parse(json);
+const localeHomePage = SITE.docsRoot.replace("en", locale);
 ---
 <div class="docs-sidebar collapse">
 	
-	<SidebarSection items={SidebarEntries.items}/>
+	<a class={
+		currUrl.endsWith(localeHomePage) ? "sidebar-section-link sidebar-link-selected" : "sidebar-section-link"
+		} href={localeHomePage}>
+		<span class="sidebar-link-text">Hekky Shader Docs</span></a>
+
+	<SidebarSection items={SidebarEntries.sidebar}/>
 	
 </div>
 <div class="sidebar-overlay">

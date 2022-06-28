@@ -1,5 +1,11 @@
 {
-	"items": [
+	"locale": "en",
+    "embed": {
+        "title": "Hekky Shader Documentation",
+        "description": "Documentation for Hekky Shaders",
+        "image": "assets/hekky-shaders-banner.png"
+    },
+	"sidebar": [
 	  {
 		"title": "Understanding PBR",
 		"children": [
@@ -31,6 +37,27 @@
 		  {
 			"title": "Using With VRChat",
 			"url": "/en/shaders/hekky-pbr/using-with-vrchat"
+		  }
+		]
+	  },
+	  {
+		"title": "Hekky Display",
+		"children": [
+		  {
+			"title": "What is Hekky Display?",
+			"url": "/en/shaders/hekky-display/what-is-hekky-display"
+		  },
+		  {
+			"title": "Setting up Hekky PBR",
+			"url": "/en/shaders/hekky-display/setup"
+		  },
+		  {
+			"title": "Shader Reference",
+			"url": "/en/shaders/hekky-display/reference"
+		  },
+		  {
+			"title": "Using With VRChat",
+			"url": "/en/shaders/hekky-display/using-with-vrchat"
 		  }
 		]
 	  },

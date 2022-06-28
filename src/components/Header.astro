@@ -1,18 +1,27 @@
 ---
 import { SITE, SOCIALS } from '~/constants.js';
+import LocaleList from '~/../public/shared/locales.json';
+import LangDropdown from '@components/LangDropdown.astro';
 import SearchIcon from '~/icons/search_black_24dp.astro';
 import HamburgerIcon from '~/icons/hamburger_black_24dp.astro';
 
 // Dark mode 
 import SunIcon from '~/icons/sun.astro';
 import MoonIcon from '~/icons/moon.astro';
+const { locale } = Astro.props;
+const availableLocales = Object.keys(LocaleList[locale]);
+const render = availableLocales.length > 1;
+const rootURL = SITE.localizedHome ? SITE.docsRoot.replace("en", locale) : SITE.root;
 ---
 <header>
 	<button class="mobile sidebar">
 		<HamburgerIcon />
 	</button>
-	<h1 class="site-title"><a href={ SITE.docsRoot }>{ SITE.title }</a></h1>
+	<h1 class="site-title"><a href={ rootURL }>{ SITE.title }</a></h1>
 	<div class="dock-right">
+		{render && <>
+			<LangDropdown locale={locale}/>
+		</>}
 		<label class="theme-toggle switch">
 			<input type="checkbox"><SunIcon  class="sun"/><MoonIcon class="moon"/>
 		</label>
