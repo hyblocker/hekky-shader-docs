@@ -1,6 +1,6 @@
 ---
 layout: '@layouts/DocsPage.astro'
-title: Shader Reference
+title: Hekky PBR Reference
 description: A list of all properties for Hekky PBR
 image: assets/hekky-pbr-banner.png
 setup: | 
