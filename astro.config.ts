@@ -24,6 +24,7 @@ export default defineConfig({
     syntaxHighlight: 'prism',
     rehypePlugins: [ // These are here because setting custom plugins disables the default plugins
     'rehype-slug', 'remark-smartypants', 'remark-gfm', // This adds links to headings
+    ['remark-definition-list', {}],
     ['rehype-autolink-headings', {
       properties: {
         class: 'anchor-link'
@@ -35,6 +36,6 @@ export default defineConfig({
       content: heading => [h(`span.anchor-icon`, {
         ariaHidden: 'true'
       }, AnchorLinkIcon)]
-    }]]
-  }
-});
+    }],
+  ]
+}});

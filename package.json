@@ -21,6 +21,7 @@
     "react-dom": "^17.0.2",
     "rehype-autolink-headings": "^6.1.1",
     "remark": "^14.0.2",
+    "remark-definition-list": "^1.1.0",
     "sass": "^1.50.0",
     "serialize-javascript": "^6.0.0",
     "shiki": "^0.10.1",

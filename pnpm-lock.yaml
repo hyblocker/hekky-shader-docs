@@ -14,6 +14,7 @@ specifiers:
   react-dom: ^17.0.2
   rehype-autolink-headings: ^6.1.1
   remark: ^14.0.2
+  remark-definition-list: ^1.1.0
   sass: ^1.50.0
   serialize-javascript: ^6.0.0
   shiki: ^0.10.1
@@ -34,6 +35,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   rehype-autolink-headings: 6.1.1
   remark: 14.0.2
+  remark-definition-list: 1.1.0
   sass: 1.50.0
   serialize-javascript: 6.0.0
   shiki: 0.10.1
@@ -2000,6 +2002,20 @@ packages:
     resolution: {integrity: sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==}
     dev: false
 
+  /mdast-util-definition-list/1.1.1:
+    resolution: {integrity: sha512-b7A+zunjFPPJSgCVtJjIRxwWBnJNDpU5sryxgNPQW95vTwlj++rSqiMznr7HHv2pAOwU1J87Xt92sDqtWmQajw==}
+    dependencies:
+      '@types/mdast': 3.0.10
+      mdast-util-from-markdown: 1.2.0
+      mdast-util-to-hast: 11.3.0
+      mdast-util-to-markdown: 1.3.0
+      micromark-extension-definition-list: 1.1.2
+      unist-builder: 3.0.0
+    transitivePeerDependencies:
+      - micromark
+      - supports-color
+    dev: false
+
   /mdast-util-definitions/5.1.0:
     resolution: {integrity: sha512-5hcR7FL2EuZ4q6lLMUK5w4lHT2H3vqL9quPvYZ/Ku5iifrirfMHiGdhxdXMUbUkDmz5I+TYMd7nbaxUhbQkfpQ==}
     dependencies:
@@ -2115,6 +2131,20 @@ packages:
       vfile-message: 3.1.2
     dev: false
 
+  /mdast-util-to-hast/11.3.0:
+    resolution: {integrity: sha512-4o3Cli3hXPmm1LhB+6rqhfsIUBjnKFlIUZvudaermXB+4/KONdd/W4saWWkC+LBLbPMqhFSSTSRgafHsT5fVJw==}
+    dependencies:
+      '@types/hast': 2.3.4
+      '@types/mdast': 3.0.10
+      '@types/mdurl': 1.0.2
+      mdast-util-definitions: 5.1.0
+      mdurl: 1.0.1
+      unist-builder: 3.0.0
+      unist-util-generated: 2.0.0
+      unist-util-position: 4.0.3
+      unist-util-visit: 4.1.0
+    dev: false
+
   /mdast-util-to-hast/12.1.1:
     resolution: {integrity: sha512-qE09zD6ylVP14jV4mjLIhDBOrpFdShHZcEsYvvKGABlr9mGbV7mTlRWdoFxL/EYSTNDiC9GZXy7y8Shgb9Dtzw==}
     dependencies:
@@ -2178,6 +2208,19 @@ packages:
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
       uvu: 0.5.3
+    dev: false
+
+  /micromark-extension-definition-list/1.1.2:
+    resolution: {integrity: sha512-pm805mHdC5G4iy+a3atFmgvxVyD1uM2esbetv6+/CshDFsMuKaBogbwTEnZLVZ9AYDmx12BjYLH8vGTqhu4fqw==}
+    peerDependencies:
+      micromark: ^3.0.5
+    dependencies:
+      assert: 2.0.0
+      micromark-core-commonmark: 1.0.6
+      micromark-factory-space: 1.0.0
+      micromark-util-chunked: 1.0.0
+      micromark-util-symbol: 1.0.1
+      micromark-util-types: 1.0.2
     dev: false
 
   /micromark-extension-gfm-autolink-literal/1.0.3:
@@ -2882,6 +2925,19 @@ packages:
       '@types/hast': 2.3.4
       hast-util-to-html: 8.0.3
       unified: 10.1.2
+    dev: false
+
+  /remark-definition-list/1.1.0:
+    resolution: {integrity: sha512-SlEFTlPY+ym9VIUnBdrRyn8BMDvk4NWY2X6phHNzjUvR2mjfsdxJE1L/J92wGpUm7URAeYZjKXnxYMhBJiIEJQ==}
+    peerDependencies:
+      remark-parse: ^10.0.0
+      unified: ^10.1.0
+    dependencies:
+      mdast-util-definition-list: 1.1.1
+      micromark-extension-definition-list: 1.1.2
+    transitivePeerDependencies:
+      - micromark
+      - supports-color
     dev: false
 
   /remark-gfm/3.0.1:
