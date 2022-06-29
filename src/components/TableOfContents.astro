@@ -1,0 +1,48 @@
+---
+import { Markdown } from 'astro/components';
+// oh boy dont you love node
+import fs from 'node:fs/promises';
+
+// TODO: fetch locale? idk localisation is an r has fuk
+let { locale, ignoreItem } = Astro.props;
+
+locale = locale ?? "en";
+
+// this is stupidly fucking cursed
+const relativeToRoot = "../".repeat(import.meta.env.DEV === true ? 1 : 1) + (import.meta.env.DEV === true ? "" : "src/");
+
+const url = new URL(`${relativeToRoot}pages/${locale}/meta.json`, import.meta.url);
+const json = await fs.readFile(url, 'utf-8');
+const SidebarEntries = JSON.parse(json);
+---
+<div class="table-of-contents">
+	<ul>
+		{SidebarEntries.sidebar.filter( function(item) {
+			if (item.title === ignoreItem) {
+				return false; // skip
+			}
+			return true;
+		}).map((item) => (
+			<>
+				<li class="table-of-contents-section-title">
+					<Markdown>## {item.title}</Markdown>
+					{
+						(<ul class="table-of-contents-section-children">
+							{item.children.map((itemA) => (
+								<>
+									
+									<a class="table-of-contents-section-link" href={itemA.url}>
+										<li class="table-of-contents-link-text">
+											{itemA.title}
+										</li>
+										{itemA.children}
+									</a>
+								</>
+							))}
+						</ul>)
+					}
+				</li>
+			</>
+		))}
+	</ul>
+</div>

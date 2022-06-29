@@ -6,6 +6,7 @@ image: assets/hekky-pbr-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import CardWarning from '@components/CardWarning.astro'
+  import CardTip from '@components/CardTip.astro'
   import PaywallIcon from '~/icons/PaywalledFeature.astro'
   import ComparisionCard from '@components/ComparisionCard.astro'
 ---
@@ -45,6 +46,10 @@ This section describes the base layer of a material using Hekky PBR.
 - **Invert Roughness** Inverts the roughness map. Enable this if you want to use smoothness instead of roughness.
 - **Normal Map** Allows you to define surface bumps without increasing the polygon count.
 
+<CardTip title="Textures">
+All textures share sampling settings the **Texture** sampling settings. The only exception is the matcap texture.
+</CardTip>
+
 ## Lighting
 
 This section describes how you may customise how a material reflects light using Hekky PBR.
@@ -83,6 +88,10 @@ This section describes how you can tweak the lighting to achieve a cartoon-esque
 
 - <PaywallIcon height="16px" width="16px"/> **Anisotropy Map** A texture map that stores anisotropy. Red is anisotropic intensity. Green is anisotropic angle.
 - <PaywallIcon height="16px" width="16px"/> **Angle Offset** Allows you to offset the angles from 0°.
+
+### Reflections
+
+- **Force reflections mode** Forces reflections to be interpreted as either box projected or spherical projected reflection probes.
 
 ### Emission
 

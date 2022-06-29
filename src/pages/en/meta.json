@@ -48,16 +48,8 @@
 			"url": "/en/shaders/hekky-display/what-is-hekky-display"
 		  },
 		  {
-			"title": "Setting up Hekky PBR",
-			"url": "/en/shaders/hekky-display/setup"
-		  },
-		  {
 			"title": "Shader Reference",
 			"url": "/en/shaders/hekky-display/reference"
-		  },
-		  {
-			"title": "Using With VRChat",
-			"url": "/en/shaders/hekky-display/using-with-vrchat"
 		  }
 		]
 	  },
