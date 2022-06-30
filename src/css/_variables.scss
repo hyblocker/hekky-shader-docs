@@ -41,6 +41,9 @@
 
 	--content-padding: 2rem;
 	--content-max-width: 120ex;
+
+	--definition-list-weight: 800;
+	--definition-list-padding: 2rem;
 }
 @mixin lightMode {
 	--background-color: #fff;

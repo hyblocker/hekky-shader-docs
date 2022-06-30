@@ -40,7 +40,7 @@ blockquote {
 }
 code {
 	background-color: var(--codeblock-bg);
-	padding: 0 0.5rem;
+	padding: 0 0.25rem;
 	font-size: 0.9rem;
 	pre & {
 		// Remove padding in codeblocks
@@ -159,4 +159,14 @@ kbd {
 	vertical-align: middle;
 	box-sizing: border-box;
 	line-height: 1;
+}
+dl {
+	& dt {
+		font-weight: var(--definition-list-weight);
+		margin: 1rem 0;
+	}
+	& dd {
+		padding-left: var(--definition-list-padding);
+		margin: 1rem 0;
+	}
 }
