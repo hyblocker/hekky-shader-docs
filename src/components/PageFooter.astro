@@ -9,7 +9,7 @@ const relativeToRoot = "../".repeat(import.meta.env.DEV === true ? 2 : 1) + (imp
 
 const { githubEditUrl, file } = Astro.props;
 
-const markdownFileURL = new URL(`${relativeToRoot}src/pages${file}`, import.meta.url);
+const markdownFileURL = new URL(`${relativeToRoot}${import.meta.env.DEV === true ? "src/": ""}pages${file}`, import.meta.url);
 const stats = await fs.stat(markdownFileURL);
 const date = stats.mtime;
 const lastEditTime = `${("0" + date.getDate()).slice(-2)}/${("0" + (date.getMonth() + 1)).slice(-2)}/${date.getFullYear()}`;
