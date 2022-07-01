@@ -42,7 +42,7 @@ There are numerous methods and tools which can be used to create PBR textures. P
 ### Which texture maps should you use?
 
 Good PBR materials generally make use of a couple of texture maps:
-- Base Colour / Diffuse / Albedo
+- Base Color / Diffuse / Albedo
 - Normal Map
 - Metallic Map
 - Roughness Map
