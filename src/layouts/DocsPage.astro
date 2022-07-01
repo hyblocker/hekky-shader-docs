@@ -5,11 +5,19 @@ import Sidebar from '@components/Sidebar/Sidebar.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
 import SearchPopup from '@components/SearchPopup.astro';
+import PageFooter from '@components/PageFooter.astro';
 import { SITE } from '~/constants.js';
 import "~/css/main.scss";
 
 // node hell
 import fs from 'node:fs/promises';
+import fs2 from 'fs';
+
+const currentPage = new URL(Astro.request.url).pathname;
+const currentFile = ([`${currentPage}.md`, `${currentPage}/index.md`].find(subpath =>
+    fs2.existsSync(`./src/pages${subpath}`)
+)).replaceAll('//', '/');
+const githubEditUrl = `${ SITE.gitRepo }/blob/${ SITE.gitBranch }/src/pages${currentFile}`;
 
 const { content } = Astro.props;
 let title = (Astro.props.title ?? content.title) ?? "";
@@ -22,8 +30,8 @@ title = (title.trim().length > 0 && (title.trim() != SITE.title)) ? `${title.tri
 // this is stupidly fucking cursed
 const relativeToRoot = "../".repeat(1) + (import.meta.env.DEV === true ? "" : "src/");
 
-const url = new URL(`${relativeToRoot}pages/${locale}/meta.json`, import.meta.url);
-const json = await fs.readFile(url, 'utf-8');
+const metaUrl = new URL(`${relativeToRoot}pages/${locale}/meta.json`, import.meta.url);
+const json = await fs.readFile(metaUrl, 'utf-8');
 const LocalisedMetadata = JSON.parse(json);
 
 title = title ?? LocalisedMetadata.embed.title; // Always false so technically redundant ; we'll see later
@@ -58,6 +66,7 @@ description = description ?? LocalisedMetadata.embed.description;
             <Sidebar locale={locale}/>
             <article class="content">
                     <slot/>
+                    <PageFooter githubEditUrl={githubEditUrl} file={currentFile} />
             </article>
             <Footer />
         </div>

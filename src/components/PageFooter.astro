@@ -1,0 +1,21 @@
+---
+import EditIcon from '@icons/edit_note_black_24dp.astro';
+
+// node hell
+import fs from 'node:fs/promises';
+
+// this is stupidly fucking cursed
+const relativeToRoot = "../".repeat(import.meta.env.DEV === true ? 2 : 1) + (import.meta.env.DEV === true ? "" : "src/");
+
+const { githubEditUrl, file } = Astro.props;
+
+const markdownFileURL = new URL(`${relativeToRoot}src/pages${file}`, import.meta.url);
+const stats = await fs.stat(markdownFileURL);
+const date = stats.mtime;
+const lastEditTime = `${("0" + date.getDate()).slice(-2)}/${("0" + (date.getMonth() + 1)).slice(-2)}/${date.getFullYear()}`;
+---
+<hr class="page-footer-separator">
+<div class="page-footer">
+    <span class="last-edited">Last updated on { lastEditTime }</span>
+    <a class="edit-on-github" href={ githubEditUrl } target="_blank"><EditIcon />Edit on GitHub</a>
+</div>
