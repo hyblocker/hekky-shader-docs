@@ -29,28 +29,62 @@ Who Asked is a simple radar shader, with AudioLink functionality because "it's f
 
 ## Rings
 
-- **Rings** Number of rings to render.
-- **Ring Color** Color of the rings.
-- **Ring Thickness** Thickness of each ring.
-- **Ring Emission** How emissive the ring should be.
+Rings
+: Number of rings to render.
+
+Ring Color
+: Color of the rings.
+
+Ring Thickness
+: Thickness of each ring.
+
+Ring Emission
+: How emissive the ring should be.
 
 ## Radar
 
-- **Rings** Number of rings to render.
-- **Ring Color** Color of the rings.
-- **Ring Thickness** Thickness of each ring.
-- **Ring Emission** How emissive the ring should be.
+Radar Color
+: The color of the radar.
+
+Radar Width
+: The width of the radar.
+
+Radar Alpha
+: The transparency of the radar.
+
+Radar Fade From Edge
+: Controls the fade threshold from the edge of the radar.
+
+Radar Fade Intensity
+: Controls how gradual the fade on the radar is.
+
+Radar Emission
+: How emissive the radar should be.
 
 ## AudioLink
 
-- **Rings** Number of rings to render.
-- **Ring Color** Color of the rings.
-- **Ring Thickness** Thickness of each ring.
-- **Ring Emission** How emissive the ring should be.
+Radar AudioLink
+: Enables AudioLink.
+
+Radar Band
+: The audio channel to react to.
+
+Radar Emission
+: The maximum emission when using AudioLink.
+
+Ring Phase Offset Angle
+: The maximum additional angle the phase offset should use.
 
 ## Misc
 
-- **Rings** Number of rings to render.
-- **Ring Color** Color of the rings.
-- **Ring Thickness** Thickness of each ring.
-- **Ring Emission** How emissive the ring should be.
+Turn Speed
+: How fast the radar will spin.
+
+Fallback Texture
+: A fallback texture which is used in the event that the shader fails to load and resorts to a fallback shader.
+
+Render Queue
+: Controls when to render this material. See the [Unity Docs](https://docs.unity3d.com/Manual/class-Material.html) for more information.
+
+Double Sided Global Illumination
+: Enables double sided global illumination for this material. See the [Unity Docs](https://docs.unity3d.com/Manual/class-Material.html) for more information.

@@ -5,7 +5,7 @@ description: Learn more about Hekky PBR
 image: assets/hekky-pbr-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
-  import FeatureIncluded from '~/icons/FeatureIncluded.astro'
+  import FeatureIncluded from '@icons/FeatureIncluded.astro'
 ---
 
 ![Hekky PBR Logo](/assets/hekky-pbr-banner.webp)

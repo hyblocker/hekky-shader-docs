@@ -49,7 +49,7 @@ Smoothness (or glossiness) is the inverse of roughness.
 </CardInfo>
 
 <div class="filament-renderer container">
-    <canvas id="roughness" data-filamat="textured-userRough"}></canvas>
+    <canvas id="roughness" data-filamat="textured-userRough"></canvas>
 
   <div class="filament-overlay">
       <div class="control">

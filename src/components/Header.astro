@@ -2,12 +2,12 @@
 import { SITE, SOCIALS } from '~/constants.js';
 import LocaleList from '~/../public/shared/locales.json';
 import LangDropdown from '@components/LangDropdown.astro';
-import SearchIcon from '~/icons/search_black_24dp.astro';
-import HamburgerIcon from '~/icons/hamburger_black_24dp.astro';
+import SearchIcon from '@icons/search_black_24dp.astro';
+import HamburgerIcon from '@icons/hamburger_black_24dp.astro';
 
 // Dark mode 
-import SunIcon from '~/icons/sun.astro';
-import MoonIcon from '~/icons/moon.astro';
+import SunIcon from '@icons/sun.astro';
+import MoonIcon from '@icons/moon.astro';
 const { locale } = Astro.props;
 const availableLocales = Object.keys(LocaleList[locale]);
 const render = availableLocales.length > 1;

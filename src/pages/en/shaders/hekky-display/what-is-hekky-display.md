@@ -6,7 +6,7 @@ image: assets/hekky-shaders-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import CardWarning from '@components/CardWarning.astro'
-  import PaywallIcon from '~/icons/PaywalledFeature.astro'
+  import PaywallIcon from '@icons/PaywalledFeature.astro'
   import ComparisionCard from '@components/ComparisionCard.astro'
 ---
 # What is Hekky Display?
