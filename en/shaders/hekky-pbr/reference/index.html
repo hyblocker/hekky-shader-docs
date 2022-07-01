@@ -30,8 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/asset.323ee6dd.css"></link>
-</head>
+    <link rel="stylesheet" href="/assets/ca18d589.37b67249.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -148,15 +147,7 @@
 		<h3 class="card-title">Paid Features</h3>
 	</div>
 	<div class="card-content">
-		Some features require a copy of 
-<a href="https://patreon.com/hekky">Hekky PBR Pro</a>
- to use. These features will have 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor">
-<path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
-</path>
-</svg>
- next to them.
-
+		<p>Some features require a copy of <a href="https://patreon.com/hekky">Hekky PBR Pro</a> to use. These features will have <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg> next to them.</p>
 	</div>
 </div><blockquote>
 <div class="heading-wrapper level-h3"><h3 id="table-of-contents">Table of Contents</h3><a class="anchor-link" href="#table-of-contents"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div>
@@ -179,34 +170,53 @@
 	</div>
 	<div class="card-content">
 		<p>Sliders next to textures control the intensity of the texture!</p>
-
 	</div>
-</div><p><strong>Rendering Mode</strong> Allows you to change the material from opaque mode to transparency mode.</p><div class="heading-wrapper level-h2"><h2 id="main">Main</h2><a class="anchor-link" href="#main"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes the base layer of a material using Hekky PBR.</p><ul>
-<li><strong>Texture</strong> The albedo / diffuse / base texture. Can also be tinted.</li>
-<li><strong>Metal Mask</strong> Controls how “metallic” and reflective the material is. Other shaders may call this property <code>Metal Map</code>, <code>Metallness</code> or something similar.</li>
-<li><strong>Roughness Map</strong> Controls how “rough” the material is.</li>
-<li><strong>Invert Roughness</strong> Inverts the roughness map. Enable this if you want to use smoothness instead of roughness.</li>
-<li><strong>Normal Map</strong> Allows you to define surface bumps without increasing the polygon count.</li>
-</ul><div class="card card-tip">
+</div><dl>
+<dt>Rendering Mode</dt>
+<dd>Allows you to change the material from opaque mode to transparency mode.
+</dd>
+</dl><div class="heading-wrapper level-h2"><h2 id="main">Main</h2><a class="anchor-link" href="#main"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes the base layer of a material using Hekky PBR.</p><dl>
+<dt>Texture</dt>
+<dd>The albedo / diffuse / base texture. Can also be tinted.
+</dd>
+<dt>Metal Mask</dt>
+<dd>Controls how “metallic” and reflective the material is. Other shaders may call this property <code>Metal Map</code>, <code>Metallness</code> or something similar.
+</dd>
+<dt>Roughness Map</dt>
+<dd>Controls how “rough” the material is.
+</dd>
+<dt>Invert Roughness</dt>
+<dd>Inverts the roughness map. Enable this if you want to use smoothness instead of roughness.
+</dd>
+<dt>Normal Map</dt>
+<dd>Allows you to define surface bumps without increasing the polygon count.
+</dd>
+</dl><div class="card card-tip">
 	<div class="heading-container">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"></path></svg>
 		<h3 class="card-title">Textures</h3>
 	</div>
 	<div class="card-content">
 		<p>All textures share sampling settings the <strong>Texture</strong> sampling settings. The only exception is the matcap texture.</p>
-
 	</div>
-</div><div class="heading-wrapper level-h2"><h2 id="lighting">Lighting</h2><a class="anchor-link" href="#lighting"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes how you may customise how a material reflects light using Hekky PBR.</p><ul>
-<li><strong>Lighting Mode</strong> Controls the lighting style of the material. You can choose between <code>Realistic</code>, <code>Toon</code> and <code>Unlit</code>.</li>
-<li><strong>Baked Specular</strong> Enables specular lighting from baked light sources, such as lightmaps and light probes.</li>
-</ul><blockquote>
-<div class="heading-wrapper level-h4"><h4 id="lighting-mode">Lighting Mode</h4><a class="anchor-link" href="#lighting-mode"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div>
-<ul>
-<li><strong>Realistic</strong> uses a realistic lighting model, and aims for photorealism.</li>
-<li><strong>Toon</strong> toonifies the output of the realistic lighting model to achieve PBR toon shading.</li>
-<li><strong>Unlit</strong> uses light probes for shading. Doesn’t get affected by any realtime lights.</li>
-</ul>
-</blockquote><div class="heading-wrapper level-h3"><h3 id="toon">Toon</h3><a class="anchor-link" href="#toon"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes how you can tweak the lighting to achieve a cartoon-esque look.</p><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
+</div><div class="heading-wrapper level-h2"><h2 id="lighting">Lighting</h2><a class="anchor-link" href="#lighting"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes how you may customise how a material reflects light using Hekky PBR.</p><dl>
+<dt>Lighting Mode</dt>
+<dd>Controls the lighting style of the material. You can choose between <code>Realistic</code>, <code>Toon</code> and <code>Unlit</code>.
+</dd>
+<dt>Baked Specular</dt>
+<dd>Enables specular lighting from baked light sources, such as lightmaps and light probes.
+</dd>
+</dl><blockquote><div class="heading-wrapper level-h4"><h4 id="lighting-mode">Lighting Mode</h4><a class="anchor-link" href="#lighting-mode"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Realistic</dt>
+<dd>uses a realistic lighting model, and aims for photorealism.
+</dd>
+<dt>Toon</dt>
+<dd>toonifies the output of the realistic lighting model to achieve PBR toon shading.
+</dd>
+<dt>Unlit</dt>
+<dd>uses light probes for shading. Doesn’t get affected by any realtime lights.
+</dd>
+</dl></blockquote><div class="heading-wrapper level-h3"><h3 id="toon">Toon</h3><a class="anchor-link" href="#toon"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes how you can tweak the lighting to achieve a cartoon-esque look.</p><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
 	<div class="before" draggable="false" ondragstart="return false">
 		<img src="/shared/img/toon-off.webp" draggable="false" ondragstart="return false">
 	</div>
@@ -220,69 +230,135 @@
 		<span class="before">Realistic Lighting</span>
 		<span class="after">Toon Lighting</span>
 	</div>
-</div><ul>
-<li><strong>Math Gradient Start</strong> Controls the start of the math gradient for toon shading. Should always be smaller or equal to <code>Math Gradient End</code>.</li>
-<li><strong>Math Gradient End</strong> Controls the end of the math gradient for toon shading. Should always be larger or equal to <code>Math Gradient Start</code>.</li>
-<li><strong>Min Brightness</strong> Controls the minimum brightness when using toon shading. Should always be smaller or equal to <code>Max Brightness</code>.</li>
-<li><strong>Max Brightness</strong> Controls the maximum brightness when using toon shading. Should always be larger or equal to <code>Min Brightness</code>.</li>
-<li><strong>Receive Shadows</strong> Disables shadows on this material.</li>
-<li><strong>Normal Reprojection</strong> Recalculates normals using a spherical mapping, assuming the mesh’s origin as the center of the sphere. This is mainly intended for cartoony faces.</li>
-<li><strong>Base Normal Blend</strong> How much to blend between the model’s normals and the reprojected normals.</li>
-</ul><div class="heading-wrapper level-h3"><h3 id="specular">Specular</h3><a class="anchor-link" href="#specular"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Specular</strong> How much to blend between the true color and the tinted specular color on specular highlights.</li>
-<li><strong>Specular Tint</strong> Allows you to change the color of specular highlights.</li>
-<li><strong>Specular Mode</strong> Allows you to toggle between isotropic (normal) and anisotropic specular modes.</li>
-<li><strong>Baked Specular</strong> Enable specular effects from baked light sources. These are not as accurate as realtime ones if not using <a href="https://docs.unity3d.com/2019.4/Documentation/Manual/LightmappingDirectional.html">Directional</a> or <a href="https://geom.io/bakery/wiki/index.php?title=Manual#Directional_mode">Bakery lightmapping modes</a>.</li>
-</ul><div class="heading-wrapper level-h3"><h3 id="anisotropy">Anisotropy</h3><a class="anchor-link" href="#anisotropy"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg>
- 
-<strong>Anisotropy Map</strong>
- A texture map that stores anisotropy. Red is anisotropic intensity. Green is anisotropic angle.
-</li>
-<li>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg>
- 
-<strong>Angle Offset</strong>
- Allows you to offset the angles from 0°.
-</li>
-</ul><div class="heading-wrapper level-h3"><h3 id="reflections">Reflections</h3><a class="anchor-link" href="#reflections"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Force reflections mode</strong> Forces reflections to be interpreted as either box projected or spherical projected reflection probes.</li>
-</ul><div class="heading-wrapper level-h3"><h3 id="emission">Emission</h3><a class="anchor-link" href="#emission"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Emission</strong> Controls the object’s emissiveness.</li>
-<li><strong>Intensity</strong> How bright to make the emission.</li>
-</ul><div class="heading-wrapper level-h3"><h3 id="matcap">Matcap</h3><a class="anchor-link" href="#matcap"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Enable Matcap</strong> Enables matcaps shading.</li>
-<li><strong>Texture</strong> The matcap texture.</li>
-<li><strong>Mask</strong> A mask texture. All channels other than red are ignored.</li>
-<li><strong>Border</strong> How much to offset the bounds matcap from the edge of the texture.</li>
-<li><strong>Replace, Add, Difference, Multiply, Overlay</strong> Different blend modes. Value controls their strength.</li>
-<li><strong>Reflection Blend</strong> How much to blend the matcap with cubemap reflections.</li>
-</ul><div class="heading-wrapper level-h2"><h2 id="occlusion">Occlusion</h2><a class="anchor-link" href="#occlusion"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Ambient Occlusion</strong> Controls how much ambient occlusion to apply to the object. Useful to help improve selfshadowing on non-lightmapped materials.</li>
-<li><strong>Exposure Occlusion</strong> Controls the effect ambient occlusion has on lightmap ambient occlusion. Doesn’t effect per-material ambient occlusion.</li>
-</ul><div class="heading-wrapper level-h2"><h2 id="outline">Outline</h2><a class="anchor-link" href="#outline"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section controls outlines.</p><ul>
-<li><strong>Enable Outline</strong> Enables outline effects.</li>
-<li><strong>Outline Width</strong> Controls the thickness of the outline.</li>
-<li><strong>Outline Colour</strong> Controls the outline’s colour.</li>
-</ul><div class="heading-wrapper level-h2"><h2 id="audiolink">AudioLink</h2><a class="anchor-link" href="#audiolink"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section explains the various <a href="https://github.com/llealloo/vrc-udon-audio-link">AudioLink</a> related controls Hekky PBR offers.</p><ul>
-<li><strong>Enable Debug Mode</strong> Enables AudioLink Debug mode, which allows you to manually input parameters for AudioLink to ensure that it’s functioning properly. Make sure that this is disabled in before uploading VRChat.</li>
-<li><strong>Bass / Low Mid / High Mid / Treble</strong> Controls the individual AudioLink channels.</li>
-</ul><blockquote>
-<div class="heading-wrapper level-h3"><h3 id="audiolink-emission">AudioLink Emission</h3><a class="anchor-link" href="#audiolink-emission"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div>
-<ul>
-<li><strong>Multiply</strong> - Multiplies the Emission strength with the specified AudioLink channel. Use the <strong>Min/Max</strong> sliders to adjust how intense you want the audio reactivity to be.</li>
-<li><strong>Add</strong> - Adds the specified AudioLink channel to the Emission strength. Use the <strong>Min/Max</strong> sliders to adjust how intense you want the audio reactivity to be.</li>
-</ul>
-</blockquote><div class="heading-wrapper level-h2"><h2 id="other-modules">Other Modules</h2><a class="anchor-link" href="#other-modules"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Bakery</strong> Enables <a href="https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218">Bakery</a> support. Required to use Bakery RNM or Bakery SH lightmapping modes, and must match whatever setting is used in Bakery.</li>
-<li><strong>LTCGI</strong> Enables <a href="https://github.com/pimaker/ltcgi">LTCGI</a> support.</li>
-<li><strong>AudioLink</strong> Enables <a href="https://github.com/llealloo/vrc-udon-audio-link">AudioLink</a> support.</li>
-</ul><div class="heading-wrapper level-h2"><h2 id="misc">Misc</h2><a class="anchor-link" href="#misc"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><ul>
-<li><strong>Render Queue</strong> Controls when to render this material. See the <a href="https://docs.unity3d.com/Manual/class-Material.html">Unity Docs</a> for more information.</li>
-<li><strong>Enable GPU Instancing</strong> Allows Unity to draw objects using the <strong>same mesh</strong> and <strong>same material</strong> using one draw call, yielding performance.</li>
-<li><strong>Double Sided Global Illumination</strong> Enables double sided global illumination for this material. See the <a href="https://docs.unity3d.com/Manual/class-Material.html">Unity Docs</a> for more information.</li>
-</ul>
+</div><dl>
+<dt>Math Gradient Start</dt>
+<dd>Controls the start of the math gradient for toon shading. Should always be smaller or equal to <code>Math Gradient End</code>.
+</dd>
+<dt>Math Gradient End</dt>
+<dd>Controls the end of the math gradient for toon shading. Should always be larger or equal to <code>Math Gradient Start</code>.
+</dd>
+<dt>Min Brightness</dt>
+<dd>Controls the minimum brightness when using toon shading. Should always be smaller or equal to <code>Max Brightness</code>.
+</dd>
+<dt>Max Brightness</dt>
+<dd>Controls the maximum brightness when using toon shading. Should always be larger or equal to <code>Min Brightness</code>.
+</dd>
+<dt>Receive Shadows</dt>
+<dd>Disables shadows on this material.
+</dd>
+<dt>Normal Reprojection</dt>
+<dd>Recalculates normals using a spherical mapping, assuming the mesh’s origin as the center of the sphere. This is mainly intended for cartoony faces.
+</dd>
+<dt>Base Normal Blend</dt>
+<dd>How much to blend between the model’s normals and the reprojected normals.
+</dd>
+</dl><div class="heading-wrapper level-h3"><h3 id="specular">Specular</h3><a class="anchor-link" href="#specular"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Specular</dt>
+<dd>How much to blend between the true color and the tinted specular color on specular highlights.
+</dd>
+<dt>Specular Tint</dt>
+<dd>Allows you to change the color of specular highlights.
+</dd>
+<dt>Specular Mode</dt>
+<dd>Allows you to toggle between isotropic (normal) and anisotropic specular modes.
+</dd>
+<dt>Baked Specular</dt>
+<dd>Enable specular effects from baked light sources. These are not as accurate as realtime ones if not using <a href="https://docs.unity3d.com/2019.4/Documentation/Manual/LightmappingDirectional.html">Directional</a> or <a href="https://geom.io/bakery/wiki/index.php?title=Manual#Directional_mode">Bakery lightmapping modes</a>.
+</dd>
+</dl><div class="heading-wrapper level-h3"><h3 id="anisotropy">Anisotropy</h3><a class="anchor-link" href="#anisotropy"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg> Anisotropy Map</dt>
+<dd>A texture map that stores anisotropy. Red is anisotropic intensity. Green is anisotropic angle.
+</dd>
+<dt><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg> Angle Offset</dt>
+<dd>Allows you to offset the angles from 0°.
+</dd>
+</dl><div class="heading-wrapper level-h3"><h3 id="reflections">Reflections</h3><a class="anchor-link" href="#reflections"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Force reflections mode</dt>
+<dd>Forces reflections to be interpreted as either box projected or spherical projected reflection probes.
+</dd>
+</dl><div class="heading-wrapper level-h3"><h3 id="emission">Emission</h3><a class="anchor-link" href="#emission"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Emission</dt>
+<dd>Controls the object’s emissiveness.
+</dd>
+<dt>Intensity</dt>
+<dd>How bright to make the emission.
+</dd>
+</dl><div class="heading-wrapper level-h3"><h3 id="matcap">Matcap</h3><a class="anchor-link" href="#matcap"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Enable Matcap</dt>
+<dd>Enables matcaps shading.
+</dd>
+<dt>Texture</dt>
+<dd>The matcap texture.
+</dd>
+<dt>Mask</dt>
+<dd>A mask texture. All channels other than red are ignored.
+</dd>
+<dt>Border</dt>
+<dd>How much to offset the bounds matcap from the edge of the texture.
+</dd>
+<dt>Replace, Add, Difference, Multiply, Overlay</dt>
+<dd>Different blend modes. Value controls their strength.
+</dd>
+<dt>Reflection Blend</dt>
+<dd>How much to blend the matcap with cubemap reflections.
+</dd>
+</dl><div class="heading-wrapper level-h2"><h2 id="occlusion">Occlusion</h2><a class="anchor-link" href="#occlusion"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Ambient Occlusion</dt>
+<dd>Controls how much ambient occlusion to apply to the object. Useful to help improve selfshadowing on non-lightmapped materials.
+</dd>
+<dt>Exposure Occlusion</dt>
+<dd>Controls the effect ambient occlusion has on lightmap ambient occlusion. Doesn’t effect per-material ambient occlusion.
+</dd>
+</dl><div class="heading-wrapper level-h2"><h2 id="outline">Outline</h2><a class="anchor-link" href="#outline"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section controls outlines.</p><dl>
+<dt>Enable Outline</dt>
+<dd>Enables outline effects.
+</dd>
+<dt>Outline Width</dt>
+<dd>Controls the thickness of the outline.
+</dd>
+<dt>Outline Color</dt>
+<dd>Controls the outline’s color.
+</dd>
+</dl><div class="heading-wrapper level-h2"><h2 id="audiolink">AudioLink</h2><a class="anchor-link" href="#audiolink"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section explains the various <a href="https://github.com/llealloo/vrc-udon-audio-link">AudioLink</a> related controls Hekky PBR offers.</p><dl>
+<dt>Enable Debug Mode</dt>
+<dd>Enables AudioLink Debug mode, which allows you to manually input parameters for AudioLink to ensure that it’s functioning properly. Make sure that this is disabled in before uploading VRChat.
+</dd>
+<dt>Bass / Low Mid / High Mid / Treble</dt>
+<dd>Controls the individual AudioLink channels.
+</dd>
+</dl><blockquote><div class="heading-wrapper level-h3"><h3 id="audiolink-emission">AudioLink Emission</h3><a class="anchor-link" href="#audiolink-emission"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Multiply</dt>
+<dd>Multiplies the Emission strength with the specified AudioLink channel. Use the <strong>Min/Max</strong> sliders to adjust how intense you want the audio reactivity to be.
+</dd>
+<dt>Add</dt>
+<dd>Adds the specified AudioLink channel to the Emission strength. Use the <strong>Min/Max</strong> sliders to adjust how intense you want the audio reactivity to be.
+</dd>
+</dl></blockquote><div class="heading-wrapper level-h2"><h2 id="other-modules">Other Modules</h2><a class="anchor-link" href="#other-modules"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Bakery</dt>
+<dd>Enables <a href="https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218">Bakery</a> support. Required to use Bakery RNM or Bakery SH lightmapping modes, and must match whatever setting is used in Bakery.
+</dd>
+<dt>LTCGI</dt>
+<dd>Enables <a href="https://github.com/pimaker/ltcgi">LTCGI</a> support.
+</dd>
+<dt>AudioLink</dt>
+<dd>Enables <a href="https://github.com/llealloo/vrc-udon-audio-link">AudioLink</a> support.
+</dd>
+</dl><div class="heading-wrapper level-h2"><h2 id="misc">Misc</h2><a class="anchor-link" href="#misc"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Render Queue</dt>
+<dd>Controls when to render this material. See the <a href="https://docs.unity3d.com/Manual/class-Material.html">Unity Docs</a> for more information.
+</dd>
+<dt>Enable GPU Instancing</dt>
+<dd>Allows Unity to draw objects using the <strong>same mesh</strong> and <strong>same material</strong> using one draw call, yielding performance.
+</dd>
+<dt>Double Sided Global Illumination</dt>
+<dd>Enables double sided global illumination for this material. See the <a href="https://docs.unity3d.com/Manual/class-Material.html">Unity Docs</a> for more information.
+</dd>
+</dl>
+                    <hr class="page-footer-separator">
+<div class="page-footer">
+    <span class="last-edited">Last updated on 01/07/2022</span>
+    <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-pbr/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
+</div>
             </article>
             <footer>
 	<div class="prominent">

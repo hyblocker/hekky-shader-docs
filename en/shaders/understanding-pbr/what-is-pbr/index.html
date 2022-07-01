@@ -30,8 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/asset.323ee6dd.css"></link>
-</head>
+    <link rel="stylesheet" href="/assets/ca18d589.37b67249.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -149,7 +148,6 @@
 	</div>
 	<div class="card-content">
 		<p>This explanation is not a technical one. It is designed to familiarise you with the core concepts of PBR, as understanding them well is important if you want to make or use good textures. This explanation will focus the concepts implemented inside of <a href="/en/shaders/hekky-pbr/what-is-hekky-pbr/">Hekky PBR</a>, but these should be exchangeable for other shaders too.</p>
-
 	</div>
 </div><p><strong>Physically Based Rendering</strong> (PBR) refers to the practise of using realistic (i.e. based on real life physics) shading and lighting algorithms to achieve the most photorealistic result possible in 3D rendering. While PBR is designed to mimic realistic shading and lighting, it does not mean that it can’t be stylized.</p><div class="card card-info">
 	<div class="heading-container">
@@ -158,7 +156,6 @@
 	</div>
 	<div class="card-content">
 		<p>PBR is <strong>NOT</strong> standardised. Each application, shader and renderer have their own implementation of it. Luckily, the implementations are similar enough to be able to transfer PBR textures from one shader to another.</p>
-
 	</div>
 </div><div class="heading-wrapper level-h2"><h2 id="core-concepts">Core concepts</h2><a class="anchor-link" href="#core-concepts"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="heading-wrapper level-h3"><h3 id="reflections">Reflections</h3><a class="anchor-link" href="#reflections"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>In the real world, light rays get reflected off a surface and bounce around the scene. The way light gets reflected can be represented in one of two ways, based on how rough a surface is.</p><p><strong>Specular Reflections</strong> refer to light rays which are reflected in the exact same angle they arrived in. This is basically a mirror, and what you normally think of as a reflection.</p><p><img src="/shared/img/specular-reflection.webp" alt="Specular reflection example demonstrating a highly reflective surface"></p><p><strong>Diffuse Reflections</strong> refer to light rays which are reflected randomly. Diffuse reflections aren’t really “reflected”. In reality the light is <strong>absorbed</strong> (i.e. the light goes <strong>inside</strong> the material) by the material, then scattered about. Some of the light gets absorbed by the material itself, meaning that the light color can changed based on the material. This is why we perceive orange painted plastic as “orange” instead of white for example.</p><p><img src="/shared/img/diffuse-reflection.webp" alt="Specular reflection example demonstrating a red and rough surface"></p><p>We can control if a surface uses specular reflections or diffuse reflections with the <strong>metal mask</strong> parameter. A surface <strong>cannot</strong> be half metallic and half dielectric (a dielectric surface is the opposite of a metallic surface).</p><div class="card card-help">
 	<div class="heading-container">
@@ -167,7 +164,6 @@
 	</div>
 	<div class="card-content">
 		<p>You might see <strong>metal mask</strong> referred to as <code is:raw>metalness</code>, <code is:raw>metallic</code> or <code is:raw>metal</code> in other shaders. These refer to the same property.</p>
-
 	</div>
 </div><p>We can control the reflectivity of a surface via the <strong>roughness</strong> parameter. The rougher a surface is, the blurrier the reflections appear. The smoother a surface is, the smoother the reflections appear.</p><div class="card card-info">
 	<div class="heading-container">
@@ -176,19 +172,8 @@
 	</div>
 	<div class="card-content">
 		<p>Smoothness (or glossiness) is the inverse of roughness.</p>
-
 	</div>
-</div><div class="filament-renderer container">
-    <canvas id="roughness" data-filamat="textured-userRough" }></canvas>
-  <div class="filament-overlay">
-      <div class="control">
-          <div class="slidecontainer">
-            <input style="width: 100%;" type="range" min="0" max="100" value="0" class="slider" data-type="filament-roughness" data-affects="roughness">
-          </div>
-          <span class="control-title  ">Roughness</span>
-      </div>
-  </div>
-</div><div class="heading-wrapper level-h3"><h3 id="energy-conservation">Energy Conservation</h3><a class="anchor-link" href="#energy-conservation"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>One of the key principles of PBR rendering in comparision to other rendering methods is the principle of energy conservation. This means that a surface <strong>never</strong> reflects more light than it receives. The only exception to this is when a surface is said to be <a href="#emission">emissive</a>.</p><div class="heading-wrapper level-h3"><h3 id="occlusion">Occlusion</h3><a class="anchor-link" href="#occlusion"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Occlusion refers to the <strong>lack</strong> of light reaching a surface. It’s used to tell the shader which parts of the model should be darker than others.</p><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
+</div><div class="filament-renderer container"><canvas id="roughness" data-filamat="textured-userRough"></canvas><div class="filament-overlay"><div class="control"><div class="slidecontainer"><input style="width: 100%;" type="range" min="0" max="100" value="0" class="slider" data-type="filament-roughness" data-affects="roughness"></div><span class="control-title  ">Roughness</span></div></div></div><div class="heading-wrapper level-h3"><h3 id="energy-conservation">Energy Conservation</h3><a class="anchor-link" href="#energy-conservation"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>One of the key principles of PBR rendering in comparision to other rendering methods is the principle of energy conservation. This means that a surface <strong>never</strong> reflects more light than it receives. The only exception to this is when a surface is said to be <a href="#emission">emissive</a>.</p><div class="heading-wrapper level-h3"><h3 id="occlusion">Occlusion</h3><a class="anchor-link" href="#occlusion"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Occlusion refers to the <strong>lack</strong> of light reaching a surface. It’s used to tell the shader which parts of the model should be darker than others.</p><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
 	<div class="before" draggable="false" ondragstart="return false">
 		<img src="/shared/img/ao-off.webp" draggable="false" ondragstart="return false">
 	</div>
@@ -203,6 +188,11 @@
 		<span class="after">Ambient Occlusion On</span>
 	</div>
 </div><div class="heading-wrapper level-h3"><h3 id="emission">Emission</h3><a class="anchor-link" href="#emission"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Some surfaces, such as small LEDs, emit light, but are too small to be an entire light source. An emissive map is used to allow such surfaces to cast light.</p><div class="heading-wrapper level-h3"><h3 id="anisotropy">Anisotropy</h3><a class="anchor-link" href="#anisotropy"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Anisotropy refers to stretched specular reflections. It’s typically seen at angles around a point on a surface too. Brushed materials are common anisotropic materials.</p><p><img src="/shared/img/aniso-example.webp" alt="Anisotropy example"></p><script src="/shared/js/filament.js"></script><script src="//unpkg.com/gl-matrix@2.8.1"></script><script src="//unpkg.com/gltumble"></script>
+                    <hr class="page-footer-separator">
+<div class="page-footer">
+    <span class="last-edited">Last updated on 01/07/2022</span>
+    <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/understanding-pbr/what-is-pbr.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
+</div>
             </article>
             <footer>
 	<div class="prominent">

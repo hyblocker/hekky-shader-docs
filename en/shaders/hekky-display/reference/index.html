@@ -30,8 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/asset.323ee6dd.css"></link>
-</head>
+    <link rel="stylesheet" href="/assets/ca18d589.37b67249.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -149,7 +148,6 @@
 	</div>
 	<div class="card-content">
 		<p>This shader requires the 10 EUR tier or higher</p>
-
 	</div>
 </div><div class="card card-help">
 	<div class="heading-container">
@@ -158,7 +156,6 @@
 	</div>
 	<div class="card-content">
 		<p>Most properties behave in the same manner as they do in <a href="/en/shaders/hekky-pbr/reference">Hekky PBR</a></p>
-
 	</div>
 </div><p><img src="/en/hekkydisplay_shader_inspector_full.webp" alt="Shader Inspector"></p><div class="card card-info">
 	<div class="heading-container">
@@ -167,47 +164,79 @@
 	</div>
 	<div class="card-content">
 		<p>Sliders next to textures control the intensity of the texture!</p>
-
 	</div>
-</div><p><strong>Rendering Mode</strong> Allows you to change the material from opaque mode to transparency mode.</p><div class="heading-wrapper level-h2"><h2 id="display">Display</h2><a class="anchor-link" href="#display"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="card card-tip">
+</div><dl>
+<dt>Rendering Mode</dt>
+<dd>Allows you to change the material from opaque mode to transparency mode.
+</dd>
+</dl><div class="heading-wrapper level-h2"><h2 id="display">Display</h2><a class="anchor-link" href="#display"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="card card-tip">
 	<div class="heading-container">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"></path></svg>
 		<h3 class="card-title">Textures</h3>
 	</div>
 	<div class="card-content">
 		<p>All textures share sampling settings the <strong>Texture</strong> sampling settings. The only exceptions are the <strong>subpixel layout</strong>, <strong>matcap</strong> textures.</p>
-
 	</div>
-</div><p>This section describes the behavior of a display expressed by a material using Hekky Display.</p><ul>
-<li><strong>Display Texture</strong> The albedo / diffuse / base texture. Can also be tinted. Generally this would be a RenderTexture from a VideoPlayer.</li>
-<li><strong>Aspect Ratio</strong> The aspect ratio of the display, Defaults to 16:9. Used to ensure that videos maintain aspect ratio. To disable it, set the value to <code>1</code>. To use a custom aspect ratio, replace the <code>:</code> with a divide operator <code>/</code>. For example, using <code>4/3</code> sets the aspect ratio to 4:3.</li>
-<li><strong>Subpixel Layout</strong> A subpixel layout texture. Example textures are provided in <code>Assets/Hekky/Textures/SubpixelLayouts</code>. This texture is a</li>
-<li><strong>Subpixel Scale X / Y</strong> Scales the subpixel texture along the X and Y axes. 1 means no scaling.</li>
-<li><strong>Subpixel Resolution</strong> The “physical” resolution of the display. To emulate a 1080p display for example, set the resolution to <code>1920</code> by <code>1080</code>.</li>
-<li><strong>Overscan X / Y</strong> Adds an unlit, black border around the display. Useful for CRTs. This section doesn’t get affected by the backlight.</li>
-<li><strong>Backlight</strong> Adds a backlight to the display, to emulate an LCD better.</li>
-<li><strong>Flip in Mirrors</strong> Flips the screen when viewed through a mirror. Useful so that text remains readable.</li>
-<li><strong>Flip on Backside</strong> Flips the screen when viewed through the backface of a mesh. Useful so that text remains readable.</li>
-</ul><blockquote>
-<div class="heading-wrapper level-h2"><h2 id="strobing">Strobing</h2><a class="anchor-link" href="#strobing"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div>
-<p><em>Strobing refers to the behavior exhibited primarily by CRTs when attempted to be recorded with incorrect shutter speed settings on a camera. This effect isn’t present to the naked eye.</em></p>
-<ul>
-<li><strong>Strobe In Cameras</strong> Enables strobing in VRChat Cameras</li>
-<li><strong>Size</strong> Controls the size of the strobing effect.</li>
-<li><strong>Period</strong> Controls the duration of the strobing effect.</li>
-<li><strong>Speed</strong> Controls the speed of the strobing effect.</li>
-<li><strong>Minimum Light</strong> The minimum light from dark areas under the strobing effect.</li>
-<li><strong>Strobe Start / Strobe End</strong> These control the start and end of the strobing effect. The strobe gets remapped such that the start is mapped to 0, and the end is mapped to 1.</li>
-</ul>
-</blockquote><div class="card card-help">
+</div><p>This section describes the behavior of a display expressed by a material using Hekky Display.</p><dl>
+<dt>Display Texture</dt>
+<dd>The albedo / diffuse / base texture. Can also be tinted. Generally this would be a RenderTexture from a VideoPlayer.
+</dd>
+<dt>Aspect Ratio</dt>
+<dd>The aspect ratio of the display, Defaults to 16:9. Used to ensure that videos maintain aspect ratio. To disable it, set the value to <code>1</code>. To use a custom aspect ratio, replace the <code>:</code> with a divide operator <code>/</code>. For example, using <code>4/3</code> sets the aspect ratio to 4:3.
+</dd>
+<dt>Subpixel Layout</dt>
+<dd>A subpixel layout texture. Example textures are provided in <code>Assets/Hekky/Textures/SubpixelLayouts</code>. This texture is an RGB texture which gets multiplied with a pixel from the video texture.
+</dd>
+<dt>Subpixel Scale X / Y</dt>
+<dd>Scales the subpixel texture along the X and Y axes. 1 means no scaling.
+Subpixel Resolution
+</dd>
+<dd>The “physical” resolution of the display. To emulate a 1080p display for example, set the resolution to <code>1920</code> by <code>1080</code>.
+</dd>
+<dt>Overscan X / Y</dt>
+<dd>Adds an unlit, black border around the display. Useful for CRTs. This section doesn’t get affected by the backlight.
+</dd>
+<dt>Backlight</dt>
+<dd>Adds a backlight to the display, to emulate an LCD better.
+</dd>
+<dt>Flip in Mirrors</dt>
+<dd>Flips the screen when viewed through a mirror. Useful so that text remains readable.
+</dd>
+<dt>Flip on Backside</dt>
+<dd>Flips the screen when viewed through the backface of a mesh. Useful so that text remains readable.
+</dd>
+</dl><blockquote><div class="heading-wrapper level-h2"><h2 id="strobing">Strobing</h2><a class="anchor-link" href="#strobing"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p><em>Strobing refers to the behavior exhibited primarily by CRTs when attempted to be recorded with incorrect shutter speed settings on a camera. This effect isn’t present to the naked eye.</em></p><dl>
+<dt>Strobe In Cameras</dt>
+<dd>Enables strobing in VRChat Cameras
+</dd>
+<dt>Size</dt>
+<dd>Controls the size of the strobing effect.
+</dd>
+<dt>Period</dt>
+<dd>Controls the duration of the strobing effect.
+</dd>
+<dt>Speed</dt>
+<dd>Controls the speed of the strobing effect.
+</dd>
+<dt>Minimum Light</dt>
+<dd>The minimum light from dark areas under the strobing effect.
+</dd>
+<dt>Strobe Start / Strobe End</dt>
+<dd>These control the start and end of the strobing effect. The strobe gets remapped such that the start is mapped to 0, and the end is mapped to 1.
+</dd>
+</dl></blockquote><div class="card card-help">
 	<div class="heading-container">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg>
 		<h3 class="card-title">Glare</h3>
 	</div>
 	<div class="card-content">
 		<p>Since Hekky Display is built upon <a href="/en/shaders/hekky-pbr/what-is-hekky-pbr">Hekky PBR</a>, it automatically gets glare due to reflections. To mimic <a href="https://en.wikipedia.org/wiki/Anti-reflective_coating">anti-glare coating</a>, reduce the roughness slider to a value near 0.</p>
-
 	</div>
+</div>
+                    <hr class="page-footer-separator">
+<div class="page-footer">
+    <span class="last-edited">Last updated on 01/07/2022</span>
+    <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-display/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>
             <footer>
