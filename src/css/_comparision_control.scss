@@ -38,17 +38,17 @@
 		}
 	}
 	& .slider {
-		height: 100%;
-		background: #fff;
+		height: 99%;
+		background: var(--comparison-card-slider-color);
 		width: .2rem;
 		position: absolute;
 		top: 0;
-		opacity: 50%;
+		opacity: var(--comparison-card-slider-opacity);
 		left: var(--compare-width);
 		cursor: ew-resize;
 		pointer-events: none;
 		& .grip {
-			background: white;
+			background: var(--comparison-card-slider-color);
 			width: .5rem;
 			height: 3rem;
 			position: absolute;
@@ -71,6 +71,8 @@
 			text-align: left;
 			font-family: var(--fonts-header);
 			font-weight: 800;
+			opacity: var(--comparison-card-text-visible-opacity);
+			transition: opacity ease-out 150ms;
 		}
 		& .after {
 			position: absolute;
@@ -80,6 +82,8 @@
 			text-align: right;
 			font-family: var(--fonts-header);
 			font-weight: 800;
+			opacity: var(--comparison-card-text-visible-opacity);
+			transition: opacity ease-out 150ms;
 		}
 	}
 }

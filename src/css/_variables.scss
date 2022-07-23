@@ -44,6 +44,11 @@
 
 	--definition-list-weight: 800;
 	--definition-list-padding: 2rem;
+
+	--comparison-card-slider-color: #fff;
+	--comparison-card-slider-opacity: 50%;
+	--comparison-card-text-visible-opacity: 100%;
+	--comparison-card-text-hidden-opacity: 25%;
 }
 @mixin lightMode {
 	--background-color: #fff;
