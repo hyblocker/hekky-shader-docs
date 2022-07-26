@@ -36,4 +36,4 @@ This allows you to mimic the Studio Lighting Mode seen in [Blender](https://blen
 
 > Right click a Normal Map texture, then select Convert > Normal map (GL 🡸🡺 DX)
 
-Allows you to convert a normal map from OpenGL mode to DirectX mode, and vice-versa.
+Allows you to convert a normal map from OpenGL mode to DirectX mode, and vice-versa. Equivalent of inverting the green channel in an image editor.
