@@ -20,6 +20,10 @@ Learn about what PBR rendering is.
 Learn about what Hekky's PBR shaders have to offer.
 </CardNoIcon>
 
+<CardNoIcon title="Hekky Atmosphere" href="/en/shaders/hekky-atmosphere/what-is-hekky-atmosphere">
+A skybox designed to replace the default Unity skybox.
+</CardNoIcon>
+
 <CardNoIcon title="Hekky Display" href="/en/shaders/hekky-display/what-is-hekky-display">
 A shader designed to mimic the look and feel of displays.
 </CardNoIcon>
