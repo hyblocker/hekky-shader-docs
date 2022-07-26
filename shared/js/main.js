@@ -13,6 +13,21 @@ function ComparisionControlClick (e) {
     // Calculate new width
     const newWidth = e.layerX;
     element.setAttribute( 'style', `--compare-width: ${newWidth}px` );
+    const widthPercentage = newWidth / element.offsetWidth;
+
+    const textElemBefore = element.querySelector('.text-overlay .before');
+    const textElemAfter = element.querySelector('.text-overlay .after');
+
+    if (widthPercentage > 0.8) {
+        textElemAfter.setAttribute('style', `opacity: var(--comparison-card-text-hidden-opacity);`);
+    } else {
+        textElemAfter.setAttribute('style', `opacity: var(--comparison-card-text-visible-opacity);`);
+    }
+    if (widthPercentage < 0.2) {
+        textElemBefore.setAttribute('style', `opacity: var(--comparison-card-text-hidden-opacity);`);
+    } else {
+        textElemBefore.setAttribute('style', `opacity: var(--comparison-card-text-visible-opacity);`);
+    }
 
     // Fuck dragging
     return false;

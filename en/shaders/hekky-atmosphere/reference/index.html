@@ -4,22 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 
-        <!-- Generic  --><title>Hekky Display Reference | Documentation</title>
-<link rel="canonical" href="https://docs.hyblocker.dev/en/shaders/hekky-display/reference/">
-<meta name="description" content="A list of all properties for Hekky PBR">
+        <!-- Generic  --><title>Hekky Atmosphere Reference | Documentation</title>
+<link rel="canonical" href="https://docs.hyblocker.dev/en/shaders/hekky-atmosphere/reference/">
+<meta name="description" content="A skybox designed to replace the default Unity skybox">
 <meta name="theme-color" content="#168CDD">
 <!-- OpenGraph  -->
 <meta property="og:url" content="https://docs.hyblocker.dev">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hekky Display Reference | Documentation">
-<meta property="og:description" content="A list of all properties for Hekky PBR">
-<meta property="og:image" content="https://docs.hyblocker.dev/assets/heky-shaders-banner.png">
+<meta property="og:title" content="Hekky Atmosphere Reference | Documentation">
+<meta property="og:description" content="A skybox designed to replace the default Unity skybox">
+<meta property="og:image" content="https://docs.hyblocker.dev/assets/hekky-shaders-banner.png">
 <!-- Twitter  -->
 <meta property="twitter:domain" content="docs.hyblocker.dev">
 <meta property="twitter:url" content="https://docs.hyblocker.dev">
-<meta name="twitter:title" content="Hekky Display Reference | Documentation">
-<meta name="twitter:description" content="A list of all properties for Hekky PBR">
-<meta name="twitter:image" content="https://docs.hyblocker.dev/assets/heky-shaders-banner.png">
+<meta name="twitter:title" content="Hekky Atmosphere Reference | Documentation">
+<meta name="twitter:description" content="A skybox designed to replace the default Unity skybox">
+<meta name="twitter:image" content="https://docs.hyblocker.dev/assets/hekky-shaders-banner.png">
 <meta name="twitter:card" content="summary_large_image">
 
         <link rel="icon" href="/shared/favicon.ico">
@@ -107,7 +107,7 @@
 										Setting up Hekky Atmosphere?
 									</li>
 									
-								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference">
+								</a><a class="sidebar-section-link sidebar-link-selected" href="/en/shaders/hekky-atmosphere/reference">
 									<li class="sidebar-link-text">
 										Shader Reference
 									</li>
@@ -122,7 +122,7 @@
 										What is Hekky Display?
 									</li>
 									
-								</a><a class="sidebar-section-link sidebar-link-selected" href="/en/shaders/hekky-display/reference">
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-display/reference">
 									<li class="sidebar-link-text">
 										Shader Reference
 									</li>
@@ -169,15 +169,24 @@
 	<div class="card-content">
 		<p>This shader requires the 10 EUR tier or higher</p>
 	</div>
-</div><div class="card card-help">
+</div><div class="card card-warning">
 	<div class="heading-container">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg>
-		<h3 class="card-title">This shader is a variant</h3>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></svg>
+		<h3 class="card-title">Early access</h3>
 	</div>
 	<div class="card-content">
-		<p>Most properties behave in the same manner as they do in <a href="/en/shaders/hekky-pbr/reference">Hekky PBR</a></p>
+		<p>This shader is currently in early access. It is likely stable enough to be used in projects, but I cannot garuantee this while it’s in early access. The shader reference is also subject to change and may not accurately describe the shader.</p>
 	</div>
-</div><p><img src="/en/hekkydisplay_shader_inspector_full.webp" alt="Shader Inspector"></p><div class="card card-info">
+</div><blockquote>
+<div class="heading-wrapper level-h3"><h3 id="table-of-contents">Table of Contents</h3><a class="anchor-link" href="#table-of-contents"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div>
+<ul>
+<li><a href="#atmosphere">Atmosphere</a></li>
+<li><a href="#night-sky">Night Sky</a></li>
+<li><a href="#sun">Sun</a></li>
+<li><a href="#moon">Moon</a></li>
+<li><a href="#stars">Stars</a></li>
+</ul>
+</blockquote><p><img src="/en/hekkyatmosphere_shader_inspector_full.webp" alt="Shader Inspector"></p><div class="card card-info">
 	<div class="heading-container">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
 		<h3 class="card-title">Sliders</h3>
@@ -185,78 +194,117 @@
 	<div class="card-content">
 		<p>Sliders next to textures control the intensity of the texture!</p>
 	</div>
-</div><dl>
-<dt>Rendering Mode</dt>
-<dd>Allows you to change the material from opaque mode to transparency mode.
+</div><div class="heading-wrapper level-h2"><h2 id="atmosphere">Atmosphere</h2><a class="anchor-link" href="#atmosphere"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Intensity</dt>
+<dd>Controls the intensity of the day sky. Effectively a brightness slider.
 </dd>
-</dl><div class="heading-wrapper level-h2"><h2 id="display">Display</h2><a class="anchor-link" href="#display"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="card card-tip">
-	<div class="heading-container">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"></path></svg>
-		<h3 class="card-title">Textures</h3>
+<dt>Ground</dt>
+<dd>The colour of the ground plane.
+</dd>
+<dt>Mie Scattering Intensity</dt>
+<dd>The intensity of the mie scattering (the “halo” around the sun).
+</dd>
+<dt>Fixed Altitude</dt>
+<dd>When enabled the camera’s altitude is ignored.
+</dd>
+<dt>Altitude</dt>
+<dd>Controls the altitude of the camera. Useful when you want to take a player somewhere which is high up but don’t want to deal with floating point precision issues.
+</dd>
+</dl><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
+	<div class="before" draggable="false" ondragstart="return false">
+		<img src="/shared/img/hekky-atmosphere-low-altitude.webp" draggable="false" ondragstart="return false">
 	</div>
-	<div class="card-content">
-		<p>All textures share sampling settings the <strong>Texture</strong> sampling settings. The only exceptions are the <strong>subpixel layout</strong>, <strong>matcap</strong> textures.</p>
+	<div class="after" draggable="false" ondragstart="return false">
+		<img src="/shared/img/hekky-atmosphere-high-altitude.webp" draggable="false" ondragstart="return false">
 	</div>
-</div><p>This section describes the behavior of a display expressed by a material using Hekky Display.</p><dl>
-<dt>Display Texture</dt>
-<dd>The albedo / diffuse / base texture. Can also be tinted. Generally this would be a RenderTexture from a VideoPlayer.
+	<div class="slider" draggable="false" ondragstart="return false">
+		<div class="grip" draggable="false" ondragstart="return false"></div>
+	</div>
+	<div class="text-overlay" style="color: #fff">
+		<span class="before">Low Altitude</span>
+		<span class="after">High Altitude</span>
+	</div>
+</div><blockquote>
+<p>There is a smooth transition from low to high altitude.</p>
+</blockquote><div class="heading-wrapper level-h2"><h2 id="night-sky">Night Sky</h2><a class="anchor-link" href="#night-sky"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Night Intensity</dt>
+<dd>The luminosity of the night sky. Effectively controls how bright the night sky is.
 </dd>
-<dt>Aspect Ratio</dt>
-<dd>The aspect ratio of the display, Defaults to 16:9. Used to ensure that videos maintain aspect ratio. To disable it, set the value to <code>1</code>. To use a custom aspect ratio, replace the <code>:</code> with a divide operator <code>/</code>. For example, using <code>4/3</code> sets the aspect ratio to 4:3.
+<dt>Night Color</dt>
+<dd>The colour of the night sky.
 </dd>
-<dt>Subpixel Layout</dt>
-<dd>A subpixel layout texture. Example textures are provided in <code>Assets/Hekky/Textures/SubpixelLayouts</code>. This texture is an RGB texture which gets multiplied with a pixel from the video texture.
+<dt>Light Pollution</dt>
+<dd>How much light pollution is in the scene currently.
 </dd>
-<dt>Subpixel Scale X / Y</dt>
-<dd>Scales the subpixel texture along the X and Y axes. 1 means no scaling.
-Subpixel Resolution
+<dt>Light Pollution Intensity</dt>
+<dd>The luminosity of light due to light pollution. Effectively controls how far it “leaks” into the atmosphere from the ground.
 </dd>
-<dd>The “physical” resolution of the display. To emulate a 1080p display for example, set the resolution to <code>1920</code> by <code>1080</code>.
+<dt>Light Pollution Color</dt>
+<dd>The colour of the lighting that’s visible in the atmosphere due to light pollution.
 </dd>
-<dt>Overscan X / Y</dt>
-<dd>Adds an unlit, black border around the display. Useful for CRTs. This section doesn’t get affected by the backlight.
+</dl><p><img src="/shared/img/hekky-atmosphere-light-pollution.webp" alt="Light pollution example"></p><blockquote>
+<p>Light pollution</p>
+</blockquote><div class="heading-wrapper level-h2"><h2 id="sun">Sun</h2><a class="anchor-link" href="#sun"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Override Color</dt>
+<dd>Overrides the sun’s colour.
 </dd>
-<dt>Backlight</dt>
-<dd>Adds a backlight to the display, to emulate an LCD better.
+<dt>Color</dt>
+<dd>The colour of the sun as seen from space. This colour then gets filtered through the atmosphere by the time it reaches the player’s eyes (This filtering lets you have red sunsets).
 </dd>
-<dt>Flip in Mirrors</dt>
-<dd>Flips the screen when viewed through a mirror. Useful so that text remains readable.
-</dd>
-<dt>Flip on Backside</dt>
-<dd>Flips the screen when viewed through the backface of a mesh. Useful so that text remains readable.
-</dd>
-</dl><blockquote><div class="heading-wrapper level-h2"><h2 id="strobing">Strobing</h2><a class="anchor-link" href="#strobing"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p><em>Strobing refers to the behavior exhibited primarily by CRTs when attempted to be recorded with incorrect shutter speed settings on a camera. This effect isn’t present to the naked eye.</em></p><dl>
-<dt>Strobe In Cameras</dt>
-<dd>Enables strobing in VRChat Cameras
+<dt>Intensity</dt>
+<dd>Controls the luminosity of the sun. Effectively controls how bright the sun is.
 </dd>
 <dt>Size</dt>
-<dd>Controls the size of the strobing effect.
+<dd>The size of the sun in the atmosphere.
 </dd>
-<dt>Period</dt>
-<dd>Controls the duration of the strobing effect.
+</dl><div class="heading-wrapper level-h2"><h2 id="moon">Moon</h2><a class="anchor-link" href="#moon"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Direction</dt>
+<dd>The direction of the moon. You most likely shouldn’t touch this, and use the <a href="/en/shaders/hekky-atmosphere/set-up#controlling-the-sky">Atmosphere System</a> instead as it better handles this.
 </dd>
-<dt>Speed</dt>
-<dd>Controls the speed of the strobing effect.
+<dt>Size</dt>
+<dd>The size of the moon in the sky.
 </dd>
-<dt>Minimum Light</dt>
-<dd>The minimum light from dark areas under the strobing effect.
+<dt>Intensity</dt>
+<dd>The luminous intensity of the moon. Effectively controls how bright the moon is.
 </dd>
-<dt>Strobe Start / Strobe End</dt>
-<dd>These control the start and end of the strobing effect. The strobe gets remapped such that the start is mapped to 0, and the end is mapped to 1.
+<dt>Albedo</dt>
+<dd>A cubemap of the moon’s surface. There’s a reason it’s a cubemap and not a 2D texture, which will be revealed soon™.
 </dd>
-</dl></blockquote><div class="card card-help">
-	<div class="heading-container">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg>
-		<h3 class="card-title">Glare</h3>
+</dl><div class="heading-wrapper level-h2"><h2 id="stars">Stars</h2><a class="anchor-link" href="#stars"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>Mode</dt>
+<dd>The current star rendering mode. Can select between “Procedural” and “HDRI”. HDRI is recommended.
+</dd>
+<dt>Threshold</dt>
+<dd>Allows you to change the material from opaque mode to transparency mode.
+</dd>
+<dt>Color Shift</dt>
+<dd>Allows you to change the material from opaque mode to transparency mode.
+</dd>
+<dt>Cubemap</dt>
+<dd>The cubemap which shows stars. For the best results, make sure this cubemap doesn’t contain the sun and moon.
+</dd>
+<dt>Intensity</dt>
+<dd>Allows you to change the material from opaque mode to transparency mode.
+</dd>
+</dl><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
+	<div class="before" draggable="false" ondragstart="return false">
+		<img src="/shared/img/hekky-atmosphere-stars-procedural.webp" draggable="false" ondragstart="return false">
 	</div>
-	<div class="card-content">
-		<p>Since Hekky Display is built upon <a href="/en/shaders/hekky-pbr/what-is-hekky-pbr">Hekky PBR</a>, it automatically gets glare due to reflections. To mimic <a href="https://en.wikipedia.org/wiki/Anti-reflective_coating">anti-glare coating</a>, reduce the roughness slider to a value near 0.</p>
+	<div class="after" draggable="false" ondragstart="return false">
+		<img src="/shared/img/hekky-atmosphere-stars-hdri.webp" draggable="false" ondragstart="return false">
+	</div>
+	<div class="slider" draggable="false" ondragstart="return false">
+		<div class="grip" draggable="false" ondragstart="return false"></div>
+	</div>
+	<div class="text-overlay" style="color: #fff">
+		<span class="before">Procedural</span>
+		<span class="after">HDRI</span>
 	</div>
 </div>
                     <hr class="page-footer-separator">
 <div class="page-footer">
-    <span class="last-edited">Last updated on 01/07/2022</span>
-    <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-display/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
+    <span class="last-edited">Last updated on 26/07/2022</span>
+    <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-atmosphere/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>
             <footer>

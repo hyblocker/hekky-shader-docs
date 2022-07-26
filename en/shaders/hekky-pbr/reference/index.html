@@ -30,7 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/ca18d589.37b67249.css" /></head>
+    <link rel="stylesheet" href="/assets/a122762f.a166c280.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -90,6 +90,26 @@
 								</a><a class="sidebar-section-link" href="/en/shaders/hekky-pbr/using-with-vrchat">
 									<li class="sidebar-link-text">
 										Using With VRChat
+									</li>
+									
+								</a>
+					</ul>
+			</li><li class="sidebar-section-title">
+				<span class="sidebar-title-text">Hekky Atmosphere</span>
+				<ul class="sidebar-section-children">
+						<a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/what-is-hekky-atmosphere">
+									<li class="sidebar-link-text">
+										What is Hekky Atmosphere?
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/set-up">
+									<li class="sidebar-link-text">
+										Setting up Hekky Atmosphere?
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference">
+									<li class="sidebar-link-text">
+										Shader Reference
 									</li>
 									
 								</a>
@@ -162,6 +182,9 @@
 <li><a href="#occlusion">Occlusion</a></li>
 <li><a href="#outline">Outline</a></li>
 <li><a href="#audiolink">AudioLink</a></li>
+<li><a href="#other-modules">Other Modules</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#ltcgi-settings">LTCGI Settings</a></li>
 </ul>
 </blockquote><p><img src="/en/hekkypbr_shader_inspector_full.webp" alt="Shader Inspector"></p><div class="card card-info">
 	<div class="heading-container">
@@ -174,6 +197,9 @@
 </div><dl>
 <dt>Rendering Mode</dt>
 <dd>Allows you to change the material from opaque mode to transparency mode.
+</dd>
+<dt>Alpha Clip</dt>
+<dd>Allows you to control the alpha clip threshold.
 </dd>
 </dl><div class="heading-wrapper level-h2"><h2 id="main">Main</h2><a class="anchor-link" href="#main"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes the base layer of a material using Hekky PBR.</p><dl>
 <dt>Texture</dt>
@@ -343,6 +369,13 @@
 <dt>AudioLink</dt>
 <dd>Enables <a href="https://github.com/llealloo/vrc-udon-audio-link">AudioLink</a> support.
 </dd>
+</dl><div class="heading-wrapper level-h2"><h2 id="ltcgi-settings">LTCGI Settings</h2><a class="anchor-link" href="#ltcgi-settings"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+<dt>LTCGI Scale</dt>
+<dd>Skews the area of effect of an LTCGI light in 3D. This can be used to give the illusion of a surface “receiving more light”.
+</dd>
+<dt>LTCGI Intensity</dt>
+<dd>Controls the brightness of LTCGI lighting.
+</dd>
 </dl><div class="heading-wrapper level-h2"><h2 id="misc">Misc</h2><a class="anchor-link" href="#misc"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
 <dt>Render Queue</dt>
 <dd>Controls when to render this material. See the <a href="https://docs.unity3d.com/Manual/class-Material.html">Unity Docs</a> for more information.
@@ -356,7 +389,7 @@
 </dl>
                     <hr class="page-footer-separator">
 <div class="page-footer">
-    <span class="last-edited">Last updated on 01/07/2022</span>
+    <span class="last-edited">Last updated on 26/07/2022</span>
     <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-pbr/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>
