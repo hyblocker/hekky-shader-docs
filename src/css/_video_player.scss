@@ -1,0 +1,6 @@
+.video-container {
+    max-width: var(--content-max-width);
+    & video {
+        width: 100%;
+    }
+}
