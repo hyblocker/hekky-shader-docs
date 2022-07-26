@@ -27,6 +27,9 @@ Some features require a copy of [Hekky PBR Pro](https://patreon.com/hekky) to us
 > - [Occlusion](#occlusion)
 > - [Outline](#outline)
 > - [AudioLink](#audiolink)
+> - [Other Modules](#other-modules)
+> - [Misc](#misc)
+> - [LTCGI Settings](#ltcgi-settings)
 
 ![Shader Inspector](/en/hekkypbr_shader_inspector_full.webp)
 
@@ -36,6 +39,9 @@ Sliders next to textures control the intensity of the texture!
 
 Rendering Mode
 : Allows you to change the material from opaque mode to transparency mode.
+
+Alpha Clip
+: Allows you to control the alpha clip threshold.
 
 ## Main
 
@@ -218,6 +224,14 @@ LTCGI
 
 AudioLink
 : Enables [AudioLink](https://github.com/llealloo/vrc-udon-audio-link) support.
+
+## LTCGI Settings
+
+LTCGI Scale
+: Skews the area of effect of an LTCGI light in 3D. This can be used to give the illusion of a surface "receiving more light".
+
+LTCGI Intensity
+: Controls the brightness of LTCGI lighting.
 
 ## Misc
 
