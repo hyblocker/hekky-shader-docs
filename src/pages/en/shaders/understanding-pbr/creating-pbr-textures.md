@@ -49,3 +49,7 @@ Good PBR materials generally make use of a couple of texture maps:
 - Ambient Occlusion Map
 
 A material that doesn't make use of one or more of the above texture maps isn't a bad material.
+
+<CardInfo title="Wear and tear">
+In real life, nothing is perfect, even if it's brand new! Therefore, if you're trying to create convincingly realistic materials, add damage! For example, if you're texturing a gas canister which has been left in a garden for a good while, add dirt, and maybe even moss.
+</CardInfo>
