@@ -30,7 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/a122762f.a166c280.css" /></head>
+    <link rel="stylesheet" href="/assets/a83f7c83.0c63f3ee.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -142,7 +142,12 @@
 			</li><li class="sidebar-section-title">
 				<span class="sidebar-title-text">Other</span>
 				<ul class="sidebar-section-children">
-						<a class="sidebar-section-link sidebar-link-selected" href="/en/shaders/misc/editor-extensions">
+						<a class="sidebar-section-link" href="/en/shaders/misc/bakery">
+									<li class="sidebar-link-text">
+										Bakery
+									</li>
+									
+								</a><a class="sidebar-section-link sidebar-link-selected" href="/en/shaders/misc/editor-extensions">
 									<li class="sidebar-link-text">
 										Editor Extensions
 									</li>
@@ -167,6 +172,7 @@
 <li><a href="#post-processing-setup">Post Processing Setup</a></li>
 <li><a href="#studio-lighting-mode">Studio Lighting Mode</a></li>
 <li><a href="#normal-map-conversion-tool">Normal Map Conversion Tool</a></li>
+<li><a href="#auto-high-quality-monosh-l1-lightmaps">Auto High Quality MonoSH L1 Lightmaps</a></li>
 </ul>
 </blockquote><div class="heading-wrapper level-h2"><h2 id="post-processing-setup">Post Processing Setup</h2><a class="anchor-link" href="#post-processing-setup"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><blockquote>
 <p>Hekky > Setup Post Processing</p>
@@ -186,12 +192,34 @@
 	</div>
 </div><div class="heading-wrapper level-h2"><h2 id="studio-lighting-mode">Studio Lighting Mode</h2><a class="anchor-link" href="#studio-lighting-mode"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><blockquote>
 <p>Press <kbd>F12</kbd>. You can go to Edit > Shortcuts.. to edit keybinds.</p>
-</blockquote><p>This allows you to mimic the Studio Lighting Mode seen in <a href="https://blender.org/">Blender</a> inside the Unity Scene View. This is particularly useful for navigating dark scenes such as nightclubs.</p><p><img src="/shared/img/studio-lighting.webp" alt="Studio Lighting"></p><div class="heading-wrapper level-h2"><h2 id="normal-map-conversion-tool">Normal Map Conversion Tool</h2><a class="anchor-link" href="#normal-map-conversion-tool"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><blockquote>
+</blockquote><p>This allows you to mimic the Studio Lighting Mode seen in <a href="https://blender.org/">Blender</a> inside the Unity Scene View. This is particularly useful for navigating dark scenes such as nightclubs.</p><p><img src="/shared/img/studio-lighting.webp" alt="Studio Lighting"></p><div class="card card-warning">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></svg>
+		<h3 class="card-title">Materials Disappearing</h3>
+	</div>
+	<div class="card-content">
+		<p>It has been reported that when using this mode, some materials disappear entirely from the scene view, or don’t render properly in the scene view. If this happens to you, please contact me so that I can fix this for better behaviour.</p>
+	</div>
+</div><div class="heading-wrapper level-h2"><h2 id="normal-map-conversion-tool">Normal Map Conversion Tool</h2><a class="anchor-link" href="#normal-map-conversion-tool"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><blockquote>
 <p>Right click a Normal Map texture, then select Convert > Normal map (GL 🡸🡺 DX)</p>
-</blockquote><p>Allows you to convert a normal map from OpenGL mode to DirectX mode, and vice-versa. Equivalent of inverting the green channel in an image editor.</p>
+</blockquote><p>Allows you to convert a normal map from OpenGL mode to DirectX mode, and vice-versa. Equivalent of inverting the green channel in an image editor.</p><div class="heading-wrapper level-h2"><h2 id="auto-high-quality-monosh-l1-lightmaps">Auto High Quality MonoSH L1 Lightmaps</h2><a class="anchor-link" href="#auto-high-quality-monosh-l1-lightmaps"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
+	<div class="before" draggable="false" ondragstart="return false">
+		<img src="/shared/img/bakery-monosh-lq.webp" draggable="false" ondragstart="return false">
+	</div>
+	<div class="after" draggable="false" ondragstart="return false">
+		<img src="/shared/img/bakery-monosh-hq.webp" draggable="false" ondragstart="return false">
+	</div>
+	<div class="slider" draggable="false" ondragstart="return false">
+		<div class="grip" draggable="false" ondragstart="return false"></div>
+	</div>
+	<div class="text-overlay" style="color: #000">
+		<span class="before">MonoSH (Normal Quality)</span>
+		<span class="after">MonoSH (High Quality)</span>
+	</div>
+</div><p><a href="https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218">Bakery</a> recently added support for MonoSH lightmaps. The default configuration for MonoSH lightmaps unfortunately suffer from lots of artifacts, as you can see above. Hekky Shaders come with a solution which forces a better compression format (<a href="https://docs.microsoft.com/en-us/windows/win32/direct3d11/bc7-format">BC7</a>) which handles gradients significantly better than the default option. BC7 however results in larger texture sizes.</p><p>Whenever you bake a scene using Bakery with MonoSH directional mode, you’ll see this pop-up:</p><p><img src="/en/monosh-popup.webp" alt="MonoSH popup"></p><p>Clicking “Yes, use BC7” will always force L1 lightmaps to use the BC7 texture format. This pop-up will not re-open again once set.</p><p>If you wish to change this behaviour, you can change the settings by navigating to <code>Editor/HekkySettings</code>, and changing the “Bakery Force Mono SH High Quality” setting.</p><p><img src="/en/hekky-settings-monosh.webp" alt="Hekky Settings Bakery Force MonoSH"></p>
                     <hr class="page-footer-separator">
 <div class="page-footer">
-    <span class="last-edited">Last updated on 26/07/2022</span>
+    <span class="last-edited">Last updated on 04/08/2022</span>
     <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/misc/editor-extensions.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>

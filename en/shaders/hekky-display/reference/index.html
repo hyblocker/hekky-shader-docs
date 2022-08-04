@@ -30,7 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/a122762f.a166c280.css" /></head>
+    <link rel="stylesheet" href="/assets/a83f7c83.0c63f3ee.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -142,7 +142,12 @@
 			</li><li class="sidebar-section-title">
 				<span class="sidebar-title-text">Other</span>
 				<ul class="sidebar-section-children">
-						<a class="sidebar-section-link" href="/en/shaders/misc/editor-extensions">
+						<a class="sidebar-section-link" href="/en/shaders/misc/bakery">
+									<li class="sidebar-link-text">
+										Bakery
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/misc/editor-extensions">
 									<li class="sidebar-link-text">
 										Editor Extensions
 									</li>
@@ -209,15 +214,21 @@
 </dd>
 <dt>Subpixel Scale X / Y</dt>
 <dd>Scales the subpixel texture along the X and Y axes. 1 means no scaling.
-Subpixel Resolution
 </dd>
+<dt>Subpixel Resolution</dt>
 <dd>The “physical” resolution of the display. To emulate a 1080p display for example, set the resolution to <code>1920</code> by <code>1080</code>.
+</dd>
+<dt>Snap To Subpixels</dt>
+<dd>Snaps the display texture to the subpixel grid, which would remove gradients in subpixels, emulating LCDs better.
 </dd>
 <dt>Overscan X / Y</dt>
 <dd>Adds an unlit, black border around the display. Useful for CRTs. This section doesn’t get affected by the backlight.
 </dd>
 <dt>Backlight</dt>
 <dd>Adds a backlight to the display, to emulate an LCD better.
+</dd>
+<dt>Grayscale</dt>
+<dd>Turns the image grayscale, useful if you’re trying to aim for a “vintage” look.
 </dd>
 <dt>Flip in Mirrors</dt>
 <dd>Flips the screen when viewed through a mirror. Useful so that text remains readable.
@@ -255,7 +266,7 @@ Subpixel Resolution
 </div>
                     <hr class="page-footer-separator">
 <div class="page-footer">
-    <span class="last-edited">Last updated on 01/07/2022</span>
+    <span class="last-edited">Last updated on 04/08/2022</span>
     <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-display/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>
