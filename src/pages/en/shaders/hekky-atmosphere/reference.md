@@ -39,6 +39,9 @@ Sliders next to textures control the intensity of the texture!
 Intensity
 : Controls the intensity of the day sky. Effectively a brightness slider.
 
+Color
+: The colour of the atmosphere when the sun is up.
+
 Ground
 : The colour of the ground plane.
 

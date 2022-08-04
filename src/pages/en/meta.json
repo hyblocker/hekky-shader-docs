@@ -83,6 +83,10 @@
 		"title": "Other",
 		"children": [
 		  {
+			"title": "Bakery",
+			"url": "/en/shaders/misc/bakery"
+		  },
+		  {
 			"title": "Editor Extensions",
 			"url": "/en/shaders/misc/editor-extensions"
 		  },

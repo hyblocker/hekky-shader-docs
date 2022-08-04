@@ -14,7 +14,7 @@ TODO: Autoplay when scrolled into view?
 
 ---
 <div class="video-container">
-	<video	{... videoAutoplay ? {autoplay: false} : {controls: true}}
+	<video	{... videoAutoplay ? {controls: true} : {autoplay: true}}
 			{... videoMuted ? {muted: true} : {}}
 			{... videoLoop ? {loop: true} : {}}
 			src={src}></video>

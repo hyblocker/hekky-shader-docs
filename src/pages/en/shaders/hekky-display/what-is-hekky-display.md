@@ -7,6 +7,7 @@ setup: |
   import CardInfo from '@components/CardInfo.astro'
   import CardWarning from '@components/CardWarning.astro'
   import PaywallIcon from '@icons/PaywalledFeature.astro'
+  import VideoPlayer from '@components/VideoPlayer.astro'
   import ComparisionCard from '@components/ComparisionCard.astro'
 ---
 # What is Hekky Display?
@@ -18,6 +19,10 @@ setup: |
 Hekky Display is a variant of [Hekky PBR](/en/shaders/hekky-pbr/what-is-hekky-pbr) designed for use specifically with displays. This shader allows displays such as TVs and monitors to render subpixels, force the video texture to fit within a specific aspect ratio, and offers a number of features for [video players](https://docs.vrchat.com/docs/video-players) in [VRChat](https://vrchat.com/).
 
 ![Subpixel rendering of a Display using Hekky Display](/shared/img/display-subpixels.webp)
+
+<VideoPlayer src="/shared/video/crt-strobing-loop.mp4" autoplay/>
+
+> CRT Strobing effect, which is visible only in the camera on the right
 
 Hekky Display supports numerous features:
 

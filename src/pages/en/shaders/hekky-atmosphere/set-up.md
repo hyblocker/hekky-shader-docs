@@ -39,7 +39,7 @@ To set up Hekky Atmosphere in a new scene:
 
 <br>
 
-<VideoPlayer src="/shared/img/hekky-atmosphere-setup-speedrun.mp4" autoplay/>
+<VideoPlayer src="/shared/video/hekky-atmosphere-setup-speedrun.mp4" />
 
 A sample scene is included in Hekky/Examples/Scenes/AtmosphereExample
 

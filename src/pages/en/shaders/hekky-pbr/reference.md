@@ -28,8 +28,8 @@ Some features require a copy of [Hekky PBR Pro](https://patreon.com/hekky) to us
 > - [Outline](#outline)
 > - [AudioLink](#audiolink)
 > - [Other Modules](#other-modules)
-> - [Misc](#misc)
 > - [LTCGI Settings](#ltcgi-settings)
+> - [Misc](#misc)
 
 ![Shader Inspector](/en/hekkypbr_shader_inspector_full.webp)
 
@@ -217,7 +217,7 @@ Add
 ## Other Modules
 
 Bakery
-: Enables [Bakery](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218) support. Required to use Bakery RNM or Bakery SH lightmapping modes, and must match whatever setting is used in Bakery.
+: Enables [Bakery](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218) support. Required to use Bakery RNM, Bakery SH or MonoSH lightmapping modes, and must match whatever setting is used in Bakery. [Learn more](/en/shaders/misc/bakery)
 
 LTCGI
 : Enables [LTCGI](https://github.com/pimaker/ltcgi) support.

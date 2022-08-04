@@ -49,14 +49,21 @@ Subpixel Layout
 
 Subpixel Scale X / Y
 : Scales the subpixel texture along the X and Y axes. 1 means no scaling.
+
 Subpixel Resolution
 : The "physical" resolution of the display. To emulate a 1080p display for example, set the resolution to `1920` by `1080`.
+
+Snap To Subpixels
+: Snaps the display texture to the subpixel grid, which would remove gradients in subpixels, emulating LCDs better.
 
 Overscan X / Y
 : Adds an unlit, black border around the display. Useful for CRTs. This section doesn't get affected by the backlight.
 
 Backlight
 : Adds a backlight to the display, to emulate an LCD better.
+
+Grayscale
+: Turns the image grayscale, useful if you're trying to aim for a "vintage" look.
 
 Flip in Mirrors
 : Flips the screen when viewed through a mirror. Useful so that text remains readable.

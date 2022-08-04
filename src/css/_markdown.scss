@@ -92,7 +92,7 @@ em {
 	font-style: italic;
 }
 strong {
-	font-weight: bold;
+	font-weight: var(--font-weight-bold);
 }
 article {
 	& ul, & li, & ol, & p, & strong, & em {

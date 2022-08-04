@@ -47,8 +47,6 @@ Hekky Atmosphere contains a number of features, most of which aren't available i
 | Stars | <FeatureIncluded height="1.5rem" width="1.5rem"/> |   |
 | Light pollution | <FeatureIncluded height="1.5rem" width="1.5rem"/> |   |
 | Exiting the atmosphere | <FeatureIncluded height="1.5rem" width="1.5rem"/> |  |
-| Artist controllable colours\* | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
-
-\* Currently Hekky Atmosphere only allows you to configure the ground's colour, and night sky colours. The day sky is currently hardcoded, but I have plans to allow you to control it's colours.
+| Artist controllable colours | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
 
 More features for Hekky Atmosphere are planned, and will be revealed when they're ready.
