@@ -34,6 +34,8 @@ Below is a list of images comparing Hekky Atmosphere with the default Unity skyb
 
 <ComparisionCard beforeSrc="/shared/img/hekky-atmosphere3.webp" beforeTxt="Hekky Atmosphere" afterSrc="/shared/img/unity-skybox3.webp" afterTxt="Unity Skybox" color="#fff" />
 
+<ComparisionCard beforeSrc="/shared/img/hekky-atmosphere4.webp" beforeTxt="Hekky Atmosphere" afterSrc="/shared/img/unity-skybox4.webp" afterTxt="Unity Skybox" color="#fff" />
+
 ## Features
 
 Hekky Atmosphere contains a number of features, most of which aren't available in the default Unity skybox:
