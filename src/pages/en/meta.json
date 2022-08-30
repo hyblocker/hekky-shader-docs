@@ -71,10 +71,14 @@
 		]
 	  },
 	  {
-		"title": "Who Asked",
+		"title": "Misc Shaders",
 		"children": [
 		  {
-			"title": "IDK",
+			"title": "Volumetric Lighting",
+			"url": "/en/shaders/volumetric-lighting"
+		  },
+		  {
+			"title": "Who Asked",
 			"url": "/en/shaders/who-asked"
 		  }
 		]

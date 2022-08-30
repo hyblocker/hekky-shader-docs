@@ -2,13 +2,41 @@
 layout: '@layouts/DocsPage.astro'
 description: Documentation for Hekky Shaders
 image: assets/hekky-shaders-banner.png
+setup: | 
+  import CardInfo from '@components/CardInfo.astro'
+  import CardWarning from '@components/CardWarning.astro'
+  import CardNoIcon from '@components/CardNoIcon.astro'
 ---
 # Documentation
 
-Hi!
+Welcome to the documentation website for Hekky Shaders!
 
-You seem to have stumbled upon root...
+Hekky Shaders are a collection of Shaders designed primarily for world creation. Below are a few links to get you started:
 
-Hmmmm. I think I can help you go to where you want to go...
+<CardNoIcon title="What is PBR?" href="/en/shaders/understanding-pbr/what-is-pbr">
+Learn about what PBR rendering is.
+</CardNoIcon>
 
-You're looking for the [Hekky Shaders Documentation](/en/shaders/), aren't you?
+<CardNoIcon title="What is Hekky PBR?" href="/en/shaders/hekky-pbr/what-is-hekky-pbr">
+Learn about what Hekky's PBR shaders have to offer.
+</CardNoIcon>
+
+<CardNoIcon title="Hekky Atmosphere" href="/en/shaders/hekky-atmosphere/what-is-hekky-atmosphere">
+A skybox designed to replace the default Unity skybox.
+</CardNoIcon>
+
+<CardNoIcon title="Hekky Display" href="/en/shaders/hekky-display/what-is-hekky-display">
+A shader designed to mimic the look and feel of displays.
+</CardNoIcon>
+
+<CardNoIcon title="Volumetric Lighting" href="/en/shaders/volumetric-lighting">
+Volumetric Lighting is a relatively simple volumetric lighting solution for Unity.
+</CardNoIcon>
+
+<CardNoIcon title="Who Asked" href="/en/shaders/who-asked">
+Yes, this is a shader. Your eyes aren't deceiving you.
+</CardNoIcon>
+
+<CardNoIcon title="Editor Extensions" href="/en/shaders/misc/editor-extensions">
+Learn about the editor extensions that get bundled with Hekky's Shaders.
+</CardNoIcon>

@@ -22,6 +22,7 @@ Some features require a copy of [Hekky PBR Pro](https://patreon.com/hekky) to us
 > - [Toon](#toon)
 > - [Specular](#specular)
 > - [Anisotropy](#anisotropy)
+> - [Subsurface Scattering](#subsurface-scattering)
 > - [Emission](#emission)
 > - [Matcap](#matcap)
 > - [Occlusion](#occlusion)
@@ -63,7 +64,7 @@ Normal Map
 : Allows you to define surface bumps without increasing the polygon count.
 
 <CardTip title="Textures">
-All textures share sampling settings the **Texture** sampling settings. The only exception is the matcap texture.
+All textures share the same **Texture** sampling settings, i.e. texture settings such as filtering mode, clamp or repeat tiling modes will be shared. The only exception is the matcap texture.
 </CardTip>
 
 ## Lighting
@@ -144,6 +145,26 @@ Baked Specular
 Force reflections mode
 : Forces reflections to be interpreted as either box projected or spherical projected reflection probes.
 
+### Subsurface Scattering
+
+<ComparisionCard beforeSrc="/shared/img/sss-off.webp" beforeTxt="Regular lighting" afterSrc="/shared/img/sss-on.webp" afterTxt="Subsurface Scattering" color="#fff"/>
+
+Enable Subsurface Scattering
+: Enables Subsurface Scattering.
+
+Thickness Map
+: A grayscale texture defining the thickness of a mesh.
+
+SSS Color
+: A color to be applied on subsurface scattering.
+
+Intensity
+: How intense the effect of subsurface scattering is.
+
+<CardTip title="Occlusion">
+Subsurface scattering is affected by occlusion, to better account for the lack of light from certain areas. The exact algorithm currently used to take occlusion into account will likely be reworked later to take occlusion into account in a more physically based manner.
+</CardTip>
+
 ### Emission
 
 Emission
@@ -181,6 +202,10 @@ Exposure Occlusion
 : Controls the effect ambient occlusion has on lightmap ambient occlusion. Doesn't effect per-material ambient occlusion.
 
 ## Outline
+
+<CardInfo title="Variants">
+Outlines are only available in the outline variant of this shader. To use outlines, select "Hekky/PBR/Standard (Outline)".
+</CardInfo>
 
 This section controls outlines.
 
