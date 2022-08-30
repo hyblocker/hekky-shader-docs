@@ -30,7 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/a83f7c83.0c63f3ee.css" /></head>
+    <link rel="stylesheet" href="/assets/11f04fec.ec5d4082.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -130,11 +130,16 @@
 								</a>
 					</ul>
 			</li><li class="sidebar-section-title">
-				<span class="sidebar-title-text">Who Asked</span>
+				<span class="sidebar-title-text">Misc Shaders</span>
 				<ul class="sidebar-section-children">
-						<a class="sidebar-section-link" href="/en/shaders/who-asked">
+						<a class="sidebar-section-link" href="/en/shaders/volumetric-lighting">
 									<li class="sidebar-link-text">
-										IDK
+										Volumetric Lighting
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/who-asked">
+									<li class="sidebar-link-text">
+										Who Asked
 									</li>
 									
 								</a>
@@ -182,6 +187,7 @@
 <li><a href="#toon">Toon</a></li>
 <li><a href="#specular">Specular</a></li>
 <li><a href="#anisotropy">Anisotropy</a></li>
+<li><a href="#subsurface-scattering">Subsurface Scattering</a></li>
 <li><a href="#emission">Emission</a></li>
 <li><a href="#matcap">Matcap</a></li>
 <li><a href="#occlusion">Occlusion</a></li>
@@ -228,7 +234,7 @@
 		<h3 class="card-title">Textures</h3>
 	</div>
 	<div class="card-content">
-		<p>All textures share sampling settings the <strong>Texture</strong> sampling settings. The only exception is the matcap texture.</p>
+		<p>All textures share the same <strong>Texture</strong> sampling settings, i.e. texture settings such as filtering mode, clamp or repeat tiling modes will be shared. The only exception is the matcap texture.</p>
 	</div>
 </div><div class="heading-wrapper level-h2"><h2 id="lighting">Lighting</h2><a class="anchor-link" href="#lighting"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section describes how you may customise how a material reflects light using Hekky PBR.</p><dl>
 <dt>Lighting Mode</dt>
@@ -307,7 +313,42 @@
 <dt>Force reflections mode</dt>
 <dd>Forces reflections to be interpreted as either box projected or spherical projected reflection probes.
 </dd>
-</dl><div class="heading-wrapper level-h3"><h3 id="emission">Emission</h3><a class="anchor-link" href="#emission"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
+</dl><div class="heading-wrapper level-h3"><h3 id="subsurface-scattering">Subsurface Scattering</h3><a class="anchor-link" href="#subsurface-scattering"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
+	<div class="before" draggable="false" ondragstart="return false">
+		<img src="/shared/img/sss-off.webp" draggable="false" ondragstart="return false">
+	</div>
+	<div class="after" draggable="false" ondragstart="return false">
+		<img src="/shared/img/sss-on.webp" draggable="false" ondragstart="return false">
+	</div>
+	<div class="slider" draggable="false" ondragstart="return false">
+		<div class="grip" draggable="false" ondragstart="return false"></div>
+	</div>
+	<div class="text-overlay" style="color: #fff">
+		<span class="before">Regular lighting</span>
+		<span class="after">Subsurface Scattering</span>
+	</div>
+</div><dl>
+<dt>Enable Subsurface Scattering</dt>
+<dd>Enables Subsurface Scattering.
+</dd>
+<dt>Thickness Map</dt>
+<dd>A grayscale texture defining the thickness of a mesh.
+</dd>
+<dt>SSS Color</dt>
+<dd>A color to be applied on subsurface scattering.
+</dd>
+<dt>Intensity</dt>
+<dd>How intense the effect of subsurface scattering is.
+</dd>
+</dl><div class="card card-tip">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"></path></svg>
+		<h3 class="card-title">Occlusion</h3>
+	</div>
+	<div class="card-content">
+		<p>Subsurface scattering is affected by occlusion, to better account for the lack of light from certain areas. The exact algorithm currently used to take occlusion into account will likely be reworked later to take occlusion into account in a more physically based manner.</p>
+	</div>
+</div><div class="heading-wrapper level-h3"><h3 id="emission">Emission</h3><a class="anchor-link" href="#emission"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><dl>
 <dt>Emission</dt>
 <dd>Controls the object’s emissiveness.
 </dd>
@@ -340,7 +381,15 @@
 <dt>Exposure Occlusion</dt>
 <dd>Controls the effect ambient occlusion has on lightmap ambient occlusion. Doesn’t effect per-material ambient occlusion.
 </dd>
-</dl><div class="heading-wrapper level-h2"><h2 id="outline">Outline</h2><a class="anchor-link" href="#outline"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>This section controls outlines.</p><dl>
+</dl><div class="heading-wrapper level-h2"><h2 id="outline">Outline</h2><a class="anchor-link" href="#outline"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><div class="card card-info">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
+		<h3 class="card-title">Variants</h3>
+	</div>
+	<div class="card-content">
+		<p>Outlines are only available in the outline variant of this shader. To use outlines, select “Hekky/PBR/Standard (Outline)“.</p>
+	</div>
+</div><p>This section controls outlines.</p><dl>
 <dt>Enable Outline</dt>
 <dd>Enables outline effects.
 </dd>
@@ -394,7 +443,7 @@
 </dl>
                     <hr class="page-footer-separator">
 <div class="page-footer">
-    <span class="last-edited">Last updated on 04/08/2022</span>
+    <span class="last-edited">Last updated on 30/08/2022</span>
     <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-pbr/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>
