@@ -48,8 +48,12 @@
 			"url": "/en/shaders/hekky-atmosphere/what-is-hekky-atmosphere"
 		  },
 		  {
-			"title": "Setting up Hekky Atmosphere?",
+			"title": "Setting up Hekky Atmosphere",
 			"url": "/en/shaders/hekky-atmosphere/set-up"
+		  },
+		  {
+			"title": "Atmospheric Fog",
+			"url": "/en/shaders/hekky-atmosphere/fog"
 		  },
 		  {
 			"title": "Shader Reference",

@@ -22,6 +22,7 @@ Some features require a copy of [Hekky PBR Pro](https://patreon.com/hekky) to us
 > - [Toon](#toon)
 > - [Specular](#specular)
 > - [Anisotropy](#anisotropy)
+> - [Reflections](#reflections)
 > - [Subsurface Scattering](#subsurface-scattering)
 > - [Emission](#emission)
 > - [Matcap](#matcap)
@@ -144,6 +145,29 @@ Baked Specular
 
 Force reflections mode
 : Forces reflections to be interpreted as either box projected or spherical projected reflection probes.
+
+SSR
+: Enables Screenspace Reflections.
+
+<CardWarning title="Note">
+The current SSR implementation is not as good as I would like it to be. As such, this will be getting reworked at some point in the future.
+</CardWarning>
+
+Blur
+: Unused for now.
+
+Edge Fade
+: How far off the edge of the screen screen space reflections will extend to. They will smoothly blend with reflection probes.
+
+Accuracy
+: Controls the amount precision used when tracing the reflected ray.
+
+Maximum steps
+: The maximum amount of steps allowed to trace the reflected ray.
+
+<CardTip title="Performance">
+Screenspace Reflections are an expensive shader effect. Use this sparingly, and only whenever necessary (you can get pretty far with reflection probes alone)
+</CardTip>
 
 ### Subsurface Scattering
 
