@@ -19,10 +19,6 @@ Fog is useful to help the viewer better perceive distance. It also provides more
 
 <ComparisionCard beforeSrc="/shared/img/atmospheric-fog-off.webp" beforeTxt="No fog" afterSrc="/shared/img/atmospheric-fog-on.webp" afterTxt="Atmospheric fog" color="#fff" />
 
-<CardError title="Issues with Mie scattering">
-Mie scattering (the haze from the sun) is currently not working properly.
-</CardError>
-
 <CardError title="Issues below y = 0">
 The effect currently breaks when the camera, or parts of a mesh are below y = 0 right now. A fix is being investigated.
 </CardError>
@@ -32,3 +28,4 @@ The effect currently breaks when the camera, or parts of a mesh are below y = 0 
 To setup Atmospheric Fog:
 - Drag the atmospheric fog prefab from Hekky/Examples/Prefabs into your scene.
 - Scale up the mesh to encompass the entire visible region.
+- Match the fog material's properties to those of the skybox
