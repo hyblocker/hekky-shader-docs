@@ -231,6 +231,30 @@
 <dt>Invert Roughness</dt>
 <dd>Inverts the roughness map. Enable this if you want to use smoothness instead of roughness.
 </dd>
+<dt>Enable POM</dt>
+<dd>Enables Parallax Occlusion Mapping
+</dd>
+<dt>Height Map</dt>
+<dd>Displacement or Height map texture, and how far it will protrude inwards.
+</dd>
+<dt>Disable Beyond 0-1 UVs</dt>
+<dd>Clips the texture so that when the POM texture bleeds beyond the 0-1 range it clips to further sell the illusion of displacement. This however assumes all the UVs are contained within a 0-1 range
+</dd>
+</dl><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
+	<div class="before" draggable="false" ondragstart="return false">
+		<img src="/shared/img/pom-disabled.webp" draggable="false" ondragstart="return false">
+	</div>
+	<div class="after" draggable="false" ondragstart="return false">
+		<img src="/shared/img/pom-enabled.webp" draggable="false" ondragstart="return false">
+	</div>
+	<div class="slider" draggable="false" ondragstart="return false">
+		<div class="grip" draggable="false" ondragstart="return false"></div>
+	</div>
+	<div class="text-overlay" style="color: #fff">
+		<span class="before">No POM</span>
+		<span class="after">POM</span>
+	</div>
+</div><dl>
 <dt>Normal Map</dt>
 <dd>Allows you to define surface bumps without increasing the polygon count.
 </dd>
@@ -481,7 +505,7 @@
 </dl>
                     <hr class="page-footer-separator">
 <div class="page-footer">
-    <span class="last-edited">Last updated on 04/10/2022</span>
+    <span class="last-edited">Last updated on 31/10/2022</span>
     <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-pbr/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>
