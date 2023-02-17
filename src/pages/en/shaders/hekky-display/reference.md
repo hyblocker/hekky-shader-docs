@@ -1,8 +1,8 @@
 ---
 layout: '@layouts/DocsPage.astro'
 title: Hekky Display Reference
-description: A list of all properties for Hekky PBR
-image: assets/heky-shaders-banner.png
+description: A list of all properties for Hekky Display
+image: assets/hekky-shaders-banner.png
 setup: | 
   import CardInfo from '@components/CardInfo.astro'
   import CardHelp from '@components/CardHelp.astro'
