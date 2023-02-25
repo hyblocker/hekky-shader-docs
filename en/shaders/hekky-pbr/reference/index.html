@@ -30,7 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/4d85091f.1b5e47fc.css" /></head>
+    <link rel="stylesheet" href="/assets/db3be116.49915537.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -102,19 +102,24 @@
 										What is Hekky Atmosphere?
 									</li>
 									
-								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/set-up">
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/set-up-atmosphere">
 									<li class="sidebar-link-text">
 										Setting up Hekky Atmosphere
 									</li>
 									
-								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/fog">
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference-fog">
 									<li class="sidebar-link-text">
 										Atmospheric Fog
 									</li>
 									
-								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference">
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference-atmosphere">
 									<li class="sidebar-link-text">
-										Shader Reference
+										Hekky Atmosphere
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference-cirrus-clouds">
+									<li class="sidebar-link-text">
+										Cirrus Clouds
 									</li>
 									
 								</a>
@@ -137,7 +142,12 @@
 			</li><li class="sidebar-section-title">
 				<span class="sidebar-title-text">Misc Shaders</span>
 				<ul class="sidebar-section-children">
-						<a class="sidebar-section-link" href="/en/shaders/volumetric-lighting">
+						<a class="sidebar-section-link" href="/en/shaders/fake-parallax">
+									<li class="sidebar-link-text">
+										Fake Parallax Cubemap
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/volumetric-lighting">
 									<li class="sidebar-link-text">
 										Volumetric Lighting
 									</li>
@@ -232,7 +242,7 @@
 <dd>Inverts the roughness map. Enable this if you want to use smoothness instead of roughness.
 </dd>
 <dt>Enable POM</dt>
-<dd>Enables Parallax Occlusion Mapping
+<dd>Enables Parallax Occlusion Mapping.
 </dd>
 <dt>Height Map</dt>
 <dd>Displacement or Height map texture, and how far it will protrude inwards.
@@ -253,6 +263,14 @@
 	<div class="text-overlay" style="color: #fff">
 		<span class="before">No POM</span>
 		<span class="after">POM</span>
+	</div>
+</div><div class="card card-warning">
+	<div class="heading-container">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></svg>
+		<h3 class="card-title">POM Performance</h3>
+	</div>
+	<div class="card-content">
+		<p>POM is an expensive (slow) technique. Hekky PBR has a few optimisations to make POM less expensive than most implementations of POM, which means you’ll be able to use POM more often, but still shouldn’t be used for everything.</p>
 	</div>
 </div><dl>
 <dt>Normal Map</dt>
@@ -505,7 +523,7 @@
 </dl>
                     <hr class="page-footer-separator">
 <div class="page-footer">
-    <span class="last-edited">Last updated on 31/10/2022</span>
+    <span class="last-edited">Last updated on 25/02/2023</span>
     <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-pbr/reference.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>

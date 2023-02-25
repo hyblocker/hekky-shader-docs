@@ -30,7 +30,7 @@
         <script src="/shared/js/fuse.js"></script>
         <script src="/shared/js/mobile.js"></script>
         <script src="/shared/js/main.js"></script>
-    <link rel="stylesheet" href="/assets/4d85091f.1b5e47fc.css" /></head>
+    <link rel="stylesheet" href="/assets/db3be116.49915537.css" /></head>
     <body>
         <header>
 	<button class="mobile sidebar">
@@ -102,19 +102,24 @@
 										What is Hekky Atmosphere?
 									</li>
 									
-								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/set-up">
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/set-up-atmosphere">
 									<li class="sidebar-link-text">
 										Setting up Hekky Atmosphere
 									</li>
 									
-								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/fog">
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference-fog">
 									<li class="sidebar-link-text">
 										Atmospheric Fog
 									</li>
 									
-								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference">
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference-atmosphere">
 									<li class="sidebar-link-text">
-										Shader Reference
+										Hekky Atmosphere
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/hekky-atmosphere/reference-cirrus-clouds">
+									<li class="sidebar-link-text">
+										Cirrus Clouds
 									</li>
 									
 								</a>
@@ -137,7 +142,12 @@
 			</li><li class="sidebar-section-title">
 				<span class="sidebar-title-text">Misc Shaders</span>
 				<ul class="sidebar-section-children">
-						<a class="sidebar-section-link" href="/en/shaders/volumetric-lighting">
+						<a class="sidebar-section-link" href="/en/shaders/fake-parallax">
+									<li class="sidebar-link-text">
+										Fake Parallax Cubemap
+									</li>
+									
+								</a><a class="sidebar-section-link" href="/en/shaders/volumetric-lighting">
 									<li class="sidebar-link-text">
 										Volumetric Lighting
 									</li>
@@ -192,7 +202,7 @@
 	<div class="card-content">
 		<p>This shader is currently in early access. It is likely stable enough to be used in projects, but I cannot garuantee this while it’s in early access.</p>
 	</div>
-</div><p>Hekky Atmosphere is a procedural skybox shader which is designed to replace the default Unity skybox. It allows for significantly higher fidelity skies with minimal effort. For a complete list of features please view the <a href="/en/shaders/hekky-atmosphere/reference">shader reference</a>.</p><div class="heading-wrapper level-h2"><h2 id="comparisons">Comparisons</h2><a class="anchor-link" href="#comparisons"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Below is a list of images comparing Hekky Atmosphere with the default Unity skybox. Both images were captured with the same sun direction and camera direction to better show the difference.</p><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
+</div><p>Hekky Atmosphere is a procedural skybox shader which is designed to replace the default Unity skybox. It allows for significantly higher fidelity skies with minimal effort. For a complete list of features please view the <a href="/en/shaders/hekky-atmosphere/reference-atmosphere">shader reference</a>.</p><div class="heading-wrapper level-h2"><h2 id="comparisons">Comparisons</h2><a class="anchor-link" href="#comparisons"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Below is a list of images comparing Hekky Atmosphere with the default Unity skybox. Both images were captured with the same sun direction and camera direction to better show the difference.</p><div class="comparision-card" style="--compare-width: 50%" draggable="false" ondragstart="return false">
 	<div class="before" draggable="false" ondragstart="return false">
 		<img src="/shared/img/hekky-atmosphere0.webp" draggable="false" ondragstart="return false">
 	</div>
@@ -382,10 +392,10 @@
 <path fill="url(#gradient)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg></td>
 </tr>
 </tbody>
-</table><p>More features for Hekky Atmosphere are planned, and will be revealed when they’re ready.</p>
+</table><p>More features for Hekky Atmosphere are planned, and will be revealed when they’re ready.</p><div class="heading-wrapper level-h2"><h2 id="clouds">Clouds</h2><a class="anchor-link" href="#clouds"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Hekky Atmosphere can be further enchanced with Hekky’s Cloud systems. These can help simulate the dynamic nature of the skies.</p><div class="heading-wrapper level-h3"><h3 id="cirrus-clouds">Cirrus Clouds</h3><a class="anchor-link" href="#cirrus-clouds"><span class="anchor-icon" aria-hidden="true"><svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xlmns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="currentcolor" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a></div><p>Cirrus clouds are the thin wispy clouds found high up in the atmosphere. This shader mimics their behaviour to make the sky feel more alive. For a complete set of features please view the <a href="/en/shaders/hekky-atmosphere/reference-cirrus-clouds">shader reference</a>.</p><p><img src="/shared/img/hekky-cirrus-clouds-01.webp" alt="Clouds in the sky"></p><p><img src="/shared/img/hekky-cirrus-clouds-02.webp" alt="Another angle demonstrating clouds in the sky"></p>
                     <hr class="page-footer-separator">
 <div class="page-footer">
-    <span class="last-edited">Last updated on 04/08/2022</span>
+    <span class="last-edited">Last updated on 25/02/2023</span>
     <a class="edit-on-github" href="https://github.com/hyblocker/hekky-shader-docs/blob/master/src/pages/en/shaders/hekky-atmosphere/what-is-hekky-atmosphere.md" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"></path></svg>Edit on GitHub</a>
 </div>
             </article>
