@@ -20,7 +20,7 @@ setup: |
 	This shader is currently in early access. It is likely stable enough to be used in projects, but I cannot garuantee this while it's in early access.
 </CardWarning>
 
-Hekky Atmosphere is a procedural skybox shader which is designed to replace the default Unity skybox. It allows for significantly higher fidelity skies with minimal effort. For a complete list of features please view the [shader reference](/en/shaders/hekky-atmosphere/reference).
+Hekky Atmosphere is a procedural skybox shader which is designed to replace the default Unity skybox. It allows for significantly higher fidelity skies with minimal effort. For a complete list of features please view the [shader reference](/en/shaders/hekky-atmosphere/reference-atmosphere).
 
 ## Comparisons
 
@@ -52,3 +52,15 @@ Hekky Atmosphere contains a number of features, most of which aren't available i
 | Artist controllable colours | <FeatureIncluded height="1.5rem" width="1.5rem"/> | <FeatureIncluded height="1.5rem" width="1.5rem"/> |
 
 More features for Hekky Atmosphere are planned, and will be revealed when they're ready.
+
+## Clouds
+
+Hekky Atmosphere can be further enchanced with Hekky's Cloud systems. These can help simulate the dynamic nature of the skies.
+
+### Cirrus Clouds
+
+Cirrus clouds are the thin wispy clouds found high up in the atmosphere. This shader mimics their behaviour to make the sky feel more alive. For a complete set of features please view the [shader reference](/en/shaders/hekky-atmosphere/reference-cirrus-clouds).
+
+![Clouds in the sky](/shared/img/hekky-cirrus-clouds-01.webp)
+
+![Another angle demonstrating clouds in the sky](/shared/img/hekky-cirrus-clouds-02.webp)

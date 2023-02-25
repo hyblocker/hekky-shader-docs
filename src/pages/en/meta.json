@@ -49,15 +49,19 @@
 		  },
 		  {
 			"title": "Setting up Hekky Atmosphere",
-			"url": "/en/shaders/hekky-atmosphere/set-up"
+			"url": "/en/shaders/hekky-atmosphere/set-up-atmosphere"
 		  },
 		  {
 			"title": "Atmospheric Fog",
-			"url": "/en/shaders/hekky-atmosphere/fog"
+			"url": "/en/shaders/hekky-atmosphere/reference-fog"
 		  },
 		  {
-			"title": "Shader Reference",
-			"url": "/en/shaders/hekky-atmosphere/reference"
+			"title": "Hekky Atmosphere",
+			"url": "/en/shaders/hekky-atmosphere/reference-atmosphere"
+		  },
+		  {
+			"title": "Cirrus Clouds",
+			"url": "/en/shaders/hekky-atmosphere/reference-cirrus-clouds"
 		  }
 		]
 	  },
@@ -77,6 +81,10 @@
 	  {
 		"title": "Misc Shaders",
 		"children": [
+			{
+			  "title": "Fake Parallax Cubemap",
+			  "url": "/en/shaders/fake-parallax"
+			},
 		  {
 			"title": "Volumetric Lighting",
 			"url": "/en/shaders/volumetric-lighting"

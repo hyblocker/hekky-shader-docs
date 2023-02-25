@@ -62,7 +62,7 @@ Invert Roughness
 : Inverts the roughness map. Enable this if you want to use smoothness instead of roughness.
 
 Enable POM
-: Enables Parallax Occlusion Mapping
+: Enables Parallax Occlusion Mapping.
 
 Height Map
 : Displacement or Height map texture, and how far it will protrude inwards.
@@ -71,6 +71,10 @@ Disable Beyond 0-1 UVs
 : Clips the texture so that when the POM texture bleeds beyond the 0-1 range it clips to further sell the illusion of displacement. This however assumes all the UVs are contained within a 0-1 range
 
 <ComparisionCard beforeSrc="/shared/img/pom-disabled.webp" beforeTxt="No POM" afterSrc="/shared/img/pom-enabled.webp" afterTxt="POM" color="#fff"/>
+
+<CardWarning title="POM Performance">
+POM is an expensive (slow) technique. Hekky PBR has a few optimisations to make POM less expensive than most implementations of POM, which means you'll be able to use POM more often, but still shouldn't be used for everything.
+</CardWarning>
 
 Normal Map
 : Allows you to define surface bumps without increasing the polygon count.
